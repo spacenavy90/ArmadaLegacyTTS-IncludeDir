@@ -79,7 +79,7 @@ function onload()
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
         name = "Arquitens-class Command Cruiser",
-        front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_card.png",
+        front = LEGACY_ASSETS.."ships/republic/rep_arq/arquitens-command-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
         ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
@@ -93,7 +93,7 @@ function onload()
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
         name = "Arquitens-class Light Cruiser",
-        front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_card.png",
+        front = LEGACY_ASSETS.."ships/republic/rep_arq/arquitens-light-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
         ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
@@ -120,13 +120,13 @@ function onload()
         defense_tokens = {}}
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "ETA-2 Actis Squadron",
-        front = LEGACY_ASSETS.."squadrons/republic/eta2/base_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/eta-2-squadron.png",
         cost = 15,
         aliases = {"ETA-2 Actis Squadron [Legacy]", "ETA-2", "ETA2"}
     })
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "Anakin Skywalker (ETA-2)",
-        front = LEGACY_ASSETS.."squadrons/republic/eta2/anakin_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/anakin-eta.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_anakin_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 24,
@@ -134,7 +134,7 @@ function onload()
     })
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "Obi-Wan Kenobi (ETA-2)",
-        front = LEGACY_ASSETS.."squadrons/republic/eta2/obi_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/obi-wan-squadron.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_obiwan_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 24,
@@ -142,7 +142,7 @@ function onload()
     })
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "Aayla Secura (ETA-2)",
-        front = LEGACY_ASSETS.."squadrons/republic/eta2/aayla_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/aayla-secura.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 23,
@@ -150,7 +150,7 @@ function onload()
     })
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "Shaak Ti (ETA-2)",
-        front = LEGACY_ASSETS.."squadrons/republic/eta2/shaak_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/shaak-ti.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 22,
@@ -196,6 +196,33 @@ function onload()
         })
 
     --lucrehulk
+    Ship:new(LargeShip,SEPARATIST_SHIP, {
+        name = "Lucrehulk-class Battleship",
+        front = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-battleship.png",
+        mesh = LEGACY_ASSETS.."ships/separatist/lucrehulk/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-bs-texture.png",
+        ruler = LEGACY_ASSETS.."ships/separatist/lucrehulk/ruler.obj", 
+        maneuver = {{"-"},{"I","-"},},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE},
+        shields = {5,5,5,3}, -- Front, left, right, rear
+        cost = 144,
+        aliases = {"Lucrehulk Battleship [Legacy]"},
+        command = 4
+        })
+
+    Ship:new(LargeShip,SEPARATIST_SHIP, {
+        name = "Lucrehulk-class Droid Control Ship",
+        front = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-droid-control-ship.png",
+        mesh = LEGACY_ASSETS.."ships/separatist/lucrehulk/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-dcs-texture.png",
+        ruler = LEGACY_ASSETS.."ships/separatist/lucrehulk/ruler.obj", 
+        maneuver = {{"-"},{"I","-"},},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE},
+        shields = {5,5,5,3}, -- Front, left, right, rear
+        cost = 136,
+        aliases = {"Lucrehulk Droid Control Ship [Legacy]"},
+        command = 4
+        })
 
     SEPARATIST_SQUAD = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
