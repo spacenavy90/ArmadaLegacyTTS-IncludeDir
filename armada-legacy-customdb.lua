@@ -105,7 +105,6 @@ function onload()
         command = 2
     })
 
-    --ipv2 stealth
     Ship:new(SmallShip,REPUBLIC_SHIP, {
         name = "IPV-2C Stealth Corvette",
         front = LEGACY_ASSETS.."ships/republic/ipv2/ipv-2c-stealth-corvette.png",
@@ -173,7 +172,7 @@ function onload()
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 23,
-        aliases = {"Aayla Secura [ETA] [Legacy]"}
+        aliases = {"Aayla Secura [Legacy]"}
     })
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "Shaak Ti (ETA-2)",
@@ -181,7 +180,7 @@ function onload()
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 22,
-        aliases = {"Shaak Ti [ETA] [Legacy]"}
+        aliases = {"Shaak Ti [Legacy]"}
     })
 
     --clone z-95
@@ -337,7 +336,62 @@ function onload()
     }
 
     --assault frigate mark 1
+    Ship:new(MediumShip,REBEL_SHIP, {
+        name = "Assault Frigate Mark I A",
+        front = LEGACY_ASSETS.."ships/rebel/afm1/assault-frigate-mki-a.png",
+        mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1a_mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_a_texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"I","I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
+        shields = {3,3,3,2}, -- Front, left, right, rear
+        cost = 72,
+        aliases = {"Assault Frigate Mark I A [Legacy]"},
+        command = 2
+        })
+
+    Ship:new(MediumShip,REBEL_SHIP, {
+        name = "Assault Frigate Mark I B",
+        front = LEGACY_ASSETS.."ships/rebel/afm1/assault-frigate-mki-b.png",
+        mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1b_mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_b_texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"I","I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
+        shields = {3,3,3,2}, -- Front, left, right, rear
+        cost = 72,
+        aliases = {"Assault Frigate Mark I B [Legacy]"},
+        command = 2
+        })
+
     --mc80b
+    Ship:new(LargeShip,REBEL_SHIP, {
+        name = "MC80B Command Cruiser",
+        front = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-command-cruiser.png",
+        mesh = LEGACY_ASSETS.."ships/rebel/mc80b/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-command-texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/mc75/ruler.obj",
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        shields = {4,4,4,3}, -- Front, left, right, rear
+        cost = 110,
+        aliases = {"MC80B Command Cruiser [Legacy]"},
+        command = 3
+        })
+
+    Ship:new(LargeShip,REBEL_SHIP, {
+        name = "MC80B Heavy Cruiser",
+        front = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-cruiser.png",
+        mesh = LEGACY_ASSETS.."ships/rebel/mc80b/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/mc75/ruler.obj",
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        shields = {4,4,4,3}, -- Front, left, right, rear
+        cost = 114,
+        aliases = {"MC80B Heavy Cruiser [Legacy]"},
+        command = 3
+        })
 
     REBEL_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
