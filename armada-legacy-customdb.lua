@@ -166,7 +166,6 @@ function onload()
         faction = "Separatist"
     }
 
-    --trident class
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Trident-class Assault Ships",
         front = LEGACY_ASSETS.."ships/separatist/trident/trident-assault-ships.png",
@@ -195,14 +194,13 @@ function onload()
         command = 1
         })
 
-    --lucrehulk
     Ship:new(LargeShip,SEPARATIST_SHIP, {
         name = "Lucrehulk-class Battleship",
         front = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-battleship.png",
         mesh = LEGACY_ASSETS.."ships/separatist/lucrehulk/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-bs-texture.png",
         ruler = LEGACY_ASSETS.."ships/separatist/lucrehulk/ruler.obj", 
-        maneuver = {{"-"},{"I","-"},},
+        maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE},
         shields = {5,5,5,3}, -- Front, left, right, rear
         cost = 144,
@@ -216,11 +214,11 @@ function onload()
         mesh = LEGACY_ASSETS.."ships/separatist/lucrehulk/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/separatist/lucrehulk/lucrehulk-dcs-texture.png",
         ruler = LEGACY_ASSETS.."ships/separatist/lucrehulk/ruler.obj", 
-        maneuver = {{"-"},{"I","-"},},
+        maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE},
         shields = {5,5,5,3}, -- Front, left, right, rear
         cost = 136,
-        aliases = {"Lucrehulk Droid Control Ship [Legacy]"},
+        aliases = {"Lucrehulk Droid Control [Legacy]"},
         command = 4
         })
 
@@ -239,8 +237,62 @@ function onload()
         faction = "Empire"
     }
 
-    --imperial dreadnaught
+    Ship:new(MediumShip,EMPIRE_SHIP, {
+        name = "Dreadnaught-class Imperial Refit",
+        front = LEGACY_ASSETS.."ships/empire/dread/dreadnaught-imperial-refit.png",
+        mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_imp_texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
+        shields = {3,3,3,1}, -- Front, left, right, rear
+        cost = 64,
+        aliases = {"Dreadnaught Imperial [Legacy]"},
+        command = 3
+        })
+
+    Ship:new(MediumShip,EMPIRE_SHIP, {
+        name = "Dreadnaught-class Katana Refit",
+        front = LEGACY_ASSETS.."ships/empire/dread/dreadnaught-katana-refit.png",
+        mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_katana_texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
+        shields = {3,3,3,1}, -- Front, left, right, rear
+        cost = 62,
+        aliases = {"Dreadnaught Katana [Legacy]"},
+        command = 3
+        })
+
     --interdictor sd
+    Ship:new(LargeShip,EMPIRE_SHIP, {
+        name = "Interdictor-class Star Destroyer",
+        front = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictor-star-destroyer.png",
+        mesh = LEGACY_ASSETS.."ships/empire/interdictor-sd/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictorsd-sd-texture.png",
+        ruler = LEGACY_ASSETS.."ships/empire/imperial/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","-","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        shields = {4,3,3,2}, -- Front, left, right, rear
+        cost = 110,
+        aliases = {"Interdictor Star Destroyer [Legacy]"},
+        command = 3
+        })
+
+    Ship:new(LargeShip,EMPIRE_SHIP, {
+        name = "Interdictor-class Prototype",
+        front = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictor-prototype.png",
+        mesh = LEGACY_ASSETS.."ships/empire/interdictor-sd/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictorsd-proto-texture.png",
+        ruler = LEGACY_ASSETS.."ships/empire/imperial/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","-","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        shields = {4,3,3,2}, -- Front, left, right, rear
+        cost = 100,
+        aliases = {"Interdictor Prototype [Legacy]"},
+        command = 3
+        })
 
     EMPIRE_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
