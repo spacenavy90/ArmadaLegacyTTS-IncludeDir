@@ -78,32 +78,34 @@ function onload()
     }
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
-    name = "Arquitens-class Command Cruiser",
-    front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_card.png",
-    mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
-    diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
-    ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
-    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
-    defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
-    shields = {2,2,2,2}, -- Front, left, right, rear
-    cost = 60,
-    aliases = {"Arquitens Command Cruiser [Legacy]"},
-    command = 2
+        name = "Arquitens-class Command Cruiser",
+        front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_card.png",
+        mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
+        ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
+        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+        defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+        shields = {2,2,2,2}, -- Front, left, right, rear
+        cost = 60,
+        aliases = {"Arquitens Command Cruiser [Legacy]"},
+        command = 2
     })
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
-    name = "Arquitens-class Light Cruiser",
-    front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_card.png",
-    mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
-    diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
-    ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
-    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
-    defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
-    shields = {2,2,2,2}, -- Front, left, right, rear
-    cost = 58,
-    aliases = {"Arquitens Light Cruiser [Legacy]"},
-    command = 2
+        name = "Arquitens-class Light Cruiser",
+        front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_card.png",
+        mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
+        ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
+        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+        defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+        shields = {2,2,2,2}, -- Front, left, right, rear
+        cost = 58,
+        aliases = {"Arquitens Light Cruiser [Legacy]"},
+        command = 2
     })
+
+    --ipv2 stealth
 
     REPUBLIC_SQUAD = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
@@ -155,20 +157,63 @@ function onload()
         aliases = {"Shaak Ti [ETA] [Legacy]"}
     })
 
+    --clone z-95
+    --laat/i
+    --g9 rigger
+
     SEPARATIST_SHIP = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
         faction = "Separatist"
     }
+
+    --trident class
+    Ship:new(SmallShip,SEPARATIST_SHIP, {
+        name = "Trident-class Assault Ships",
+        front = LEGACY_ASSETS.."ships/separatist/trident/trident-assault-ships.png",
+        mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_a_texture.png",
+        ruler = LEGACY_ASSETS.."ships/separatist/hardcell/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","II","I"}},
+        defense_tokens = {DEF_SCATTER, DEF_EVADE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 30,
+        aliases = {"Trident Assault Ships [Legacy]"},
+        command = 1
+        })
+
+    Ship:new(SmallShip,SEPARATIST_SHIP, {
+        name = "Trident-class Assault Carriers",
+        front = LEGACY_ASSETS.."ships/separatist/trident/trident-assault-carriers.png",
+        mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_c_texture.png",
+        ruler = LEGACY_ASSETS.."ships/separatist/hardcell/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","II","I"}},
+        defense_tokens = {DEF_SCATTER, DEF_EVADE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 32,
+        aliases = {"Trident Assault Carriers [Legacy]"},
+        command = 1
+        })
+
+    --lucrehulk
 
     SEPARATIST_SQUAD = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
         faction = "Separatist"
     }
 
+    --nantex
+    --hmp gunship
+    --sith infiltrator
+    --rogue fighter
+
     EMPIRE_SHIP = {
         back = LEGACY_ASSETS.."ships/empire/card_back.jpg",
         faction = "Empire"
     }
+
+    --imperial dreadnaught
+    --interdictor sd
 
     EMPIRE_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
@@ -186,14 +231,19 @@ function onload()
         faction = "Rebellion" 
     }
 
+    --assault frigate mark 1
+    --mc80b
+
     REBEL_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
         faction = "Rebellion" 
     }
 
 UpdateCard("Commander Sato",27,{
-   cost = 24
+    --front = LEGACY_ASSETS.."",
+    cost = 24
 })
+    --rebalance point costs and card fronts(?)
 
     --PurgeCard("name",69)
 
