@@ -143,7 +143,8 @@ function onload()
         diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_red_texture.png",
         health = 3,
         move = 5,
-        defense_tokens = {}}
+        defense_tokens = {}
+    }
     Squadron:new(eta2, REPUBLIC_SQUAD, {
         name = "ETA-2 Actis Squadron",
         front = LEGACY_ASSETS.."squadrons/republic/eta2/eta-2-squadron.png",
@@ -184,8 +185,73 @@ function onload()
     })
 
     --clone z-95
+    clone_z95 = {
+        mesh = LEGACY_ASSETS.."squadrons/republic/clone-z95/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/clone-z95/cz95_red_texture.png",
+        health = 4,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(clone_z95, REPUBLIC_SQUAD, {
+        name = "Clone Z-95 Squadron",
+        front = LEGACY_ASSETS.."squadrons/republic/clone-z95/clonez95_card.jpg",
+        cost = 10,
+        aliases = {"Clone Z-95 Squadron [Legacy]", "Clone Z-95"}
+    })
+    Squadron:new(clone_z95, REPUBLIC_SQUAD, {
+        name = "Stub",
+        front = LEGACY_ASSETS.."squadrons/republic/clone-z95/stub_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/clone-z95/cz95_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 15,
+        aliases = {"Stub [Legacy]"}
+    })
+
     --laat/i
+    laat_i = {
+        mesh = LEGACY_ASSETS.."squadrons/republic/laati/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/laati/laati_red_texture.png",
+        health = 6,
+        move = 2,
+        defense_tokens = {}
+    }
+    Squadron:new(laat_i, REPUBLIC_SQUAD, {
+        name = "LAAT/i Gunship",
+        front = LEGACY_ASSETS.."squadrons/republic/laati/laati_card.jpg",
+        cost = 17,
+        aliases = {"LAAT/i Gunship [Legacy]", "LAAT/i"}
+    })
+    Squadron:new(laat_i, REPUBLIC_SQUAD, {
+        name = "Hawk",
+        front = LEGACY_ASSETS.."squadrons/republic/laati/hawk_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/laati/laati_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 25,
+        aliases = {"Hawk [Legacy]"}
+    })
+
     --g9 rigger
+    g9_rigger = {
+        mesh = LEGACY_ASSETS.."squadrons/republic/g9-rigger/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g9rigger_texture.png",
+        health = 7,
+        move = 2,
+        defense_tokens = {}
+    }
+    Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
+        name = "G9 Rigger-class Freighter",
+        front = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g9_card.jpg",
+        cost = 13,
+        aliases = {"G9 Rigger-class Freighter [Legacy]"}
+    })
+    Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
+        name = "Anakin Skywalker (G9)",
+        front = LEGACY_ASSETS.."squadrons/republic/g9-rigger/anakin_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g9rigger_ace_texture.png", 
+        defense_tokens = {DEF_BRACE},
+        cost = 27,
+        aliases = {"Anakin Skywalker [G9] [Legacy]"}
+    })
 
     SEPARATIST_SHIP = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
@@ -335,7 +401,6 @@ function onload()
         faction = "Rebellion" 
     }
 
-    --assault frigate mark 1
     Ship:new(MediumShip,REBEL_SHIP, {
         name = "Assault Frigate Mark I A",
         front = LEGACY_ASSETS.."ships/rebel/afm1/assault-frigate-mki-a.png",
@@ -346,7 +411,7 @@ function onload()
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
         cost = 72,
-        aliases = {"Assault Frigate Mark I A [Legacy]"},
+        aliases = {"Assault Frigate Mark I A [Legacy]", "Assault Frig. Mk.I A [Legacy]"},
         command = 2
         })
 
@@ -359,12 +424,11 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"I","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
-        cost = 72,
-        aliases = {"Assault Frigate Mark I B [Legacy]"},
+        cost = 68,
+        aliases = {"Assault Frigate Mark I B [Legacy]", "Assault Frig. Mk.I B [Legacy]"},
         command = 2
         })
 
-    --mc80b
     Ship:new(LargeShip,REBEL_SHIP, {
         name = "MC80B Command Cruiser",
         front = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-command-cruiser.png",
@@ -375,7 +439,7 @@ function onload()
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
         shields = {4,4,4,3}, -- Front, left, right, rear
         cost = 110,
-        aliases = {"MC80B Command Cruiser [Legacy]"},
+        aliases = {"MC80B Command Cruiser [Legacy]", "Command Cruiser [Legacy]"},
         command = 3
         })
 
@@ -389,7 +453,7 @@ function onload()
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
         shields = {4,4,4,3}, -- Front, left, right, rear
         cost = 114,
-        aliases = {"MC80B Heavy Cruiser [Legacy]"},
+        aliases = {"MC80B Heavy Cruiser [Legacy]", "Heavy Cruiser [Legacy]"},
         command = 3
         })
 
