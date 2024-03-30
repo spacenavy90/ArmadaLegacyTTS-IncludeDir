@@ -508,11 +508,58 @@ function onload()
         faction = "Empire"
     }
 
-    -- TIE_ADV = GetDefinition("TIE Advanced Squadron",12)
-    -- UpdateCard("TIE Advanced Squadron",12,{
-    --     cost = 10,
-    --     front = "https://vassalwarlords.twilightpeaks.net/assets/cards/squadrons/empire/squadcard_tie-advanced-squadron.png"
-    -- })
+    TIE_ADV = GetDefinition("TIE Advanced Squadron",12)
+    TIE_FIG = GetDefinition("TIE Fighter Squadron",8)
+    TIE_BOM = GetDefinition("TIE Fighter Squadron",9)
+    TIE_INT = GetDefinition("TIE Interceptor Squadron",11)
+
+    Squadron:new(TIE_ADV, EMPIRE_SQUAD, {
+        name = "Maarek Stele (ADV)",
+        front = LEGACY_ASSETS.."squadrons/empire/adv/maarek_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        diffuse = LEGACY_ASSETS.."squadrons/empire/adv/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 18,
+        aliases = {"Maarek Stele [Legacy]"}
+    })
+
+    UpdateCard("Darth Vader",21,{
+        front = LEGACY_ASSETS.."squadrons/empire/adv/vader_new_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        aliases = {"Darth Vader [Rebalanced]"},
+        cost = 25
+    })
+
+    Squadron:new(TIE_FIG, EMPIRE_SQUAD, {
+        name = "Iden Versio",
+        front = LEGACY_ASSETS.."squadrons/empire/tie/iden_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        diffuse = LEGACY_ASSETS.."squadrons/empire/tie/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 17,
+        aliases = {"Iden Versio [Legacy]"}
+    })
+
+    Squadron:new(TIE_BOM, EMPIRE_SQUAD, {
+        name = "Tomax Bren",
+        front = LEGACY_ASSETS.."squadrons/empire/bom/tomax_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        diffuse = LEGACY_ASSETS.."squadrons/empire/bom/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 16,
+        aliases = {"Tomax Bren [Legacy]"}
+    })
+
+    Squadron:new(TIE_INT, EMPIRE_SQUAD, {
+        name = "Turr Phennir",
+        front = LEGACY_ASSETS.."squadrons/empire/int/turr_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        diffuse = LEGACY_ASSETS.."squadrons/empire/int/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 18,
+        aliases = {"Turr Phennir [Legacy]"}
+    })
+
 
 ------------------------------------
 
@@ -588,55 +635,51 @@ function onload()
     Squadron:new(awing, REBEL_SQUAD, {
         name = "Arvel Crynyo",
         front = LEGACY_ASSETS.."squadrons/rebel/awing/arvel_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
         diffuse = LEGACY_ASSETS.."squadrons/rebel/awing/ace_diffuse.jpg", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 16,
-        aliases = {"Arvel Crynyo [Legacy]"}
+        aliases = {"Arvel Crynyo [Legacy]", "Arvel Crynyd [Legacy]"}
     })
 
     bwing = GetDefinition("B-wing Squadron",14)
     Squadron:new(bwing, REBEL_SQUAD, {
         name = "Braylen Stramm",
         front = LEGACY_ASSETS.."squadrons/rebel/bwing/braylen_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
         diffuse = LEGACY_ASSETS.."squadrons/rebel/bwing/ace_diffuse.jpg", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 19,
-        aliases = {"Braylen Stramm [Legacy]"}
+        aliases = {"Braylen Stramm [Legacy]", "Braylen_Stramm [Legacy"}
     })
 
     xwing = GetDefinition("X-wing Squadron",13)
     Squadron:new(xwing, REBEL_SQUAD, {
-        name = "Corran Horn",
+        name = "Corran Horn (X-Wing)",
         front = LEGACY_ASSETS.."squadrons/rebel/xwing/corran_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
         diffuse = LEGACY_ASSETS.."squadrons/rebel/xwing/ace_diffuse.jpg", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 20,
-        aliases = {"Corran Horn [Legacy]"}
+        aliases = {"Corran Horn [X-Wing] [Legacy]"}
     })
 
     UpdateCard("Luke Skywalker",20,{
         front = LEGACY_ASSETS.."squadrons/rebel/xwing/luke_new_card.png",
-        aliases = {"Luke Skywalker [Legacy]"}
-})
-
-    -- Squadron:new(xwing, REBEL_SQUAD, {
-    --     name = "Luke Skywalker",
-    --     front = LEGACY_ASSETS.."squadrons/rebel/xwing/arvel_card.png",
-    --     diffuse = LEGACY_ASSETS.."squadrons/rebel/xwing/ace_diffuse.jpg", 
-    --     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    --     cost = 16,
-    --     aliases = {"Luke Skywalker [Legacy]"}
-    -- })
+        --mesh = LEGACY_ASSETS..".obj",
+        aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"}
+        cost = 22
+    })
 
     ywing = GetDefinition("Y-wing Squadron",10)
-
     Squadron:new(ywing, REBEL_SQUAD, {
-        name = "Arvel Crynyo",
-        front = LEGACY_ASSETS.."squadrons/rebel/awing/arvel_card.png",
-        diffuse = LEGACY_ASSETS.."squadrons/rebel/awing/ace_diffuse.jpg", 
-        defense_tokens = {DEF_BRACE,DEF_SCATTER},
-        cost = 16,
-        aliases = {"Arvel Crynyo [Legacy]"}
+        name = "Horton Salm",
+        front = LEGACY_ASSETS.."squadrons/rebel/ywing/horton_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        diffuse = LEGACY_ASSETS.."squadrons/rebel/ywing/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 18,
+        aliases = {"Horton Salm [Legacy]"}
     })
 
 ------------------------------------
@@ -646,8 +689,6 @@ UpdateCard("Commander Sato",27,{
     cost = 24
 })
     --rebalance point costs and card fronts(?)
-
-    --PurgeCard("name",69)
 
 end
 
