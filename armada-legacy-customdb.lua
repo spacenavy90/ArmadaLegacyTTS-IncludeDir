@@ -133,6 +133,8 @@ function onload()
         command = 1
     })
 
+------------------------------------
+
     REPUBLIC_SQUAD = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
         faction = "Republic"
@@ -184,7 +186,6 @@ function onload()
         aliases = {"Shaak Ti [Legacy]"}
     })
 
-    --clone z-95
     clone_z95 = {
         mesh = LEGACY_ASSETS.."squadrons/republic/clone-z95/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/republic/clone-z95/cz95_red_texture.png",
@@ -207,7 +208,6 @@ function onload()
         aliases = {"Stub [Legacy]"}
     })
 
-    --laat/i
     laat_i = {
         mesh = LEGACY_ASSETS.."squadrons/republic/laati/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/republic/laati/laati_red_texture.png",
@@ -230,7 +230,6 @@ function onload()
         aliases = {"Hawk [Legacy]"}
     })
 
-    --g9 rigger
     g9_rigger = {
         mesh = LEGACY_ASSETS.."squadrons/republic/g9-rigger/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g9rigger_texture.png",
@@ -252,6 +251,8 @@ function onload()
         cost = 27,
         aliases = {"Anakin Skywalker [G9] [Legacy]"}
     })
+
+------------------------------------
 
     SEPARATIST_SHIP = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
@@ -314,15 +315,130 @@ function onload()
         command = 4
         })
 
+------------------------------------
+
     SEPARATIST_SQUAD = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
         faction = "Separatist"
     }
 
     --nantex
+    nantex = {
+        mesh = LEGACY_ASSETS.."squadrons/separatist/nantex/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_texture.png",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(nantex, SEPARATIST_SQUAD, {
+        name = "Nantex Starfighter Squadron",
+        front = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_card.png",
+        cost = 11,
+        aliases = {"Nantex Starfighter Squadron [Legacy]"}
+    })
+    Squadron:new(nantex, SEPARATIST_SQUAD, {
+        name = "Sun Fac",
+        front = LEGACY_ASSETS.."squadrons/separatist/nantex/sunfac_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 19,
+        aliases = {"Sun Fac [Legacy]"}
+    })
+    Squadron:new(nantex, SEPARATIST_SQUAD, {
+        name = "Gorgol",
+        front = LEGACY_ASSETS.."squadrons/separatist/nantex/gorgol_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 16,
+        aliases = {"Gorgol [Legacy]"}
+    })
+
     --hmp gunship
+    hmp_gunship = {
+        mesh = LEGACY_ASSETS.."squadrons/separatist/hmp/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_texture.png",
+        health = 5,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
+        name = "HMP Droid Gunship",
+        front = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_card.png",
+        cost = 17,
+        aliases = {"HMP Droid Gunship [Legacy]"}
+    })
+    Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
+        name = "Geonosian Prototype",
+        front = LEGACY_ASSETS.."squadrons/separatist/hmp/geoproto_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 22,
+        aliases = {"Geonosian Prototype [Legacy]"}
+    })
+    Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
+        name = "DGS-047",
+        front = LEGACY_ASSETS.."squadrons/separatist/hmp/dgs047_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 24,
+        aliases = {"DGS-047 [Legacy]"}
+    })
+
     --sith infiltrator
+    sith_infil = {
+        mesh = LEGACY_ASSETS.."squadrons/separatist/sith-infil/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sithinfil_texture.png",
+        health = 6,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(sith_infil, SEPARATIST_SQUAD, {
+        name = "Sith Infiltrator",
+        front = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sithinfil_card.png",
+        cost = 17,
+        aliases = {"Sith Infiltrator [Legacy]"}
+    })
+    Squadron:new(sith_infil, SEPARATIST_SQUAD, {
+        name = "Count Dooku",
+        front = LEGACY_ASSETS.."squadrons/separatist/sith-infil/dooku_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sithinfil_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 25,
+        aliases = {"Count Dooku [Legacy]"}
+    })
+
     --rogue fighter
+    rogue_fighter = {
+        mesh = LEGACY_ASSETS.."squadrons/separatist/rogue/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue_texture.png",
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(rogue_fighter, SEPARATIST_SQUAD, {
+        name = "Rogue Starfighter Squadron",
+        front = LEGACY_ASSETS.."squadrons/separatist/rogue/roguestar_card.png",
+        cost = 15,
+        aliases = {"Rogue Starfighter Squadron [Legacy]"}
+    })
+    Squadron:new(rogue_fighter, SEPARATIST_SQUAD, {
+        name = "Magnaguard Protectors",
+        front = LEGACY_ASSETS.."squadrons/separatist/rogue/magna_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 21,
+        aliases = {"Magnaguard Protectors [Legacy]"}
+    })
+    Squadron:new(rogue_fighter, SEPARATIST_SQUAD, {
+        name = "Cad Bane",
+        front = LEGACY_ASSETS.."squadrons/separatist/rogue/cadbane_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 22,
+        aliases = {"Cad Bane [Legacy]"}
+    })
+
+------------------------------------
 
     EMPIRE_SHIP = {
         back = LEGACY_ASSETS.."ships/empire/card_back.jpg",
@@ -385,6 +501,8 @@ function onload()
         command = 3
         })
 
+------------------------------------
+
     EMPIRE_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
         faction = "Empire"
@@ -395,6 +513,8 @@ function onload()
     --     cost = 10,
     --     front = "https://vassalwarlords.twilightpeaks.net/assets/cards/squadrons/empire/squadcard_tie-advanced-squadron.png"
     -- })
+
+------------------------------------
 
     REBEL_SHIP = {
         back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
@@ -457,10 +577,14 @@ function onload()
         command = 3
         })
 
+------------------------------------
+
     REBEL_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
         faction = "Rebellion" 
     }
+
+------------------------------------
 
 UpdateCard("Commander Sato",27,{
     --front = LEGACY_ASSETS.."",
