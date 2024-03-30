@@ -16,46 +16,191 @@
 --
 -- Definitions merge multiple tables to reduce duplication of common properties:
 -- Examples of Card, Ship, Squadron definitions below.
+--
+--     Commander = {
+--         type="Commander",
+--         back = "https://i.imgur.com/fMJMaYo.png" } -- card back
+--     Rebel = { factions={"Rebellion"} } -- factions must be a table for cards, since multi faction upgrades exist
+--     Card:new(Commander,Rebel,{name="Admiral Ackbar",  front="http://i.imgur.com/HFVv48K.jpg", cost=38})
+--
+--     REBEL_SHIP = {
+--         back = "https://i.imgur.com/vUaQViH.png",  -- card back
+--         faction = "Rebellion" }
+--     Ship:new(SmallShip,REBEL_SHIP,{
+--         name = "GR-75 Medium Transports",
+--         front = "https://i.imgur.com/vMgbQB3.png", --Card front image
+--         mesh = "http://paste.ee/p/XZLIh",
+--         diffuse = "http://i.imgur.com/2A2pAEI.png", -- model texture
+--         ruler = "http://paste.ee/r/FSip2", -- custom ruler mesh
+--         maneuver = {{"II"},{"I","II"},{"-","I","II"}},
+--         defense_tokens = {DEF_SCATTER, DEF_EVADE},
+--         shields = {1,1,1,1}, -- Front, left, right, rear
+--         cost = 18,
+--         aliases = {},
+--         command = 1 -- Number of command dials
+--     })
+--
+--     REBEL_SQUAD = {
+--         back = "https://i.imgur.com/8s63Ngl.png", --card back
+--         faction = "Rebellion"
+--     }
+--     ship = {
+--         mesh = "http://paste.ee/r/ZqCC6",
+--         diffuse = "http://i.imgur.com/QSLaqgW.png", --model texture
+--         health = 5,
+--         move = 2,
+--         defense_tokens = {}}
+--     Squadron:new(ship, REBEL_SQUAD, {
+-- 	       name = "B-wing Squadron",
+--         front = "https://i.imgur.com/bB11RGw.png", --card front
+--         cost = 14,
+--         aliases = {'B-wing Squadrons', "B-wing"}
+--     })
+--     Squadron:new(ship, REBEL_SQUAD, {
+-- 	       name = "Keyan Farlander",
+--         front = "https://i.imgur.com/r4bx4xg.png", --card front
+--         diffuse = "http://i.imgur.com/r7YB80F.png", --model texture
+--         defense_tokens = {DEF_BRACE,DEF_BRACE},
+--         cost = 20
+--     })
+--
+-- For questions, message valadian#6997 on discord,
+--     or join ArmadaTTS Server: https://discord.gg/3MrP8db
+--
 
-ASSETS_ROOT = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
-
+LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
 function onload()
 	printToAll("Loading Armada Legacy collection",{1,0.5,0})
 	
 	REPUBLIC_SHIP = {
-		back = "https://i.imgur.com/8s63Ngl.png",
+		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
         faction = "Republic"
     }
-	Ship:new(SmallShip,REPUBLIC_SHIP, {
-	name = "Arquitens-class Command Cruiser",
-        front = ASSETS_ROOT.."ships/republic/rep_arq/reparq_command_card.png",
-        mesh = ASSETS_ROOT.."ships/republic/rep_arq/mesh.obj",
-        diffuse = ASSETS_ROOT.."ships/republic/rep_arq/reparq_command_texture.png",
-        ruler = "http://paste.ee/r/FSip2", 
-        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
-        defense_tokens = {DEF_EVADE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO},
-        shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 60,
-        aliases = {},
-        command = 2
-    })
+
     Ship:new(SmallShip,REPUBLIC_SHIP, {
-        name = "Arquitens-class Light Cruiser",
-        front = ASSETS_ROOT.."ships/republic/rep_arq/reparq_light_card.png",
-        mesh = ASSETS_ROOT.."ships/republic/rep_arq/mesh.obj",
-        diffuse = ASSETS_ROOT.."ships/republic/rep_arq/reparq_light_texture.png",
-        ruler = "http://paste.ee/r/FSip2", 
-        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
-        defense_tokens = {DEF_EVADE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO},
-        shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 58,
-        aliases = {},
-        command = 2
-        })
+    name = "Arquitens-class Command Cruiser",
+    front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_card.png",
+    mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+    diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
+    ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+    shields = {2,2,2,2}, -- Front, left, right, rear
+    cost = 60,
+    aliases = {"Arquitens Command Cruiser [Legacy]"},
+    command = 2
+    })
+
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+    name = "Arquitens-class Light Cruiser",
+    front = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_card.png",
+    mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+    diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
+    ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+    shields = {2,2,2,2}, -- Front, left, right, rear
+    cost = 58,
+    aliases = {"Arquitens Light Cruiser [Legacy]"},
+    command = 2
+    })
+
+    REPUBLIC_SQUAD = {
+		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+        faction = "Republic"
+    }
+
+    eta2 = {
+        mesh = LEGACY_ASSETS.."squadrons/republic/eta2/plain_mesh.obj",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_red_texture.png",
+        health = 3,
+        move = 5,
+        defense_tokens = {}}
+    Squadron:new(eta2, REPUBLIC_SQUAD, {
+        name = "ETA-2 Actis Squadron",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/base_card.jpg",
+        cost = 15,
+        aliases = {"ETA-2 Actis Squadron [Legacy]", "ETA-2", "ETA2"}
+    })
+    Squadron:new(eta2, REPUBLIC_SQUAD, {
+        name = "Anakin Skywalker (ETA-2)",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/anakin_card.jpg",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_anakin_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 24,
+        aliases = {"Anakin Skywalker [ETA] [Legacy]"}
+    })
+    Squadron:new(eta2, REPUBLIC_SQUAD, {
+        name = "Obi-Wan Kenobi (ETA-2)",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/obi_card.jpg",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_obiwan_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 24,
+        aliases = {"Obi-Wan Kenobi [ETA] [Legacy]"}
+    })
+    Squadron:new(eta2, REPUBLIC_SQUAD, {
+        name = "Aayla Secura (ETA-2)",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/aayla_card.jpg",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 23,
+        aliases = {"Aayla Secura [ETA] [Legacy]"}
+    })
+    Squadron:new(eta2, REPUBLIC_SQUAD, {
+        name = "Shaak Ti (ETA-2)",
+        front = LEGACY_ASSETS.."squadrons/republic/eta2/shaak_card.jpg",
+        diffuse = LEGACY_ASSETS.."squadrons/republic/eta2/eta2_ace_texture.png", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 22,
+        aliases = {"Shaak Ti [ETA] [Legacy]"}
+    })
+
+    SEPARATIST_SHIP = {
+        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        faction = "Separatist"
+    }
+
+    SEPARATIST_SQUAD = {
+        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        faction = "Separatist"
+    }
+
+    EMPIRE_SHIP = {
+        back = LEGACY_ASSETS.."ships/empire/card_back.jpg",
+        faction = "Empire"
+    }
+
+    EMPIRE_SQUAD = {
+        back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
+        faction = "Empire"
+    }
+
+    -- TIE_ADV = GetDefinition("TIE Advanced Squadron",12)
+    -- UpdateCard("TIE Advanced Squadron",12,{
+    --     cost = 10,
+    --     front = "https://vassalwarlords.twilightpeaks.net/assets/cards/squadrons/empire/squadcard_tie-advanced-squadron.png"
+    -- })
+
+    REBEL_SHIP = {
+        back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
+        faction = "Rebellion" 
+    }
+
+    REBEL_SQUAD = {
+        back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
+        faction = "Rebellion" 
+    }
+
+UpdateCard("Commander Sato",27,{
+   cost = 24
+})
+
+    --PurgeCard("name",69)
 
 end
 
 -- DO NOT MODIFY CODE BELOW THIS, OR MOD DB MAY NOT WORK!
+ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 function table.copy(orig)
     local orig_type = type(orig)
     local copy
@@ -80,7 +225,7 @@ DEF_EVADE = 'c09d88'
 DEF_REDIRECT = '36f595'
 DEF_SCATTER = '895e91'
 DEF_SALVO = '5028b2'
-Ship = { collider = "", convex = true, material = 3, maneuver = {}, type = nil, -- 1,
+Ship = { collider = "", convex = true, type = 1, material = 3, maneuver = {},
     defense_tokens = {}, shields = {1,1,1,1,1,1}, cost = 0, name = "",
     front = "", back = "", aliases = {}, faction = "" }
 DefaultShip = table.copy(Ship)
@@ -101,11 +246,11 @@ function Ship:new (...)
     end
     return o
 end
-SmallShip = { collider = "http://paste.ee/r/eDbf1" }
-MediumShip = { collider = "http://paste.ee/r/6LYTT" }
-LargeShip = { collider = "http://paste.ee/r/a7mfW" }
-HugeShip = { collider = "http://paste.ee/r/ClCL3" }
-Squadron = { collider = "http://paste.ee/r/ZKM7E", convex = false, type = nil, --1, --http://paste.ee/r/nAMCQ
+SmallShip = { collider = ASSETS_ROOT..'misc/bases/small.obj' } --"http://paste.ee/r/eDbf1"
+MediumShip = { collider = ASSETS_ROOT..'misc/bases/medium.obj' } --"http://paste.ee/r/6LYTT"
+LargeShip = { collider = ASSETS_ROOT..'misc/bases/large.obj'} --"http://paste.ee/r/a7mfW"
+HugeShip = { collider = ASSETS_ROOT..'misc/bases/huge.obj' } --"http://paste.ee/r/ClCL3"
+Squadron = { collider = ASSETS_ROOT..'misc/bases/squad.obj', convex = false, type = 1, --"http://paste.ee/r/ZKM7E" --http://paste.ee/r/nAMCQ
     material = 1, health = 0, move = 0, defense_tokens = {}, cost = 0,
     name = "", front = "", back = "", aliases = {}, faction = "" }
 DefaultSquad = table.copy(Squadron)
@@ -154,5 +299,24 @@ function PurgeCard (name, cost)
     spawner = findObjectByName("Armada Spawner")
     if spawner~=nil then
         spawner.call("API_PurgeCard",o)
+    end
+end
+function UpdateCard(current_name, current_cost, o) -- MUST
+    local update = {}
+    update['name'] = current_name
+    update['cost'] = current_cost or 0
+    update['o'] = o
+    spawner = findObjectByName("Armada Spawner")
+    if spawner~=nil then
+        spawner.call("API_UpdateCard",update)
+    end
+end
+function GetDefinition(name, cost)
+    local o = {}
+    o['name'] = name
+    o['cost'] = cost or 0
+    spawner = findObjectByName("Armada Spawner")
+    if spawner~=nil then
+        return spawner.call("API_GetDefinition",o)
     end
 end
