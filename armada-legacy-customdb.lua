@@ -106,6 +106,33 @@ function onload()
     })
 
     --ipv2 stealth
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+        name = "IPV-2C Stealth Corvette",
+        front = LEGACY_ASSETS.."ships/republic/ipv2/ipv-2c-stealth-corvette.png",
+        mesh = LEGACY_ASSETS.."ships/republic/ipv2/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/republic/ipv2/ipv2-stealth-texture.png",
+        ruler = LEGACY_ASSETS.."ships/republic/ipv2/ruler.obj", 
+        maneuver = {{"II"},{"II","I"},{"II","I","II"},{"I","II","I","II"}},
+        defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_EVADE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 34,
+        aliases = {"IPV-2C Stealth Corvette [Legacy]"},
+        command = 1
+    })
+
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+        name = "IPV-2C Support Corvette",
+        front = LEGACY_ASSETS.."ships/republic/ipv2/ipv-2c-support-corvette.png",
+        mesh = LEGACY_ASSETS.."ships/republic/ipv2/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/republic/ipv2/ipv2-support-texture.png",
+        ruler = LEGACY_ASSETS.."ships/republic/ipv2/ruler.obj", 
+        maneuver = {{"II"},{"II","I"},{"II","I","II"},{"I","II","I","II"}},
+        defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_EVADE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 34,
+        aliases = {"IPV-2C Support Corvette [Legacy]"},
+        command = 1
+    })
 
     REPUBLIC_SQUAD = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
@@ -265,7 +292,6 @@ function onload()
         command = 3
         })
 
-    --interdictor sd
     Ship:new(LargeShip,EMPIRE_SHIP, {
         name = "Interdictor-class Star Destroyer",
         front = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictor-star-destroyer.png",
