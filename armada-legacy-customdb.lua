@@ -584,6 +584,61 @@ function onload()
         faction = "Rebellion" 
     }
 
+    awing = GetDefinition("A-wing Squadron",11)
+    Squadron:new(awing, REBEL_SQUAD, {
+        name = "Arvel Crynyo",
+        front = LEGACY_ASSETS.."squadrons/rebel/awing/arvel_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/rebel/awing/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 16,
+        aliases = {"Arvel Crynyo [Legacy]"}
+    })
+
+    bwing = GetDefinition("B-wing Squadron",14)
+    Squadron:new(bwing, REBEL_SQUAD, {
+        name = "Braylen Stramm",
+        front = LEGACY_ASSETS.."squadrons/rebel/bwing/braylen_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/rebel/bwing/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 19,
+        aliases = {"Braylen Stramm [Legacy]"}
+    })
+
+    xwing = GetDefinition("X-wing Squadron",13)
+    Squadron:new(xwing, REBEL_SQUAD, {
+        name = "Corran Horn",
+        front = LEGACY_ASSETS.."squadrons/rebel/xwing/corran_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/rebel/xwing/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 20,
+        aliases = {"Corran Horn [Legacy]"}
+    })
+
+    UpdateCard("Luke Skywalker",20,{
+        front = LEGACY_ASSETS.."squadrons/rebel/xwing/luke_new_card.png",
+        aliases = {"Luke Skywalker [Legacy]"}
+})
+
+    -- Squadron:new(xwing, REBEL_SQUAD, {
+    --     name = "Luke Skywalker",
+    --     front = LEGACY_ASSETS.."squadrons/rebel/xwing/arvel_card.png",
+    --     diffuse = LEGACY_ASSETS.."squadrons/rebel/xwing/ace_diffuse.jpg", 
+    --     defense_tokens = {DEF_BRACE,DEF_BRACE},
+    --     cost = 16,
+    --     aliases = {"Luke Skywalker [Legacy]"}
+    -- })
+
+    ywing = GetDefinition("Y-wing Squadron",10)
+
+    Squadron:new(ywing, REBEL_SQUAD, {
+        name = "Arvel Crynyo",
+        front = LEGACY_ASSETS.."squadrons/rebel/awing/arvel_card.png",
+        diffuse = LEGACY_ASSETS.."squadrons/rebel/awing/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 16,
+        aliases = {"Arvel Crynyo [Legacy]"}
+    })
+
 ------------------------------------
 
 UpdateCard("Commander Sato",27,{
