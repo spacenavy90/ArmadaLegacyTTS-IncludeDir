@@ -455,7 +455,7 @@ function onload()
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
         shields = {3,3,3,1}, -- Front, left, right, rear
         cost = 64,
-        aliases = {"Dreadnaught Imperial [Legacy]"},
+        aliases = {"Dreadnaught Imperial Refit [Legacy]"},
         command = 3
         })
 
@@ -469,7 +469,7 @@ function onload()
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
         shields = {3,3,3,1}, -- Front, left, right, rear
         cost = 62,
-        aliases = {"Dreadnaught Katana [Legacy]"},
+        aliases = {"Dreadnaught Katana Refit [Legacy]"},
         command = 3
         })
 
@@ -510,20 +510,21 @@ function onload()
 
     TIE_ADV = GetDefinition("TIE Advanced Squadron",12)
     TIE_FIG = GetDefinition("TIE Fighter Squadron",8)
-    TIE_BOM = GetDefinition("TIE Fighter Squadron",9)
+    TIE_BOM = GetDefinition("TIE Bomber Squadron",9)
     TIE_INT = GetDefinition("TIE Interceptor Squadron",11)
 
     Squadron:new(TIE_ADV, EMPIRE_SQUAD, {
-        name = "Maarek Stele (ADV)",
+        name = "Maarek Stele (TIE/x1)",
         front = LEGACY_ASSETS.."squadrons/empire/adv/maarek_card.png",
         --mesh = LEGACY_ASSETS..".obj",
         diffuse = LEGACY_ASSETS.."squadrons/empire/adv/ace_diffuse.jpg", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 18,
-        aliases = {"Maarek Stele [Legacy]"}
+        aliases = {"Maarek Stele [TIE/x1] [Legacy]"}
     })
 
     UpdateCard("Darth Vader",21,{
+        name = "Darth Vader (TIE/x1)",
         front = LEGACY_ASSETS.."squadrons/empire/adv/vader_new_card.png",
         --mesh = LEGACY_ASSETS..".obj",
         aliases = {"Darth Vader [Rebalanced]"},
@@ -632,6 +633,10 @@ function onload()
     }
 
     awing = GetDefinition("A-wing Squadron",11)
+    bwing = GetDefinition("B-wing Squadron",14)
+    xwing = GetDefinition("X-wing Squadron",13)
+    ywing = GetDefinition("Y-wing Squadron",10)
+
     Squadron:new(awing, REBEL_SQUAD, {
         name = "Arvel Crynyo",
         front = LEGACY_ASSETS.."squadrons/rebel/awing/arvel_card.png",
@@ -642,7 +647,6 @@ function onload()
         aliases = {"Arvel Crynyo [Legacy]", "Arvel Crynyd [Legacy]"}
     })
 
-    bwing = GetDefinition("B-wing Squadron",14)
     Squadron:new(bwing, REBEL_SQUAD, {
         name = "Braylen Stramm",
         front = LEGACY_ASSETS.."squadrons/rebel/bwing/braylen_card.png",
@@ -653,7 +657,6 @@ function onload()
         aliases = {"Braylen Stramm [Legacy]", "Braylen_Stramm [Legacy"}
     })
 
-    xwing = GetDefinition("X-wing Squadron",13)
     Squadron:new(xwing, REBEL_SQUAD, {
         name = "Corran Horn (X-Wing)",
         front = LEGACY_ASSETS.."squadrons/rebel/xwing/corran_card.png",
@@ -667,11 +670,10 @@ function onload()
     UpdateCard("Luke Skywalker",20,{
         front = LEGACY_ASSETS.."squadrons/rebel/xwing/luke_new_card.png",
         --mesh = LEGACY_ASSETS..".obj",
-        aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"}
+        aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"},
         cost = 22
     })
 
-    ywing = GetDefinition("Y-wing Squadron",10)
     Squadron:new(ywing, REBEL_SQUAD, {
         name = "Horton Salm",
         front = LEGACY_ASSETS.."squadrons/rebel/ywing/horton_card.png",
