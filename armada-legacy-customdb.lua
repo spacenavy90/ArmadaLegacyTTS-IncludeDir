@@ -498,6 +498,12 @@ function onload()
         command = 3
         })
 
+    UpdateCard("Interdictor Combat Refit",93,{
+        front = LEGACY_ASSETS.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
+        aliases = {"Interdictor Combat Refit [Rebalanced]"},
+        cost = 88
+    })
+
 ------------------------------------
     --empire squadrons
     EMPIRE_SQUAD = {
@@ -622,6 +628,12 @@ function onload()
         command = 3
         })
 
+    UpdateCard("MC80 Command Cruiser",106,{
+        front = LEGACY_ASSETS.."ships/rebel/mc80/mc80-command-cruiser_rebalance.png",
+        aliases = {"MC80 Command Cruiser [Rebalanced]"},
+        cost = 104
+    })
+
 ------------------------------------
     --rebel squadrons
     REBEL_SQUAD = {
@@ -664,13 +676,6 @@ function onload()
         aliases = {"Corran Horn [X-Wing] [Legacy]"}
     })
 
-    UpdateCard("Luke Skywalker",20,{
-        front = LEGACY_ASSETS.."squadrons/rebel/xwing/luke_new_card.png",
-        --mesh = LEGACY_ASSETS..".obj",
-        aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"},
-        cost = 22
-    })
-
     Squadron:new(ywing, REBEL_SQUAD, {
         name = "Horton Salm",
         front = LEGACY_ASSETS.."squadrons/rebel/ywing/horton_card.png",
@@ -679,6 +684,13 @@ function onload()
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 18,
         aliases = {"Horton Salm [Legacy]"}
+    })
+
+    UpdateCard("Luke Skywalker",20,{
+        front = LEGACY_ASSETS.."squadrons/rebel/xwing/luke_new_card.png",
+        --mesh = LEGACY_ASSETS..".obj",
+        aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"},
+        cost = 22
     })
 
 ------------------------------------
@@ -705,70 +717,72 @@ Commander = {
     type="Commander",
     back = LEGACY_ASSETS.."/cards/commanders/back.png"
 }
-Card:new(Commander,Republic,{name="Admiral Coburn",  front=LEGACY_ASSETS.."cards/commanders/admiral-coburn.png", cost=25})
-Card:new(Commander,Republic,{name="Yoda",  front=LEGACY_ASSETS.."cards/commanders/yoda.png", cost=27})
-Card:new(Commander,Separatist,{name="Riff Tamson",  front=LEGACY_ASSETS.."cards/commanders/riff-tamson.png", cost=32})
-Card:new(Commander,Separatist,{name="Nute Gunray",  front=LEGACY_ASSETS.."cards/commanders/nute-gunray.png", cost=20})
-Card:new(Commander,Empire,{name="Gilad Pellaeon",  front=LEGACY_ASSETS.."cards/commanders/gilad-pellaeon.png", cost=20})
-Card:new(Commander,Empire,{name="Admiral Rogriss",  front=LEGACY_ASSETS.."cards/commanders/admiral-rogriss.png", cost=25})
-Card:new(Commander,Rebel,{name="Admiral Nantz",  front=LEGACY_ASSETS.."cards/commanders/admiral-nantz.png", cost=26})
-Card:new(Commander,Rebel,{name="Han Solo",  front=LEGACY_ASSETS.."cards/commanders/han-solo-commander.png", cost=30})
+Card:new(Commander,Republic,{name="Admiral Coburn",  front=LEGACY_ASSETS.."cards/commanders/admiral-coburn.png", cost=25, aliases="Admiral Coburn [Legacy]"})
+Card:new(Commander,Republic,{name="Yoda",  front=LEGACY_ASSETS.."cards/commanders/yoda.png", cost=27, aliases="Yoda [Legacy]"})
+Card:new(Commander,Separatist,{name="Riff Tamson",  front=LEGACY_ASSETS.."cards/commanders/riff-tamson.png", cost=32, aliases="Riff Tamson [Legacy]"})
+Card:new(Commander,Separatist,{name="Nute Gunray",  front=LEGACY_ASSETS.."cards/commanders/nute-gunray.png", cost=20, aliases="Nute Gunray [Legacy]"})
+Card:new(Commander,Empire,{name="Gilad Pellaeon",  front=LEGACY_ASSETS.."cards/commanders/gilad-pellaeon.png", cost=20, aliases="Gilad Pellaeon [Legacy]"})
+Card:new(Commander,Empire,{name="Admiral Rogriss",  front=LEGACY_ASSETS.."cards/commanders/admiral-rogriss.png", cost=25, aliases="Admiral Rogriss [Legacy]"})
+Card:new(Commander,Rebel,{name="Admiral Nantz",  front=LEGACY_ASSETS.."cards/commanders/admiral-nantz.png", cost=26, aliases="Admiral Nantz [Legacy]"})
+Card:new(Commander,Rebel,{name="Han Solo",  front=LEGACY_ASSETS.."cards/commanders/han-solo-commander.png", cost=30, aliases="Han Solo [Legacy]"})
+
+UpdateCard("Commander Sato",27,{cost = 24,aliases="Commander Sato [Rebalanced]"})
 
 --officers
 Officer = {
     type="Officer",
     back = LEGACY_ASSETS.."/cards/officers/back.png"
 }
-Card:new(Officer,Republic,{name="Aayla Secura", front=LEGACY_ASSETS.."cards/officers/aayla-secura-officer.png", cost=5})
-Card:new(Officer,Republic,{name="Admiral Yularen", front=LEGACY_ASSETS.."cards/officers/admiral-yularen-officer.png", cost=7})
-Card:new(Officer,Separatist,{name="K2-B4", front=LEGACY_ASSETS.."cards/officers/k2-b4.png", cost=6})
-Card:new(Officer,Separatist,{name="Poggle the Lesser", front=LEGACY_ASSETS.."cards/officers/poggle-the-lesser.png", cost=6})
-Card:new(Officer,Empire,{name="Prince Admiral Krennel", front=LEGACY_ASSETS.."cards/officers/prince-admiral-krennel.png", cost=6})
-Card:new(Officer,Empire,{name="Joruus C'baoth", front=LEGACY_ASSETS.."cards/officers/joruus-cbaoth.png", cost=8})
-Card:new(Officer,Rebel,{name="Captain Onoma", front=LEGACY_ASSETS.."cards/officers/captain-onoma.png", cost=4})
-Card:new(Officer,Rebel,{name="Borsk Fey'lya", front=LEGACY_ASSETS.."cards/officers/borsk-feylya.png", cost=7})
+Card:new(Officer,Republic,{name="Aayla Secura", front=LEGACY_ASSETS.."cards/officers/aayla-secura-officer.png", cost=5, aliases="Aayla Secura [Legacy]"})
+Card:new(Officer,Republic,{name="Admiral Yularen", front=LEGACY_ASSETS.."cards/officers/admiral-yularen-officer.png", cost=7, aliases="Admiral Yularen [Legacy]"})
+Card:new(Officer,Separatist,{name="K2-B4", front=LEGACY_ASSETS.."cards/officers/k2-b4.png", cost=6, aliases="K2-B4 [Legacy]"})
+Card:new(Officer,Separatist,{name="Poggle the Lesser", front=LEGACY_ASSETS.."cards/officers/poggle-the-lesser.png", cost=6, aliases="Poggle the Lesser [Legacy]"})
+Card:new(Officer,Empire,{name="Prince Admiral Krennel", front=LEGACY_ASSETS.."cards/officers/prince-admiral-krennel.png", cost=6, aliases="Prince Admiral Krennel [Legacy]"})
+Card:new(Officer,Empire,{name="Joruus C'baoth", front=LEGACY_ASSETS.."cards/officers/joruus-cbaoth.png", cost=8, aliases="Joruus C'baoth [Legacy]"})
+Card:new(Officer,Rebel,{name="Captain Onoma", front=LEGACY_ASSETS.."cards/officers/captain-onoma.png", cost=4, aliases="Captain Onoma [Legacy]"})
+Card:new(Officer,Rebel,{name="Borsk Fey'lya", front=LEGACY_ASSETS.."cards/officers/borsk-feylya.png", cost=7, aliases="Borsk Fey'lya [Legacy]"})
 
 --titles
 Title = {
     type="Title",
     back = LEGACY_ASSETS.."/cards/titles/back.png"
 }
-Card:new(Title,Republic,{name="Carrion Spike", front=LEGACY_ASSETS.."cards/titles/carrion-spike.png", cost=6})
-Card:new(Title,Republic,{name="Stellar Rise", front=LEGACY_ASSETS.."cards/titles/stellar-rise.png", cost=3})
-Card:new(Title,Republic,{name="Surrogator", front=LEGACY_ASSETS.."cards/titles/surrogator.png", cost=5})
-Card:new(Title,Separatist,{name="Neimoidian Grasp", front=LEGACY_ASSETS.."cards/titles/neimoidian-grasp.png", cost=2})
-Card:new(Title,Separatist,{name="Grappler", front=LEGACY_ASSETS.."cards/titles/grappler.png", cost=3})
-Card:new(Title,Separatist,{name="Procurer", front=LEGACY_ASSETS.."cards/titles/procurer.png", cost=5})
-Card:new(Title,Separatist,{name="Profusion", front=LEGACY_ASSETS.."cards/titles/profusion.png", cost=4})
-Card:new(Title,Separatist,{name="Vuuntun Palaa", front=LEGACY_ASSETS.."cards/titles/vuuntun-palaa.png", cost=7})
-Card:new(Title,Empire,{name="Abrogator", front=LEGACY_ASSETS.."cards/titles/abrogator.png", cost=5})
-Card:new(Title,Empire,{name="Binder", front=LEGACY_ASSETS.."cards/titles/binder.png", cost=5})
-Card:new(Title,Empire,{name="Eternal Wrath", front=LEGACY_ASSETS.."cards/titles/eternal-wrath.png", cost=6})
-Card:new(Title,Empire,{name="Isolator", front=LEGACY_ASSETS.."cards/titles/isolator.png", cost=6})
-Card:new(Title,Empire,{name="Katana Fleet Dreadnaught", front=LEGACY_ASSETS.."cards/titles/katana-fleet-dreadnaught.png", cost=2})
-Card:new(Title,Empire,{name="Vendetta", front=LEGACY_ASSETS.."cards/titles/vendetta.png", cost=6})
-Card:new(Title,Rebel,{name="Allegiant", front=LEGACY_ASSETS.."cards/titles/allegiant.png", cost=5})
-Card:new(Title,Rebel,{name="Liberty Star", front=LEGACY_ASSETS.."cards/titles/liberty-star.png", cost=6})
-Card:new(Title,Rebel,{name="Mon Remonda", front=LEGACY_ASSETS.."cards/titles/mon-remonda.png", cost=7})
-Card:new(Title,Rebel,{name="Remember Alderaan", front=LEGACY_ASSETS.."cards/titles/remember-alderaan.png", cost=3})
-Card:new(Title,Rebel,{name="Tyrant's Bane", front=LEGACY_ASSETS.."cards/titles/tyrants-bane.png", cost=8})
+Card:new(Title,Republic,{name="Carrion Spike", front=LEGACY_ASSETS.."cards/titles/carrion-spike.png", cost=6, aliases="Carrion Spike [Legacy]"})
+Card:new(Title,Republic,{name="Stellar Rise", front=LEGACY_ASSETS.."cards/titles/stellar-rise.png", cost=3, aliases="Stellar Rise [Legacy]"})
+Card:new(Title,Republic,{name="Surrogator", front=LEGACY_ASSETS.."cards/titles/surrogator.png", cost=5, aliases="Surrogator [Legacy]"})
+Card:new(Title,Separatist,{name="Neimoidian Grasp", front=LEGACY_ASSETS.."cards/titles/neimoidian-grasp.png", cost=2, aliases="Neimoidian Grasp [Legacy]"})
+Card:new(Title,Separatist,{name="Grappler", front=LEGACY_ASSETS.."cards/titles/grappler.png", cost=3, aliases="Grappler [Legacy]"})
+Card:new(Title,Separatist,{name="Procurer", front=LEGACY_ASSETS.."cards/titles/procurer.png", cost=5, aliases="Procurer [Legacy]"})
+Card:new(Title,Separatist,{name="Profusion", front=LEGACY_ASSETS.."cards/titles/profusion.png", cost=4, aliases="Profusion [Legacy]"})
+Card:new(Title,Separatist,{name="Vuuntun Palaa", front=LEGACY_ASSETS.."cards/titles/vuuntun-palaa.png", cost=7, aliases="Vuuntun Palaa [Legacy]"})
+Card:new(Title,Empire,{name="Abrogator", front=LEGACY_ASSETS.."cards/titles/abrogator.png", cost=5, aliases="Abrogator [Legacy]"})
+Card:new(Title,Empire,{name="Binder", front=LEGACY_ASSETS.."cards/titles/binder.png", cost=5, aliases="Binder [Legacy]"})
+Card:new(Title,Empire,{name="Eternal Wrath", front=LEGACY_ASSETS.."cards/titles/eternal-wrath.png", cost=6, aliases="Eternal Wrath [Legacy]"})
+Card:new(Title,Empire,{name="Isolator", front=LEGACY_ASSETS.."cards/titles/isolator.png", cost=6, aliases="Isolator [Legacy]"})
+Card:new(Title,Empire,{name="Katana Fleet Dreadnaught", front=LEGACY_ASSETS.."cards/titles/katana-fleet-dreadnaught.png", cost=2, aliases="Katana Fleet Dreadnaught [Legacy]"})
+Card:new(Title,Empire,{name="Vendetta", front=LEGACY_ASSETS.."cards/titles/vendetta.png", cost=6, aliases="Vendetta [Legacy]"})
+Card:new(Title,Rebel,{name="Allegiant", front=LEGACY_ASSETS.."cards/titles/allegiant.png", cost=5, aliases="Allegiant [Legacy]"})
+Card:new(Title,Rebel,{name="Liberty Star", front=LEGACY_ASSETS.."cards/titles/liberty-star.png", cost=6, aliases="Liberty Star [Legacy]"})
+Card:new(Title,Rebel,{name="Mon Remonda", front=LEGACY_ASSETS.."cards/titles/mon-remonda.png", cost=7, aliases="Mon Remonda [Legacy]"})
+Card:new(Title,Rebel,{name="Remember Alderaan", front=LEGACY_ASSETS.."cards/titles/remember-alderaan.png", cost=3, aliases="Remember Alderaan [Legacy]"})
+Card:new(Title,Rebel,{name="Tyrant's Bane", front=LEGACY_ASSETS.."cards/titles/tyrants-bane.png", cost=8, aliases="Tyrant's Bane [Legacy]"})
 
 --defensive retrofit
 DefensiveRetrofit = {
     type="DefensiveRetrofit",
     back = LEGACY_ASSETS.."cards/defretro/back.png"
 }
-Card:new(DefensiveRetrofit,{name="Cloaking Device", front=LEGACY_ASSETS.."cards/defretro/cloaking-device.png", cost=10})
-Card:new(DefensiveRetrofit,{name="Flares", front=LEGACY_ASSETS.."cards/defretro/flares.png", cost=5})
+Card:new(DefensiveRetrofit,{name="Cloaking Device", front=LEGACY_ASSETS.."cards/defretro/cloaking-device.png", cost=10, aliases="Cloaking Device [Legacy]"})
+Card:new(DefensiveRetrofit,{name="Flares", front=LEGACY_ASSETS.."cards/defretro/flares.png", cost=5, aliases="Flares [Legacy]"})
 
 --experimental retrofit
 ExperimentalRetrofit = {
     type="ExperimentalRetrofit",
     back = LEGACY_ASSETS.."cards/exp/back.png"
 }
-Card:new(ExperimentalRetrofit,{name="Cloaking Field", front=LEGACY_ASSETS.."cards/exp/cloaking-field.png", cost=5})
-Card:new(ExperimentalRetrofit,{name="Grav Cone Projector", front=LEGACY_ASSETS.."cards/exp/grav-cone-projector.png", cost=10})
-Card:new(ExperimentalRetrofit,{name="Reversed Grav Well Projector", front=LEGACY_ASSETS.."cards/exp/reversed-grav-well-projector.png", cost=2})
+Card:new(ExperimentalRetrofit,{name="Cloaking Field", front=LEGACY_ASSETS.."cards/exp/cloaking-field.png", cost=5, aliases="Cloaking Field [Legacy]"})
+Card:new(ExperimentalRetrofit,{name="Grav Cone Projector", front=LEGACY_ASSETS.."cards/exp/grav-cone-projector.png", cost=10, aliases="Grav Cone Projector [Legacy]"})
+Card:new(ExperimentalRetrofit,{name="Reversed Grav Well Projector", front=LEGACY_ASSETS.."cards/exp/reversed-grav-well-projector.png", cost=2, aliases="Reversed Grav Well Projector [Legacy]"})
 
 --fleet command
 FleetCommand = {
@@ -796,19 +810,19 @@ OffensiveRetrofit = {
     type="OffensiveRetrofit",
     back = LEGACY_ASSETS.."cards/offretro/back.png"
 }
-Card:new(OffensiveRetrofit,{name="Advanced Guidance System", front=LEGACY_ASSETS.."cards/offretro/advanced-guidance-system.png", cost=4})
-Card:new(OffensiveRetrofit,{name="Drill Beak", front=LEGACY_ASSETS.."cards/offretro/drill-beak.png", cost=5})
-Card:new(OffensiveRetrofit,{name="Enhanced Propulsion", front=LEGACY_ASSETS.."cards/offretro/enhanded-propulsion.png", cost=2})
-Card:new(OffensiveRetrofit,{name="Reserve Bulk Hangar", front=LEGACY_ASSETS.."cards/offretro/reserve-bulk-hangar.png", cost=9})
-Card:new(OffensiveRetrofit,{name="Tractor Tentacles", front=LEGACY_ASSETS.."cards/offretro/tractor-tentacles.png", cost=3})
+Card:new(OffensiveRetrofit,{name="Advanced Guidance System", front=LEGACY_ASSETS.."cards/offretro/advanced-guidance-system.png", cost=4, aliases="Advanced Guidance System [Legacy]"})
+Card:new(OffensiveRetrofit,{name="Drill Beak", front=LEGACY_ASSETS.."cards/offretro/drill-beak.png", cost=5, aliases="Drill Beak [Legacy]"})
+Card:new(OffensiveRetrofit,{name="Enhanced Propulsion", front=LEGACY_ASSETS.."cards/offretro/enhanded-propulsion.png", cost=2, aliases="Enhanced Propulsion [Legacy]"})
+Card:new(OffensiveRetrofit,{name="Reserve Bulk Hangar", front=LEGACY_ASSETS.."cards/offretro/reserve-bulk-hangar.png", cost=9, aliases="Reserve Bulk Hangar [Legacy]"})
+Card:new(OffensiveRetrofit,{name="Tractor Tentacles", front=LEGACY_ASSETS.."cards/offretro/tractor-tentacles.png", cost=3, aliases="Tractor Tentacles [Legacy]"})
 
 --ordnance
 Ordnance = {
     type="Ordnance",
     back = LEGACY_ASSETS.."cards/ord/back.png"
 }
-Card:new(Ordnance,{name="Long Range Concussion Missiles", front=LEGACY_ASSETS.."cards/ord/long-range-concussion-missiles.png", cost=4})
-Card:new(Ordnance,{name="Tracking Torpedoes", front=LEGACY_ASSETS.."cards/ord/tracking-torpedoes.png", cost=6})
+Card:new(Ordnance,{name="Long Range Concussion Missiles", front=LEGACY_ASSETS.."cards/ord/long-range-concussion-missiles.png", cost=4, aliases="Long Range Concussion Missiles [Legacy]"})
+Card:new(Ordnance,{name="Tracking Torpedoes", front=LEGACY_ASSETS.."cards/ord/tracking-torpedoes.png", cost=6, aliases="Tracking Torpedoes [Legacy]"})
 
 --superweapon
 -- SuperWeapon = {
@@ -822,41 +836,31 @@ SupportTeam = {
     type="SupportTeam",
     back = LEGACY_ASSETS.."cards/support/back.png"
 }
-Card:new(SupportTeam,Republic,{name="Clone Engineers", front=LEGACY_ASSETS.."cards/support/clone-engineers.png", cost=3})
-Card:new(SupportTeam,{name="Mon Calamari Shield Techs", front=LEGACY_ASSETS.."cards/support/mon-calamari-shield-techs.png", cost=5})
-Card:new(SupportTeam,{name="Repair Team", front=LEGACY_ASSETS.."cards/support/repair-team.png", cost=2})
+Card:new(SupportTeam,Republic,{name="Clone Engineers", front=LEGACY_ASSETS.."cards/support/clone-engineers.png", cost=3, aliases="Clone Engineers [Legacy]"})
+Card:new(SupportTeam,{name="Mon Calamari Shield Techs", front=LEGACY_ASSETS.."cards/support/mon-calamari-shield-techs.png", cost=5, aliases="Mon Calamari Shield Techs [Legacy]"})
+Card:new(SupportTeam,{name="Repair Team", front=LEGACY_ASSETS.."cards/support/repair-team.png", cost=2, aliases="Repair Team [Legacy]"})
 
 Turbolaser = {
     type="Turbolaser",
     back = LEGACY_ASSETS.."cards/turbo/back.png"
 }
-Card:new(Turbolaser,{name="Light Turbolaser Cannons", front=LEGACY_ASSETS.."cards/turbo/light-turbolaser-cannons.png", cost=6})
-Card:new(Turbolaser,{name="XV9 Turbolasers", front=LEGACY_ASSETS.."cards/turbo/xv9-turbolasers.png", cost=5})
+Card:new(Turbolaser,{name="Light Turbolaser Cannons", front=LEGACY_ASSETS.."cards/turbo/light-turbolaser-cannons.png", cost=6, aliases="Light Turbolaser Cannons [Legacy]"})
+Card:new(Turbolaser,{name="XV9 Turbolasers", front=LEGACY_ASSETS.."cards/turbo/xv9-turbolasers.png", cost=5, aliases="XV9 Turbolasers [Legacy]"})
 
 --weapons team & offensive retrofit
 WeaponsTeamAndOffensiveRetrofit = {
     type="WeaponsTeamAndOffensiveRetrofit",
     back = LEGACY_ASSETS.."cards/wepoff/back.png"
 }
-Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="Asajj Ventress", front=LEGACY_ASSETS.."cards/wepoff/asajj-ventress-boarding-team.png", cost=7})
-Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="BX Commando Droids", front=LEGACY_ASSETS.."cards/wepoff/bx-commando-droids.png", cost=2})
+Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="Asajj Ventress", front=LEGACY_ASSETS.."cards/wepoff/asajj-ventress-boarding-team.png", cost=7, aliases="Asajj Ventress [Legacy]"})
+Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="BX Commando Droids", front=LEGACY_ASSETS.."cards/wepoff/bx-commando-droids.png", cost=2, aliases="BX Commando Droids [Legacy]"})
 
 --weapons_team
 WeaponsTeam = {
     type="WeaponsTeam",
     back = LEGACY_ASSETS.."cards/wepteam/back.png"
 }
-Card:new(WeaponsTeam,{name="Targeting Team", front=LEGACY_ASSETS.."cards/wepteam/targeting-team.png", cost=5})
-
-
-------------------------------------
---rebalanced upgrade cards
-
-UpdateCard("Commander Sato",27,{
-    --front = LEGACY_ASSETS.."",
-    cost = 24
-})
-    --rebalance point costs
+Card:new(WeaponsTeam,{name="Targeting Team", front=LEGACY_ASSETS.."cards/wepteam/targeting-team.png", cost=5, aliases="Targeting Team [Legacy]"})
 
 ------------------------------------
 
