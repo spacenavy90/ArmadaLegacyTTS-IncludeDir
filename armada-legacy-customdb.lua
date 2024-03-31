@@ -72,6 +72,7 @@ LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-I
 function onload()
 	printToAll("Loading Armada Legacy collection",{1,0.5,0})
 	
+    --republic ships
 	REPUBLIC_SHIP = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
         faction = "Republic"
@@ -134,7 +135,7 @@ function onload()
     })
 
 ------------------------------------
-
+    --republic squadrons
     REPUBLIC_SQUAD = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
         faction = "Republic"
@@ -253,7 +254,7 @@ function onload()
     })
 
 ------------------------------------
-
+    --separatist ships
     SEPARATIST_SHIP = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
         faction = "Separatist"
@@ -316,13 +317,12 @@ function onload()
         })
 
 ------------------------------------
-
+    --separatist squadrons
     SEPARATIST_SQUAD = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
         faction = "Separatist"
     }
 
-    --nantex
     nantex = {
         mesh = LEGACY_ASSETS.."squadrons/separatist/nantex/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_texture.png",
@@ -353,7 +353,6 @@ function onload()
         aliases = {"Gorgol [Legacy]"}
     })
 
-    --hmp gunship
     hmp_gunship = {
         mesh = LEGACY_ASSETS.."squadrons/separatist/hmp/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_texture.png",
@@ -384,7 +383,6 @@ function onload()
         aliases = {"DGS-047 [Legacy]"}
     })
 
-    --sith infiltrator
     sith_infil = {
         mesh = LEGACY_ASSETS.."squadrons/separatist/sith-infil/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sithinfil_texture.png",
@@ -407,7 +405,6 @@ function onload()
         aliases = {"Count Dooku [Legacy]"}
     })
 
-    --rogue fighter
     rogue_fighter = {
         mesh = LEGACY_ASSETS.."squadrons/separatist/rogue/plain_mesh.obj",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue_texture.png",
@@ -439,7 +436,7 @@ function onload()
     })
 
 ------------------------------------
-
+    --empire ships
     EMPIRE_SHIP = {
         back = LEGACY_ASSETS.."ships/empire/card_back.jpg",
         faction = "Empire"
@@ -502,7 +499,7 @@ function onload()
         })
 
 ------------------------------------
-
+    --empire squadrons
     EMPIRE_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
         faction = "Empire"
@@ -563,7 +560,7 @@ function onload()
 
 
 ------------------------------------
-
+    --rebel ships
     REBEL_SHIP = {
         back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
         faction = "Rebellion" 
@@ -626,7 +623,7 @@ function onload()
         })
 
 ------------------------------------
-
+    --rebel squadrons
     REBEL_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
         faction = "Rebellion" 
@@ -685,12 +682,163 @@ function onload()
     })
 
 ------------------------------------
+--new upgrade cards
+
+Republic = {
+    factions={"Republic"}
+}
+Separatist = {
+    factions={"Separatist"}
+}
+CloneWars = {
+    factions={"Republic","Separatist"}
+}
+Empire = {
+    factions={"Empire"}
+}
+Rebel = {
+    factions={"Rebellion"}
+}
+
+Commander = {
+    type="Commander",
+    back = LEGACY_ASSETS.."/cards/commanders/back.png"
+}
+Card:new(Commander,Rebel,{name="Admiral Nantz",  front=LEGACY_ASSETS.."cards/commanders/admiral-nantz.png", cost=26})
+Card:new(Commander,Rebel,{name="Han Solo",  front=LEGACY_ASSETS.."cards/commanders/han-solo-commander.png", cost=30})
+Card:new(Commander,Empire,{name="Gilad Pellaeon",  front=LEGACY_ASSETS.."cards/commanders/gilad-pellaeon.png", cost=20})
+Card:new(Commander,Empire,{name="Admiral Rogriss",  front=LEGACY_ASSETS.."cards/commanders/admiral-rogriss.png", cost=25})
+Card:new(Commander,Republic,{name="Admiral Coburn",  front=LEGACY_ASSETS.."cards/commanders/admiral-coburn.png", cost=25})
+Card:new(Commander,Republic,{name="Yoda",  front=LEGACY_ASSETS.."cards/commanders/yoda.png", cost=27})
+Card:new(Commander,Separatist,{name="Riff Tamson",  front=LEGACY_ASSETS.."cards/commanders/riff-tamson.png", cost=32})
+Card:new(Commander,Separatist,{name="Nute Gunray",  front=LEGACY_ASSETS.."cards/commanders/nute-gunray.png", cost=20})
+
+--officers
+Officer = {
+    type="Officer",
+    back = "https://i.imgur.com/QvnjHpd.png"
+}
+-- Card:new(Officer,Rebel,{name="Adar Tallon", front="http://i.imgur.com/htbjXKu.jpg", cost=10})
+
+--titles
+Title = {
+    type="Title",
+    back = "https://i.imgur.com/oBU2CKS.png"
+}
+-- Card:new(Title,Rebel,{name="Bright Hope", front="https://i.imgur.com/ppRWBhH.jpg", cost=2})
+
+--defensive retrofit
+DefensiveRetrofit = {
+    type="DefensiveRetrofit",
+    back = "https://i.imgur.com/WXkUkKe.png"
+}
+-- Card:new(DefensiveRetrofit,CloneWars,{name="Thermal Shields", front="https://i.imgur.com/ih2D2Zz.png", cost=5})
+-- Card:new(DefensiveRetrofit,{name="Advanced Projectors", front="https://i.imgur.com/fREeP77.jpg", cost=6})
+
+--experimental retrofit
+ExperimentalRetrofit = {
+    type="ExperimentalRetrofit",
+    back = "https://i.imgur.com/SAnzYjF.png"
+}
+-- Card:new(ExperimentalRetrofit,{name="G-8 Experimental Projector", front="https://i.imgur.com/DUzGkon.jpg", cost=8})
+
+--fleet command
+FleetCommand = {
+    type="FleetCommand",
+    back = LEGACY_ASSETS.."cards/fleetcom/back.png"
+}
+-- Card:new(FleetCommand,{name="All Fighters, Follow Me!", front="https://i.imgur.com/pRqJy8Z.jpg", cost=5})
+
+--fleet support
+FleetSupport = {
+    type="FleetSupport",
+    back = "https://i.imgur.com/bH1FR0J.png"
+}
+-- Card:new(FleetSupport,{name="Bomber Command Center", front="https://i.imgur.com/slRsjXp.jpg", cost=8})
+
+--ion cannons
+IonCannons = {
+    type="IonCannons",
+    back = "https://i.imgur.com/CzYiC1u.png"
+}
+-- Card:new(IonCannons,{name="Heavy Ion Emplacements", front="https://i.imgur.com/S82y39J.jpg", cost=9})
+
+--offensive retrofit
+OffensiveRetrofit = {
+    type="OffensiveRetrofit",
+    back = "https://i.imgur.com/FSY3Hkx.png"
+}
+-- Card:new(OffensiveRetrofit,Republic,{name="Hyperspace Rings", front="https://i.imgur.com/GCSZ4Wy.jpeg", cost=3})
+-- Card:new(OffensiveRetrofit,{name="Advanced Transponder Net", front="https://i.imgur.com/vm6HKV1.jpg", cost=5}) --modification)
+
+--ordnance
+Ordnance = {
+    type="Ordnance",
+    back = "https://i.imgur.com/6SrNHUo.png"
+}
+-- Card:new(Ordnance,{name="Assault Concussion Missiles", front="https://i.imgur.com/iuWMfEx.jpg", cost=5})
+
+--superweapon
+SuperWeapon = {
+    type="SuperWeapon",
+    back = "https://i.imgur.com/wAfp2ow.jpeg"
+}
+-- Card:new(SuperWeapon,Rebel,{name="Magnite Crystal Tractor Beam Array", front="https://i.imgur.com/2YpzXNT.jpg", cost=10})
+
+--support_team
+SupportTeam = {
+    type="SupportTeam",
+    back = "https://i.imgur.com/WjGbQ3t.png"
+}
+-- Card:new(SupportTeam,Separatist,{name="Battle Droid Reserves", front="https://i.imgur.com/ffhsdrO.jpeg", cost=4})
+-- Card:new(SupportTeam,{name="Auxiliary Shields Team", front="https://i.imgur.com/SkNnm5P.jpg", cost=3})
+
+Turbolaser = {
+    type="Turbolaser",
+    back = "https://i.imgur.com/YwrHjHG.png"
+}
+-- Card:new(Turbolaser,CloneWars,{name="Swivel-Mount Batteries", front="https://i.imgur.com/QyfrQ24.jpeg", cost=8}) --modification)
+
+--weapons team & offensive retrofit
+WeaponsTeamAndOffensiveRetrofit = {
+    type="WeaponsTeamAndOffensiveRetrofit",
+    back = "https://i.imgur.com/mPu7lfL.png"
+}
+-- Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Cham Syndulla", front="https://i.imgur.com/1UBq5nW.jpg", cost=5})
+
+--weapons_team
+WeaponsTeam = {
+    type="WeaponsTeam",
+    back = "https://i.imgur.com/GhAHc4B.png"
+}
+-- Card:new(WeaponsTeam,Rebel,{name="Caitken and Shollan", front="https://i.imgur.com/5msklkl.jpg", cost=6})
+
+
+------------------------------------
+--rebalanced upgrade cards
 
 UpdateCard("Commander Sato",27,{
     --front = LEGACY_ASSETS.."",
     cost = 24
 })
-    --rebalance point costs and card fronts(?)
+    --rebalance point costs
+
+------------------------------------
+
+--objectives
+-- Objective = {
+--     type="Objective",
+--     back = "https://i.imgur.com/6mOLyyo.jpeg"
+-- }
+-- Assault = { category = "Assault" }
+-- Card:new(Assault, Objective, {name="Advanced Gunnery", front="https://i.imgur.com/3dV3CQL.png"})
+-- Defense = { category = "Defense" }
+-- Card:new(Defense, Objective, {name="Abandoned Mining Facility", front="https://i.imgur.com/FisDnrA.png", victory=10})
+-- Navigation = { category = "Navigation" }
+-- Card:new(Navigation, Objective, {name="Dangerous Territory", front="https://i.imgur.com/DIlMCHD.png", victory=15})
+-- Special = { category = "Special" }
+-- Card:new(Special, Objective, {name="Base Defense: Armed Station", front="https://i.imgur.com/uuS6Bgr.png"})
+
 
 end
 
