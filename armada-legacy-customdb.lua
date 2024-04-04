@@ -69,6 +69,7 @@
 --
 
 LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
+CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
 function onload()
 	printToAll("Loading Armada Legacy collection",{1,0.5,0})
     --UpdateCard("",,{cost = ,aliases={" [Rebalanced]"}})
@@ -507,7 +508,11 @@ function onload()
     UpdateCard("Gozanti-class Assault Carriers",28,{cost = 25,aliases={"Gozanti Assault Carriers [Rebalanced]"}})
     UpdateCard("Imperial I-class Star Destroyer",110,{cost = 105,aliases={"Imperial I Star Destroyer [Rebalanced]"}})
     UpdateCard("Imperial II-class Star Destroyer",120,{cost = 115,aliases={"Imperial II Star Destroyer [Rebalanced]"}})   
-    --interdictor suppression refit (cost 90)
+    UpdateCard("Interdictor Suppression Refit",90,{
+        --front = LEGACY_ASSETS.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
+        aliases = {"Interdictor Suppression Refit [Rebalanced]"},
+        --cost = 90
+    })
     UpdateCard("Interdictor Combat Refit",93,{
         front = LEGACY_ASSETS.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
         aliases = {"Interdictor Combat Refit [Rebalanced]"},
