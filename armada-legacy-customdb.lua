@@ -78,7 +78,7 @@ function onload()
     --republic ships
 	REPUBLIC_SHIP = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
-        faction = "Republic"
+        faction = "Republic_L"
     }
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
@@ -141,7 +141,7 @@ function onload()
     --republic squadrons
     REPUBLIC_SQUAD = {
 		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
-        faction = "Republic"
+        faction = "Republic_L"
     }
 
     eta2 = {
@@ -262,7 +262,7 @@ function onload()
     --separatist ships
     SEPARATIST_SHIP = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
-        faction = "Separatist"
+        faction = "Separatist_L"
     }
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
@@ -325,7 +325,7 @@ function onload()
     --separatist squadrons
     SEPARATIST_SQUAD = {
         back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
-        faction = "Separatist"
+        faction = "Separatist_L"
     }
 
     nantex = {
@@ -444,7 +444,7 @@ function onload()
     --empire ships
     EMPIRE_SHIP = {
         back = LEGACY_ASSETS.."ships/empire/card_back.jpg",
-        faction = "Empire"
+        faction = "Empire_L"
     }
 
     Ship:new(MediumShip,EMPIRE_SHIP, {
@@ -532,7 +532,7 @@ function onload()
     --empire squadrons
     EMPIRE_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
-        faction = "Empire"
+        faction = "Empire_L"
     }
 
     TIE_ADV = GetDefinition("TIE Advanced Squadron",12)
@@ -606,7 +606,7 @@ function onload()
     --rebel ships
     REBEL_SHIP = {
         back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
-        faction = "Rebellion" 
+        faction = "Rebellion_L" 
     }
 
     Ship:new(MediumShip,REBEL_SHIP, {
@@ -688,7 +688,7 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
     --rebel squadrons
     REBEL_SQUAD = {
         back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
-        faction = "Rebellion" 
+        faction = "Rebellion_L" 
     }
 
     awing = GetDefinition("A-wing Squadron",11)
@@ -762,19 +762,19 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
 --new upgrade cards
 
 Republic = {
-    factions={"Republic"}
+    factions={"Republic_L"}
 }
 Separatist = {
-    factions={"Separatist"}
+    factions={"Separatist_L"}
 }
 CloneWars = {
-    factions={"Republic","Separatist"}
+    factions={"Republic_L","Separatist_L"}
 }
 Empire = {
-    factions={"Empire"}
+    factions={"Empire_L"}
 }
 Rebel = {
-    factions={"Rebellion"}
+    factions={"Rebellion_L"}
 }
 
 --commanders
