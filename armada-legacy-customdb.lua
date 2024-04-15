@@ -71,7 +71,7 @@
 LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
 CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
 function onload()
-	printToAll("Loading Armada Legacy collection",{1,0.5,0})
+	printToAll("Loading Armada Legacy collection...",{1,0.5,0})
     --UpdateCard("",,{cost = ,aliases={" [Rebalanced]"}})
 
 	
@@ -199,13 +199,13 @@ function onload()
     }
     Squadron:new(clone_z95, REPUBLIC_SQUAD, {
         name = "Clone Z-95 Squadron",
-        front = LEGACY_ASSETS.."squadrons/republic/clone-z95/clonez95_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/clone-z95/clone-z-95-squadron.png",
         cost = 10,
         aliases = {"Clone Z-95 Squadron [Legacy]", "Clone Z-95"}
     })
     Squadron:new(clone_z95, REPUBLIC_SQUAD, {
         name = "Stub",
-        front = LEGACY_ASSETS.."squadrons/republic/clone-z95/stub_card.png",
+        front = LEGACY_ASSETS.."squadrons/republic/clone-z95/stub.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/clone-z95/cz95_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 15,
@@ -221,13 +221,13 @@ function onload()
     }
     Squadron:new(laat_i, REPUBLIC_SQUAD, {
         name = "LAAT/i Gunship",
-        front = LEGACY_ASSETS.."squadrons/republic/laati/laati_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/laati/laat.png",
         cost = 17,
         aliases = {"LAAT/i Gunship [Legacy]", "LAAT/i"}
     })
     Squadron:new(laat_i, REPUBLIC_SQUAD, {
         name = "Hawk",
-        front = LEGACY_ASSETS.."squadrons/republic/laati/hawk_card.png",
+        front = LEGACY_ASSETS.."squadrons/republic/laati/hawk.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/laati/laati_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 25,
@@ -243,13 +243,13 @@ function onload()
     }
     Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
         name = "G9 Rigger-class Freighter",
-        front = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g9_card.jpg",
+        front = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g-9-freighter.png",
         cost = 13,
         aliases = {"G9 Rigger-class Freighter [Legacy]"}
     })
     Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
         name = "Anakin Skywalker (G9)",
-        front = LEGACY_ASSETS.."squadrons/republic/g9-rigger/anakin_card.png",
+        front = LEGACY_ASSETS.."squadrons/republic/g9-rigger/Twilight.png",
         diffuse = LEGACY_ASSETS.."squadrons/republic/g9-rigger/g9rigger_ace_texture.png", 
         defense_tokens = {DEF_BRACE},
         cost = 27,
@@ -337,13 +337,13 @@ function onload()
     }
     Squadron:new(nantex, SEPARATIST_SQUAD, {
         name = "Nantex Starfighter Squadron",
-        front = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex-squadron.png",
         cost = 11,
         aliases = {"Nantex Starfighter Squadron [Legacy]"}
     })
     Squadron:new(nantex, SEPARATIST_SQUAD, {
         name = "Sun Fac",
-        front = LEGACY_ASSETS.."squadrons/separatist/nantex/sunfac_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/nantex/sun-fac.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 19,
@@ -351,7 +351,7 @@ function onload()
     })
     Squadron:new(nantex, SEPARATIST_SQUAD, {
         name = "Gorgol",
-        front = LEGACY_ASSETS.."squadrons/separatist/nantex/gorgol_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/nantex/gorgol.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/nantex/nantex_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 16,
@@ -367,13 +367,13 @@ function onload()
     }
     Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
         name = "HMP Droid Gunship",
-        front = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp-gunship.png",
         cost = 17,
         aliases = {"HMP Droid Gunship [Legacy]"}
     })
     Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
         name = "Geonosian Prototype",
-        front = LEGACY_ASSETS.."squadrons/separatist/hmp/geoproto_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/hmp/geonosian-prototype.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 22,
@@ -381,7 +381,7 @@ function onload()
     })
     Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
         name = "DGS-047",
-        front = LEGACY_ASSETS.."squadrons/separatist/hmp/dgs047_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/hmp/dgs-047.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 24,
@@ -397,13 +397,13 @@ function onload()
     }
     Squadron:new(sith_infil, SEPARATIST_SQUAD, {
         name = "Sith Infiltrator",
-        front = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sithinfil_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sith-infiltrator.png",
         cost = 17,
         aliases = {"Sith Infiltrator [Legacy]"}
     })
     Squadron:new(sith_infil, SEPARATIST_SQUAD, {
         name = "Count Dooku",
-        front = LEGACY_ASSETS.."squadrons/separatist/sith-infil/dooku_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/sith-infil/count-dooku-squadron.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/sith-infil/sithinfil_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 25,
@@ -419,13 +419,13 @@ function onload()
     }
     Squadron:new(rogue_fighter, SEPARATIST_SQUAD, {
         name = "Rogue Starfighter Squadron",
-        front = LEGACY_ASSETS.."squadrons/separatist/rogue/roguestar_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue-starfighter-squadron.png",
         cost = 15,
         aliases = {"Rogue Starfighter Squadron [Legacy]"}
     })
     Squadron:new(rogue_fighter, SEPARATIST_SQUAD, {
         name = "Magnaguard Protectors",
-        front = LEGACY_ASSETS.."squadrons/separatist/rogue/magna_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/rogue/magnaguard-protectors.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 21,
@@ -433,7 +433,7 @@ function onload()
     })
     Squadron:new(rogue_fighter, SEPARATIST_SQUAD, {
         name = "Cad Bane",
-        front = LEGACY_ASSETS.."squadrons/separatist/rogue/cadbane_card.png",
+        front = LEGACY_ASSETS.."squadrons/separatist/rogue/cad-bane.png",
         diffuse = LEGACY_ASSETS.."squadrons/separatist/rogue/rogue_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 22,
@@ -996,6 +996,8 @@ WeaponsTeam = {
 Card:new(WeaponsTeam,{name="Targeting Team", front=LEGACY_ASSETS.."cards/wepteam/targeting-team.png", cost=5, aliases={"Targeting Team [Legacy]"}})
 
 UpdateCard("Sensor Team", 5,{cost = 2,aliases={"Sensor Team [Rebalanced]"}})
+
+printToAll("Finished loading Armada Legacy collection!",{1,0.5,0})
 
 ------------------------------------
 
