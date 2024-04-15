@@ -284,7 +284,7 @@ function onload()
         front = LEGACY_ASSETS.."ships/separatist/trident/trident-assault-carriers.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_c_texture.png",
-        ruler = LEGACY_ASSETS.."ships/separatist/hardcell/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
@@ -656,7 +656,7 @@ function onload()
         front = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/rebel/mc80b/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-texture.png",
-        ruler = LEGACY_ASSETS.."ships/rebel/mc75/ruler.obj",
+        ruler = LEGACY_ASSETS.."ships/rebel/mc80b/ruler.obj",
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
         shields = {4,4,4,3}, -- Front, left, right, rear
