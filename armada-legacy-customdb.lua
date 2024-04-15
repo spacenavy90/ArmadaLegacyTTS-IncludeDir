@@ -77,7 +77,7 @@ function onload()
 	
     --republic ships
 	REPUBLIC_SHIP = {
-		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+		back = LEGACY_ASSETS.."ships/republic/card_back.png",
         faction = "Republic_L"
     }
 
@@ -140,7 +140,7 @@ function onload()
 ------------------------------------
     --republic squadrons
     REPUBLIC_SQUAD = {
-		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+		back = LEGACY_ASSETS.."ships/republic/card_back.png",
         faction = "Republic_L"
     }
 
@@ -261,7 +261,7 @@ function onload()
 ------------------------------------
     --separatist ships
     SEPARATIST_SHIP = {
-        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        back =      LEGACY_ASSETS.."ships/separatist/card_back.png",
         faction = "Separatist_L"
     }
 
@@ -324,7 +324,7 @@ function onload()
 ------------------------------------
     --separatist squadrons
     SEPARATIST_SQUAD = {
-        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        back =      LEGACY_ASSETS.."ships/separatist/card_back.png",
         faction = "Separatist_L"
     }
 
@@ -443,7 +443,7 @@ function onload()
 ------------------------------------
     --empire ships
     EMPIRE_SHIP = {
-        back = LEGACY_ASSETS.."ships/empire/card_back.jpg",
+        back = LEGACY_ASSETS.."ships/empire/card_back.png",
         faction = "Empire_L"
     }
 
@@ -531,7 +531,7 @@ function onload()
 ------------------------------------
     --empire squadrons
     EMPIRE_SQUAD = {
-        back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
+        back = LEGACY_ASSETS.."squadrons/empire/card_back.png",
         faction = "Empire_L"
     }
 
@@ -605,7 +605,7 @@ function onload()
 ------------------------------------
     --rebel ships
     REBEL_SHIP = {
-        back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
+        back = LEGACY_ASSETS.."ships/rebel/card_back.png",
         faction = "Rebellion_L" 
     }
 
@@ -687,7 +687,7 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
 ------------------------------------
     --rebel squadrons
     REBEL_SQUAD = {
-        back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
+        back = LEGACY_ASSETS.."squadrons/rebel/card_back.png",
         faction = "Rebellion_L" 
     }
 
