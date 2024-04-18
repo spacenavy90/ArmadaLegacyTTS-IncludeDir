@@ -368,7 +368,7 @@ function onload()
     Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
         name = "HMP Droid Gunship",
         front = LEGACY_ASSETS.."squadrons/separatist/hmp/hmp-gunship.png",
-        cost = 17,
+        cost = 16,
         aliases = {"HMP Droid Gunship [Legacy]"}
     })
     Squadron:new(hmp_gunship, SEPARATIST_SQUAD, {
