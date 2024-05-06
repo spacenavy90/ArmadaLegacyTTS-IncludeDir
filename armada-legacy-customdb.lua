@@ -612,7 +612,7 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP, {
         name = "Assault Frigate Mark I A",
-        front = CARDS_LEGACY.."ships/rebel/afm1/assault-frigate-mki-a.png",
+        front = CARDS_LEGACY.."Wave I/Ships/assault-frigate-mki-a.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1a_mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_a_texture.png",
         ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
@@ -626,7 +626,7 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP, {
         name = "Assault Frigate Mark I B",
-        front = CARDS_LEGACY.."ships/rebel/afm1/assault-frigate-mki-b.png",
+        front = CARDS_LEGACY.."Wave I/Ships/assault-frigate-mki-b.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1b_mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_b_texture.png",
         ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
