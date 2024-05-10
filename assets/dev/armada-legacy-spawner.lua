@@ -1608,6 +1608,7 @@ end
 ----#include ui/fleetSpawner
 
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
+LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
 
 DEF_BRACE = '79d121'
 DEF_CONTAIN = '68abfc'
@@ -1698,7 +1699,7 @@ LargeShip = {
     collider = ASSETS_ROOT..'misc/bases/large.obj'
 }
 MassiveShip = { 
-    collider = LEGACY_ASSETS..'dev/ships/subjugator/massive.obj' --https://paste.ee/r/rYmvj
+    collider = LEGACY_ASSETS..'dev/ships/subjugator/massive.obj' --https://paste.ee/r/AE0fV
 }
 HugeShip = {
     collider = ASSETS_ROOT..'misc/bases/huge.obj'

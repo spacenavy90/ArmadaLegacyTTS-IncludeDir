@@ -1,6 +1,7 @@
 ----#include TTS_armada/src/Global
 --italia table: https://i.imgur.com/ZH3BOIY.jpg
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
+LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
 local SQUAD_MOVE_RULER = 1
 local SQUAD_ATTACK_RULER = 2
 local SQUAD_ATTACK_CLOSE_RULER = 3
@@ -20,7 +21,7 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/small.obj',"http://paste.ee/r/eDbf1"},
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
-    {LEGACY_ASSETS..'dev/ships/subjugator/massive.obj',"https://paste.ee/r/rYmvj"},
+    {LEGACY_ASSETS..'dev/ships/subjugator/massive.obj',"https://paste.ee/r/AE0fV"},
     {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"}}
     -- "https://paste.ee/r/eDbf1",
     -- "https://paste.ee/r/6LYTT",
