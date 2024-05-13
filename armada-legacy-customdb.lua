@@ -976,7 +976,6 @@ Turbolaser = {
 }
 Card:new(Turbolaser,{name="Light Turbolaser Cannons", front = LEGACY_ASSETS.."cards/turbo/light-turbolaser-cannons.png", cost=6, aliases={"Light Turbolaser Cannons [Legacy]"}})
 Card:new(Turbolaser,{name="XV9 Turbolasers", front = LEGACY_ASSETS.."cards/turbo/xv9-turbolasers.png", cost=5, aliases={"XV9 Turbolasers [Legacy]"}})
-Card:new(Turbolaser,{name="Point Defense Cannons", front = LEGACY_ASSETS.."dev/wave3/cards/point-defense-cannons.png", cost=5, aliases={"Point Defense Cannons [Legacy]"}})
 
 UpdateCard("Dual Turbolaser Turrets", 5,{cost = 3,aliases={"Dual Turbolaser Turrets [Rebalanced]"}})
 UpdateCard("Heavy Turbolaser Turrets", 6,{cost = 4,aliases={"Heavy Turbolaser Turrets [Rebalanced]"}})
