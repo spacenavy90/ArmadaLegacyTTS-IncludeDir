@@ -21,8 +21,8 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/small.obj',"http://paste.ee/r/eDbf1"},
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
-    {LEGACY_ASSETS..'dev/ships/subjugator/massive.obj',"https://paste.ee/r/AE0fV"},
     {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"}}
+    {LEGACY_ASSETS..'dev/ships/subjugator/massive.obj',"https://paste.ee/r/AE0fV"},
     -- "https://paste.ee/r/eDbf1",
     -- "https://paste.ee/r/6LYTT",
     -- "https://paste.ee/r/a7mfW",
@@ -1091,16 +1091,18 @@ function dial.name(dial)
 end
 --shieldedShip = nil
 ship_size = {
-    {0.807,0,1.398},
-    {1.201,0,2.008},
-    {1.496,0,2.539},
-    {1.496,0,2.539,2.539*3+3.68}
+    {0.807,0,1.398}, --small
+    {1.201,0,2.008}, --med
+    {1.496,0,2.539}, --large
+    {1.496,0,2.539,2.539*3+3.68}, --huge
+    {1.201,0,3.842} --massive
 }
 shield_pos = {
-    {0.634,0,1.176,-1.176},
-    {1.028,0,1.835,-1.835},
-    {1.323,0,2.377,-2.377},
-    {1.323,0,2.377,2.539*2+2.377+3.68}
+    {0.634,0,1.176,-1.176}, --small
+    {1.028,0,1.835,-1.835}, --med
+    {1.323,0,2.377,-2.377}, --large
+    {1.323,0,2.377,2.539*2+2.377+3.68} --huge
+    {1.028,0,1.835,-1.835}--massive
 }
 function spawnShields(ship)
 --    local pos = ship.getPosition()
@@ -1115,9 +1117,12 @@ function spawnShields(ship)
         {math.abs(o[1]),0,0},
         {0,0,-math.abs(o[3])},
     }
-    if size==4 then
+    if size==4 then --huge size, array 4 in ships()
         table.insert(offsets,{-math.abs(o[1]),0,2.539*2+3.68})
         table.insert(offsets,{math.abs(o[1]),0,2.539*2+3.68})
+    elseif size==5 then --massive size, array 5 in ships()
+        table.insert(offsets,{-math.abs(o[1]),0,6})
+        table.insert(offsets,{math.abs(o[1]),0,6})
     end
 
     local world = ship.getPosition()

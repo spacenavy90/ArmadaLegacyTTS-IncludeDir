@@ -71,6 +71,8 @@
 LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
 CARDS_LEGACY = 'https://raw.githubusercontent.com/eldrxdevelop/ArmadaLegacy/main/'
 CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+ARMADA_ASSETS = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
+
 function onload()
 	printToAll("Loading Armada Legacy collection...",{1,0.5,0})
     --UpdateCard("",,{cost = ,aliases={" [Rebalanced]"}})
@@ -135,6 +137,34 @@ function onload()
         shields = {2,1,1,1}, -- Front, left, right, rear
         cost = 34,
         aliases = {"IPV-2C Support Corvette [Legacy]"},
+        command = 1
+    })
+
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+        name = "CR-20 Troop Carriers",
+        front = LEGACY_ASSETS.."dev/wave3/ships/cr20/cr20-troop-carriers.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/cr20/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/cr20/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/cr20/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"I","I","I"}},
+        defense_tokens = {DEF_SCATTER, DEF_EVADE},
+        shields = {1,1,1,1}, -- Front, left, right, rear
+        cost = 26,
+        aliases = {"CR-20 Troop Carriers [Legacy]"},
+        command = 1
+    })
+
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+        name = "CR-20 Combat Refit",
+        front = LEGACY_ASSETS.."dev/wave3/ships/cr20/cr20-combat-refits.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/cr20/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/cr20/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/cr20/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"I","I","I"}},
+        defense_tokens = {DEF_SCATTER, DEF_EVADE},
+        shields = {1,1,1,1}, -- Front, left, right, rear
+        cost = 29,
+        aliases = {"CR-20 Combat Refit [Legacy]"},
         command = 1
     })
 
@@ -322,7 +352,7 @@ function onload()
         command = 4
         })
 
-    Ship:new(MassiveShip,SEPARATIST_SHIP, {
+    Ship:new(MediumShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Battleship",
         front = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/subjugator_placeholder.png",
         mesh = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/mesh_massive.obj",
@@ -330,9 +360,10 @@ function onload()
         ruler = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE},
-        shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right 
+        --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
+        shields = {5,3,3,2}, -- blockedFront, rear-left, rear-right, rear
         cost = 169,
-        aliases = {"Subjugator-class Battleship [Legacy]"},
+        aliases = {"Subjugator-class [Legacy]"},
         command = 4
         })
         
@@ -519,6 +550,20 @@ function onload()
         command = 3
         })
 
+    Ship:new(SmallShip,EMPIRE_SHIP, {
+        name = "Lancer-class",
+        front = CARDS_LEGACY.."Wave II/Ships/interdictor-prototype.png",
+        mesh = LEGACY_ASSETS.."ships/empire/interdictor-sd/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictorsd-proto-texture.png",
+        ruler = LEGACY_ASSETS.."ships/empire/imperial/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","-","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        shields = {4,3,3,2}, -- Front, left, right, rear
+        cost = 100,
+        aliases = {"Interdictor Prototype [Legacy]"},
+        command = 3
+        })
+
     UpdateCard("Arquitens-class Command Cruiser",59,{cost = 57,aliases={"Arquitens Command Cruiser [Rebalanced]"}})
     UpdateCard("Gladiator II-class Star Destroyer",62,{cost = 59,aliases={"Gladiator II [Rebalanced]"}})
     UpdateCard("Gozanti-class Assault Carriers",28,{cost = 25,aliases={"Gozanti Assault Carriers [Rebalanced]"}})
@@ -669,6 +714,20 @@ function onload()
 
     Ship:new(LargeShip,REBEL_SHIP, {
         name = "MC80B Heavy Cruiser",
+        front = CARDS_LEGACY.."Wave II/Ships/mc80b-heavy-cruiser.png",
+        mesh = LEGACY_ASSETS.."ships/rebel/mc80b/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-texture.png",
+        ruler = LEGACY_ASSETS.."ships/rebel/mc80b/ruler.obj",
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        shields = {4,4,4,3}, -- Front, left, right, rear
+        cost = 114,
+        aliases = {"MC80B Heavy Cruiser [Legacy]", "Heavy Cruiser [Legacy]"},
+        command = 3
+        })
+
+    Ship:new(SmallShip,REBEL_SHIP, {
+        name = "MC40A Light Cruiser",
         front = CARDS_LEGACY.."Wave II/Ships/mc80b-heavy-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/rebel/mc80b/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-texture.png",
@@ -1086,7 +1145,7 @@ SmallShip = { collider = ASSETS_ROOT..'misc/bases/small.obj' } --"http://paste.e
 MediumShip = { collider = ASSETS_ROOT..'misc/bases/medium.obj' } --"http://paste.ee/r/6LYTT"
 LargeShip = { collider = ASSETS_ROOT..'misc/bases/large.obj'} --"http://paste.ee/r/a7mfW"
 --SquareShip = { collider = LEGACY_ASSETS..'misc/bases/square.obj'}
-MassiveShip = { collider = LEGACY_ASSETS..'dev/ships/subjugator/massive.obj'} --https://paste.ee/r/AE0fV
+--MassiveShip = { collider = LEGACY_ASSETS..'dev/ships/subjugator/massive.obj'} --https://paste.ee/r/AE0fV
 HugeShip = { collider = ASSETS_ROOT..'misc/bases/huge.obj' } --"http://paste.ee/r/ClCL3"
 Squadron = { collider = ASSETS_ROOT..'misc/bases/squad.obj', convex = false, type = 1, --"http://paste.ee/r/ZKM7E" --http://paste.ee/r/nAMCQ
     material = 1, health = 0, move = 0, defense_tokens = {}, cost = 0,
