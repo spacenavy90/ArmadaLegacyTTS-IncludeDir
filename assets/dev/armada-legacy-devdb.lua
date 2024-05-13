@@ -792,7 +792,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/assault-frigate-mki-a.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1a_mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_a_texture.png",
-        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/rebel/afm1/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"I","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
@@ -806,7 +806,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/assault-frigate-mki-b.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1b_mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_b_texture.png",
-        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/rebel/afm1/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"I","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
