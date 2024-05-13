@@ -353,17 +353,32 @@ function onload()
         })
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
-        name = "Subjugator-class Battleship",
-        front = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/subjugator_placeholder.png",
+        name = "Subjugator-class Command Refit",
+        front = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/wave3/ships/subjugator/Subjugator_Command_Refit.jpg",
         mesh = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/mesh_massive.obj",
         diffuse = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_diffuse.png",
-        ruler = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/ruler.obj", 
+        ruler = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_range_mesh.obj", 
         maneuver = {{"-"},{"I","-"}},
-        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE},
+        defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
         --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
-        shields = {5,3,3,2}, -- blockedFront, rear-left, rear-right, rear
-        cost = 169,
-        aliases = {"Subjugator-class [Legacy]"},
+        shields = {1,2,2,2}, -- blockedFront, rear-left, rear-right, rear
+        cost = 180,
+        aliases = {"Subjugator-class Command Refit [Legacy]"},
+        command = 4
+        })
+
+    Ship:new(MediumShip,SEPARATIST_SHIP, {
+        name = "Subjugator-class Mega Ion",
+        front = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/wave3/ships/subjugator/Subjugator_Mega_Ion_Refit.jpg",
+        mesh = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/mesh_massive.obj",
+        diffuse = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_diffuse.png",
+        ruler = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_range_mesh.obj", 
+        maneuver = {{"-"},{"I","-"}},
+        defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
+        --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
+        shields = {1,2,2,2}, -- blockedFront, rear-left, rear-right, rear
+        cost = 180,
+        aliases = {"Subjugator-class Mega Ion [Legacy]"},
         command = 4
         })
         
@@ -551,17 +566,31 @@ function onload()
         })
 
     Ship:new(SmallShip,EMPIRE_SHIP, {
-        name = "Lancer-class",
-        front = CARDS_LEGACY.."Wave II/Ships/interdictor-prototype.png",
-        mesh = LEGACY_ASSETS.."ships/empire/interdictor-sd/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictorsd-proto-texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/imperial/ruler.obj",
-        maneuver = {{"I"},{"I","I"},{"I","-","I"}},
-        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+        name = "Lancer-class Frigate",
+        front = LEGACY_ASSETS..'dev/wave3/ships/lancer/lancer-frigate.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/lancer/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/lancer/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/lancer/ruler.obj",
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
         shields = {4,3,3,2}, -- Front, left, right, rear
-        cost = 100,
-        aliases = {"Interdictor Prototype [Legacy]"},
-        command = 3
+        cost = 44,
+        aliases = {"Lancer-class Frigate [Legacy]"},
+        command = 1
+        })
+
+    Ship:new(SmallShip,EMPIRE_SHIP, {
+        name = "Lancer-class Battle Refit",
+        front = LEGACY_ASSETS..'dev/wave3/ships/lancer/lancer-battle-refit.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/lancer/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/lancer/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/lancer/ruler.obj",
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
+        shields = {4,3,3,2}, -- Front, left, right, rear
+        cost = 48,
+        aliases = {"Lancer-class Battle Refit [Legacy]"},
+        command = 1
         })
 
     UpdateCard("Arquitens-class Command Cruiser",59,{cost = 57,aliases={"Arquitens Command Cruiser [Rebalanced]"}})
@@ -728,16 +757,30 @@ function onload()
 
     Ship:new(SmallShip,REBEL_SHIP, {
         name = "MC40A Light Cruiser",
-        front = CARDS_LEGACY.."Wave II/Ships/mc80b-heavy-cruiser.png",
-        mesh = LEGACY_ASSETS.."ships/rebel/mc80b/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/rebel/mc80b/mc80b-heavy-texture.png",
-        ruler = LEGACY_ASSETS.."ships/rebel/mc80b/ruler.obj",
-        maneuver = {{"I"},{"I","I"}},
-        defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
-        shields = {4,4,4,3}, -- Front, left, right, rear
-        cost = 114,
-        aliases = {"MC80B Heavy Cruiser [Legacy]", "Heavy Cruiser [Legacy]"},
-        command = 3
+        front = LEGACY_ASSETS..'dev/wave3/ships/mc40a/mc40a-light-cruiser.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/mc40a/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/mc40a/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"-","I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
+        shields = {3,3,3,2}, -- Front, left, right, rear
+        cost = 64,
+        aliases = {"MC40A Light Cruiser [Legacy]"},
+        command = 2
+        })
+
+    Ship:new(SmallShip,REBEL_SHIP, {
+        name = "MC40A Missile Cruiser",
+        front = LEGACY_ASSETS..'dev/wave3/ships/mc40a/mc40a-missile-cruiser.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/mc40a/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/mc40a/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"-","I","I"}},
+        defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
+        shields = {3,3,3,2}, -- Front, left, right, rear
+        cost = 62,
+        aliases = {"MC40A Missile Cruiser [Legacy]"},
+        command = 2
         })
 
 UpdateCard("Assault Frigate Mk. II B",72,{cost = 78,aliases={"Assault Frig. Mk.II B [Rebalanced]"}})
