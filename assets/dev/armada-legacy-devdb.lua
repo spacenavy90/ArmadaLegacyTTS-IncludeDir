@@ -354,10 +354,10 @@ function onload()
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Command Refit",
-        front = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/wave3/ships/subjugator/Subjugator_Command_Refit.jpg",
-        mesh = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/mesh_massive.obj",
-        diffuse = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_diffuse.png",
-        ruler = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_range_mesh.obj", 
+        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/Subjugator_Command_Refit.jpg",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_range_mesh.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
         --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
@@ -369,10 +369,10 @@ function onload()
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Mega Ion",
-        front = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/wave3/ships/subjugator/Subjugator_Mega_Ion_Refit.jpg",
-        mesh = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/mesh_massive.obj",
-        diffuse = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_diffuse.png",
-        ruler = LEGACY_ASSETS.."LEGACY_ASSETS..'dev/ships/subjugator/massive_range_mesh.obj", 
+        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/Subjugator_Mega_Ion_Refit.jpg",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_range_mesh.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
         --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
@@ -567,7 +567,7 @@ function onload()
 
     Ship:new(SmallShip,EMPIRE_SHIP, {
         name = "Lancer-class Frigate",
-        front = LEGACY_ASSETS..'dev/wave3/ships/lancer/lancer-frigate.png",
+        front = LEGACY_ASSETS.."dev/wave3/ships/lancer/lancer-frigate.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/lancer/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/lancer/diffuse.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/lancer/ruler.obj",
@@ -581,7 +581,7 @@ function onload()
 
     Ship:new(SmallShip,EMPIRE_SHIP, {
         name = "Lancer-class Battle Refit",
-        front = LEGACY_ASSETS..'dev/wave3/ships/lancer/lancer-battle-refit.png",
+        front = LEGACY_ASSETS.."dev/wave3/ships/lancer/lancer-battle-refit.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/lancer/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/lancer/diffuse.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/lancer/ruler.obj",
@@ -668,6 +668,94 @@ function onload()
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 18,
         aliases = {"Turr Phennir [Legacy]"}
+    })
+
+    alpha_starwing = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/alpha/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/alpha/base_diffuse.png",
+        health = 6,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(alpha_starwing, EMPIRE_SQUAD, {
+        name = "Alpha-class Star Wing Squadron",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/alpha/alpha-star-wing.png",
+        cost = 13,
+        aliases = {"G9 Rigger-class Freighter [Legacy]"}
+    })
+    Squadron:new(alpha_starwing, EMPIRE_SQUAD, {
+        name = "Major Vynder",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/alpha/major-vynder.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/alpha/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 21,
+        aliases = {"Major Vynder [Legacy]"}
+    })
+
+    g1a = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/g1a/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/g1a/base_diffuse.png",
+        health = 4,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(g1a, EMPIRE_SQUAD, {
+        name = "G-1A Starfighter",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/g1a/g1a-starfighter.png",
+        cost = 14,
+        aliases = {"G-1A Starfighter [Legacy]"}
+    })
+    Squadron:new(g1a, EMPIRE_SQUAD, {
+        name = "Zuckuss",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/g1a/zuckuss.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/g1a/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 20,
+        aliases = {"Zuckuss [Legacy]"}
+    })
+
+    tie_agg = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/tie_aggressor/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/tie_aggressor/base_diffuse.png",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(tie_agg, EMPIRE_SQUAD, {
+        name = "TIE Aggressor Squadron",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/tie_aggressor/tie-aggressor-squadron.png",
+        cost = 11,
+        aliases = {"TIE Aggressor Squadron [Legacy]"}
+    })
+    Squadron:new(tie_agg, EMPIRE_SQUAD, {
+        name = "Lieutenant Kestal",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/tie_aggressor/lieutenant-kestal.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/tie_aggressor/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 17,
+        aliases = {"Lieutenant Kestal [Legacy]"}
+    })
+
+    tie_reaper = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/tie_reaper/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/tie_reaper/base_diffuse.png",
+        health = 4,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(tie_reaper, EMPIRE_SQUAD, {
+        name = "TIE Reaper",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/tie_reaper/tie-reaper.png",
+        cost = 12,
+        aliases = {"TIE Reaper [Legacy]"}
+    })
+    Squadron:new(tie_reaper, EMPIRE_SQUAD, {
+        name = "Death Troopers",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/tie_reaper/death-troopers.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/tie_reaper/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 16,
+        aliases = {"Death Troopers [Legacy]"}
     })
 
     UpdateCard("Aggressor Assault Fighter",16,{cost = 15,aliases={"Aggressor Assault Fighter [Rebalanced]"}})
@@ -757,7 +845,7 @@ function onload()
 
     Ship:new(SmallShip,REBEL_SHIP, {
         name = "MC40A Light Cruiser",
-        front = LEGACY_ASSETS..'dev/wave3/ships/mc40a/mc40a-light-cruiser.png",
+        front = LEGACY_ASSETS.."dev/wave3/ships/mc40a/mc40a-light-cruiser.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/mc40a/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/mc40a/diffuse.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
@@ -771,7 +859,7 @@ function onload()
 
     Ship:new(SmallShip,REBEL_SHIP, {
         name = "MC40A Missile Cruiser",
-        front = LEGACY_ASSETS..'dev/wave3/ships/mc40a/mc40a-missile-cruiser.png",
+        front = LEGACY_ASSETS.."dev/wave3/ships/mc40a/mc40a-missile-cruiser.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/mc40a/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/mc40a/diffuse.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
@@ -852,6 +940,94 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 18,
         aliases = {"Horton Salm [Legacy]"}
+    })
+    
+    arc_reb = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/arc_reb/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/arc_reb/base_diffuse.png",
+        health = 7,
+        move = 2,
+        defense_tokens = {}
+    }
+    Squadron:new(arc_reb, REBEL_SQUAD, {
+        name = "Alliance Overhaul ARC-170 Squadron",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/arc_reb/alliance-arc-170-squadron.png",
+        cost = 15,
+        aliases = {"Alliance Overhaul ARC-170 Squadron [Legacy]"}
+    })
+    Squadron:new(arc_reb, REBEL_SQUAD, {
+        name = "Norra Wexley",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/arc_reb/norra-wexley-arc-170.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/arc_reb/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 21,
+        aliases = {"Norra Wexley [Legacy]"}
+    })
+
+    baudo = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/baudo/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/baudo/base_diffuse.png",
+        health = 5,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(baudo, REBEL_SQUAD, {
+        name = "Baudo-class Star Yacht",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/baudo/baudo-star-yacht.png",
+        cost = 13,
+        aliases = {"Baudo-class Star Yacht [Legacy]"}
+    })
+    Squadron:new(baudo, REBEL_SQUAD, {
+        name = "Mirax Terrik",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/baudo/mirax-terrik.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/baudo/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 22,
+        aliases = {"Mirax Terrik [Legacy]"}
+    })
+
+    kwing = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/kwing/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/kwing/base_diffuse.png",
+        health = 7,
+        move = 2,
+        defense_tokens = {}
+    }
+    Squadron:new(kwing, REBEL_SQUAD, {
+        name = "K-wing Squadron",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/kwing/k-wing-squadron.png",
+        cost = 18,
+        aliases = {"K-wing Squadron [Legacy]"}
+    })
+    Squadron:new(kwing, REBEL_SQUAD, {
+        name = "Miranda Doni",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/kwing/miranda-doni.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/kwing/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 26,
+        aliases = {"Miranda Doni [Legacy]"}
+    })
+
+    uwing = {
+        mesh = LEGACY_ASSETS.."dev/wave3/squadrons/uwing/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/uwing/base_diffuse.png",
+        health = 4,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(uwing, REBEL_SQUAD, {
+        name = "U-wing",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/uwing/u-wing.png",
+        cost = 12,
+        aliases = {"U-wing [Legacy]"}
+    })
+    Squadron:new(uwing, REBEL_SQUAD, {
+        name = "Cassian Andor",
+        front = LEGACY_ASSETS.."dev/wave3/squadrons/uwing/cassian-andor.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/squadrons/uwing/ace_diffuse.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 16,
+        aliases = {"Cassian Andor [Legacy]"}
     })
 
     UpdateCard("E-wing Squadron",15,{cost = 14,aliases={"E-wing Squadron [Rebalanced]"}})
