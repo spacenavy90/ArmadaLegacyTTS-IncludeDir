@@ -354,10 +354,10 @@ function onload()
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Command Refit",
-        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/Subjugator_Command_Refit.jpg",
+        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_command.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_diffuse.png",
-        ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_range_mesh.obj", 
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
         --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
@@ -368,11 +368,11 @@ function onload()
         })
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
-        name = "Subjugator-class Mega Ion",
-        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/Subjugator_Mega_Ion_Refit.jpg",
+        name = "Subjugator-class Mega Ion Refit",
+        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_ion.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_diffuse.png",
-        ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_range_mesh.obj", 
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ign_ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
         --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
