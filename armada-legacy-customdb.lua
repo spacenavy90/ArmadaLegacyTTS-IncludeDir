@@ -893,7 +893,7 @@ UpdateCard("Advanced Projectors",6,{cost = 4,aliases={"Advanced Projectors [Reba
 UpdateCard("Cluster Bombs",5,{cost = 2,aliases={"Cluster Bombs [Rebalanced]"}})
 UpdateCard("Electronic Countermeasures",7,{cost = 8,aliases={"Electronic Countermeasures [Rebalanced]"}})
 UpdateCard("Redundant Shields",8,{cost = 5,aliases={"Redundant Shields [Rebalanced]"}})
-UpdateCard("Thermal Shields",5,{cost = 8,aliases={"Thermal Shields [Rebalanced]"}})
+UpdateCard("Thermal Shields",5,{cost = 8,front=LEGACY_ASSETS.."cards/defretro/thermal_shields.png",aliases={"Thermal Shields [Rebalanced]"}})
 
 --experimental retrofit
 ExperimentalRetrofit = {
