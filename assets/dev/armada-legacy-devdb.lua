@@ -852,7 +852,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
-        shields = {3,3,3,2}, -- Front, left, right, rear
+        shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 64,
         aliases = {"MC40A Light Cruiser [Legacy]"},
         command = 2
@@ -866,7 +866,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
-        shields = {3,3,3,2}, -- Front, left, right, rear
+        shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 62,
         aliases = {"MC40A Missile Cruiser [Legacy]"},
         command = 2
