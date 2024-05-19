@@ -352,7 +352,7 @@ function onload()
         command = 4
         })
 
-    Ship:new(MediumShip,SEPARATIST_SHIP, {
+    Ship:new(MassiveShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Command Refit",
         front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_command.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
@@ -360,14 +360,13 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
-        --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
-        shields = {1,2,2,2}, -- blockedFront, rear-left, rear-right, rear
+        shields = {5,2,2,2,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
         cost = 180,
         aliases = {"Subjugator-class Command Refit [Legacy]"},
         command = 4
         })
 
-    Ship:new(MediumShip,SEPARATIST_SHIP, {
+    Ship:new(MassiveShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Mega Ion Refit",
         front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_ion.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
@@ -375,13 +374,11 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ign_ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
-        --shields = {5,3,3,2,2,2}, -- Front, front-left, front-right, rear, back-left, back-right
-        shields = {1,2,2,2}, -- blockedFront, rear-left, rear-right, rear
+        shields = {5,2,2,2,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
         cost = 180,
         aliases = {"Subjugator-class Mega Ion [Legacy]"},
         command = 4
-        })
-        
+        })      
 
 ------------------------------------
     --separatist squadrons
@@ -1384,7 +1381,7 @@ SmallShip = { collider = ASSETS_ROOT..'misc/bases/small.obj' } --"http://paste.e
 MediumShip = { collider = ASSETS_ROOT..'misc/bases/medium.obj' } --"http://paste.ee/r/6LYTT"
 LargeShip = { collider = ASSETS_ROOT..'misc/bases/large.obj'} --"http://paste.ee/r/a7mfW"
 --SquareShip = { collider = LEGACY_ASSETS..'misc/bases/square.obj'}
---MassiveShip = { collider = LEGACY_ASSETS..'dev/ships/subjugator/massive.obj'} --https://paste.ee/r/AE0fV
+MassiveShip = { collider = LEGACY_ASSETS..'dev/wave3/ships/subjugator/massive_base_mesh.obj'} --https://paste.ee/r/AE0fV
 HugeShip = { collider = ASSETS_ROOT..'misc/bases/huge.obj' } --"http://paste.ee/r/ClCL3"
 Squadron = { collider = ASSETS_ROOT..'misc/bases/squad.obj', convex = false, type = 1, --"http://paste.ee/r/ZKM7E" --http://paste.ee/r/nAMCQ
     material = 1, health = 0, move = 0, defense_tokens = {}, cost = 0,
