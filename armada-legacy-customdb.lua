@@ -802,7 +802,7 @@ UpdateCard("Leia Organa",27,{cost = 24,aliases={"Leia Organa [Rebalanced]"}})
 
 UpdateCard("Admiral Piett",22,{cost = 20,aliases={"Admiral Piett [Rebalanced]"}})
 UpdateCard("Admiral Sloane",24,{cost = 30,aliases={"Admiral Sloane [Rebalanced]"}})
---UpdateCard("Darth Vader",36,{cost = 34,aliases={"Darth Vader [Rebalanced]"}}) --remove?
+--UpdateCard("Darth Vader",36,{cost = 34,aliases={"Darth Vader [Rebalanced]"}})
 UpdateCard("Emperor Palpatine",35,{cost = 30,aliases={"Emperor Palpatine [Rebalanced]"}})
 --UpdateCard("Grand Admiral Thrawn",32,{cost = 30,aliases={"Grand Admiral Thrawn [Rebalanced]"}})
 UpdateCard("Grand Moff Tarkin",28,{cost = 30,aliases={"Grand Moff Tarkin [Rebalanced]"}})

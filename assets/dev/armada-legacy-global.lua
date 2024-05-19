@@ -21,8 +21,8 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/small.obj',"http://paste.ee/r/eDbf1"},
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
-    {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"}}
-    {LEGACY_ASSETS..'dev/ships/subjugator/massive.obj',"https://paste.ee/r/AE0fV"},
+    {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"}},
+    {LEGACY_ASSETS..'dev/ships/subjugator/massive.obj',"https://paste.ee/r/AE0fV"}
     -- "https://paste.ee/r/eDbf1",
     -- "https://paste.ee/r/6LYTT",
     -- "https://paste.ee/r/a7mfW",
@@ -1101,7 +1101,7 @@ shield_pos = {
     {0.634,0,1.176,-1.176}, --small
     {1.028,0,1.835,-1.835}, --med
     {1.323,0,2.377,-2.377}, --large
-    {1.323,0,2.377,2.539*2+2.377+3.68} --huge
+    {1.323,0,2.377,2.539*2+2.377+3.68}, --huge
     {1.028,0,1.835,-1.835}--massive
 }
 function spawnShields(ship)
@@ -1397,14 +1397,15 @@ ATTACK_RULERS = {
     ASSETS_ROOT.."misc/rulers/ship/small/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/medium/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/collider.obj",
-    ASSETS_ROOT.."misc/rulers/ship/huge/collider.obj"
+    ASSETS_ROOT.."misc/rulers/ship/huge/collider.obj",
+    LEGACY_ASSETS.."dev/ships/subjugator/attack_collider.obj"
 }
 RANGE_RULER_MESH = {
     ASSETS_ROOT.."misc/rulers/ship/small/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/medium/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/mesh.obj",
-    LEGACY_ASSETS.."dev/ships/subjugator/massive_range_mesh.obj",
-    ASSETS_ROOT.."misc/rulers/ship/huge/mesh.obj"
+    ASSETS_ROOT.."misc/rulers/ship/huge/mesh.obj",
+    LEGACY_ASSETS.."dev/ships/subjugator/massive_range_ruler.obj"
 }
 function Action_cmds(ship)
     printCmds(ship)

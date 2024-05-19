@@ -1698,9 +1698,6 @@ MediumShip = {
 LargeShip = {
     collider = ASSETS_ROOT..'misc/bases/large.obj'
 }
-MassiveShip = { 
-    collider = LEGACY_ASSETS..'dev/ships/subjugator/massive.obj' --https://paste.ee/r/AE0fV
-}
 HugeShip = {
     collider = ASSETS_ROOT..'misc/bases/huge.obj'
 }
@@ -1718,6 +1715,9 @@ Squadron = {
     back = "",
     aliases = {},
     faction = ""
+}
+MassiveShip = { 
+    collider = LEGACY_ASSETS..'dev/ships/subjugator/massive_base_mesh.obj' --https://paste.ee/r/AE0fV
 }
 function Squadron:new (o, ...)
     o = o or {}
