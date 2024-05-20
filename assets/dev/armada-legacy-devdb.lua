@@ -1256,8 +1256,10 @@ SuperWeapon = {
     back = "https://i.imgur.com/wAfp2ow.jpeg"
 }
 
+Card:new(SuperWeapon,Separatist,{name="Mega Ion Barrage", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/megaion.png", cost=8, aliases={"Mega Ion Barrage [Legacy]"}})
+
 CentralControl = {
-    type="SuperWeapon",
+    type="SuperWeapon", --custom upgrade slot, using superweapon since it is underutilized across factions
     back = "https://i.imgur.com/wAfp2ow.jpeg"
 }
 Card:new(CentralControl,Separatist,{name="Interception Protocols", front = LEGACY_ASSETS.."cards/cencon/interception-protocols.png", cost=5, aliases={"Interception Protocols [Legacy]"}})
