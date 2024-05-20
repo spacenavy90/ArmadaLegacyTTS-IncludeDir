@@ -1256,7 +1256,8 @@ SuperWeapon = {
     back = "https://i.imgur.com/wAfp2ow.jpeg"
 }
 
-Card:new(SuperWeapon,Separatist,{name="Mega Ion Barrage", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/megaion.png", cost=8, aliases={"Mega Ion Barrage [Legacy]"}})
+Card:new(SuperWeapon,Separatist,{name="Mega Ion Barrage", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ionbarrage.png", cost=8, aliases={"Mega Ion Barrage [Legacy]"}})
+Card:new(SuperWeapon,Separatist,{name="Mega Ion Disabler", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/iondisabler.png", cost=8, aliases={"Mega Ion Disabler [Legacy]"}})
 
 CentralControl = {
     type="SuperWeapon", --custom upgrade slot, using superweapon since it is underutilized across factions
