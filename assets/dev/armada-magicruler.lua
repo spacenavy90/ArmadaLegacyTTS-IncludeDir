@@ -329,7 +329,7 @@ ship_size = {
     {1.201,0,2.008,2.008},
     {1.496,0,2.539,2.539},
     {1.496,0,2.539,2.539*3+3.68},
-    {1.201,0,2.008,9.10}
+    {1.201,0,2.008,9.10} --custom massive
 }
 -- moved_objects = {}
 function moveTokens(ship, old_pos, old_rot, new_pos, new_rot)
