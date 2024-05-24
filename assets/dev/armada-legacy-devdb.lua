@@ -360,7 +360,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
-        shields = {4,4,4,1,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
+        shields = {4,3,3,1,4,4}, --Front, back-left, back-right, rear, front-left, front-right
         cost = 180,
         aliases = {"Subjugator-class Command Refit [Legacy]"},
         command = 4
@@ -374,7 +374,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ign_ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
-        shields = {4,4,4,1,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
+        shields = {4,3,3,1,4,4}, --Front, back-left, back-right, rear, front-left, front-right
         cost = 180,
         aliases = {"Subjugator-class Mega Ion [Legacy]"},
         command = 4
