@@ -378,7 +378,35 @@ function onload()
         cost = 180,
         aliases = {"Subjugator-class Mega Ion [Legacy]"},
         command = 4
-        })      
+        }) 
+        
+    Ship:new(SmallShip,SEPARATIST_SHIP, {
+        name = "C-9979 Landing Craft",
+        front = CARDS_LEGACY.."dev/wave3/ships/c9979/c9979_card.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/c9979/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/c9979/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/c9979/ruler.obj", 
+        maneuver = {{"I"},{"I","-"},{"I","-","-"}},
+        defense_tokens = {DEF_CONTAIN, DEF_EVADE, DEF_BRACE},
+        shields = {2,2,2,2}, -- Front, left, right, rear
+        cost = 30,
+        aliases = {"C-9979 Landing Craft [Legacy]"},
+        command = 1
+        })
+
+    Ship:new(SmallShip,SEPARATIST_SHIP, {
+        name = "C-9969 Landing Craft",
+        front = CARDS_LEGACY.."dev/wave3/ships/c9979/c9969_card.png",
+        mesh = LEGACY_ASSETS.."dev/wave3/ships/c9979/mesh.obj",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/c9979/diffuse.png",
+        ruler = LEGACY_ASSETS.."dev/wave3/ships/c9979/ruler.obj", 
+        maneuver = {{"I"},{"I","-"},{"I","-","-"}},
+        defense_tokens = {DEF_CONTAIN, DEF_EVADE, DEF_BRACE},
+        shields = {2,2,2,2}, -- Front, left, right, rear
+        cost = 34,
+        aliases = {"C-9969 Landing Craft [Legacy]"},
+        command = 1
+        })
 
 ------------------------------------
     --separatist squadrons
