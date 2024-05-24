@@ -354,13 +354,13 @@ function onload()
 
     Ship:new(MassiveShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Command Refit",
-        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_command.png",
+        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_command_v2.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
-        diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_diffuse.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/diffuse_command.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
-        shields = {5,2,2,2,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
+        shields = {4,4,4,1,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
         cost = 180,
         aliases = {"Subjugator-class Command Refit [Legacy]"},
         command = 4
@@ -368,13 +368,13 @@ function onload()
 
     Ship:new(MassiveShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Mega Ion Refit",
-        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_ion.png",
+        front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/subjugator_ion_v2.png",
         mesh = LEGACY_ASSETS.."dev/wave3/ships/subjugator/mesh_massive.obj",
-        diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_diffuse.png",
+        diffuse = LEGACY_ASSETS.."dev/wave3/ships/subjugator/diffuse_ion.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ign_ruler.obj", 
         maneuver = {{"-"},{"I","-"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO},
-        shields = {5,2,2,2,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
+        shields = {4,4,4,1,3,3}, -- Front, front-left, front-right, rear, back-left, back-right
         cost = 180,
         aliases = {"Subjugator-class Mega Ion [Legacy]"},
         command = 4
@@ -570,7 +570,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/lancer/ruler.obj",
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
-        shields = {4,3,3,2}, -- Front, left, right, rear
+        shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 44,
         aliases = {"Lancer-class Frigate [Legacy]"},
         command = 1
@@ -584,7 +584,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/lancer/ruler.obj",
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
-        shields = {4,3,3,2}, -- Front, left, right, rear
+        shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 48,
         aliases = {"Lancer-class Battle Refit [Legacy]"},
         command = 1
@@ -849,7 +849,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
-        shields = {2,2,2,2}, -- Front, left, right, rear
+        shields = {3,3,3,2}, -- Front, left, right, rear
         cost = 64,
         aliases = {"MC40A Light Cruiser [Legacy]"},
         command = 2
@@ -863,7 +863,7 @@ function onload()
         ruler = LEGACY_ASSETS.."dev/wave3/ships/mc40a/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
-        shields = {2,2,2,2}, -- Front, left, right, rear
+        shields = {3,3,3,2}, -- Front, left, right, rear
         cost = 62,
         aliases = {"MC40A Missile Cruiser [Legacy]"},
         command = 2
@@ -1257,7 +1257,8 @@ SuperWeapon = {
 }
 
 Card:new(SuperWeapon,Separatist,{name="Mega Ion Barrage", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ionbarrage.png", cost=8, aliases={"Mega Ion Barrage [Legacy]"}})
-Card:new(SuperWeapon,Separatist,{name="Mega Ion Disabler", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/iondisabler.png", cost=8, aliases={"Mega Ion Disabler [Legacy]"}})
+Card:new(SuperWeapon,Separatist,{name="Mega Ion Disabler", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/iondisabler_v2.png", cost=12, aliases={"Mega Ion Disabler [Legacy]"}})
+Card:new(SuperWeapon,Separatist,{name="Mega Ion Splash", front = LEGACY_ASSETS.."dev/wave3/ships/subjugator/ionsplash.png", cost=10, aliases={"Mega Ion Splash [Legacy]"}})
 
 CentralControl = {
     type="SuperWeapon", --custom upgrade slot, using superweapon since it is underutilized across factions
