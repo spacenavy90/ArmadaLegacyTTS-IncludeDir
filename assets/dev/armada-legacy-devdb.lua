@@ -387,7 +387,7 @@ function onload()
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/c9979/diffuse.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/c9979/ruler.obj", 
         maneuver = {{"I"},{"I","-"},{"I","-","-"}},
-        defense_tokens = {DEF_CONTAIN, DEF_EVADE, DEF_BRACE},
+        defense_tokens = {DEF_EVADE, DEF_BRACE},
         shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 32,
         aliases = {"C-9979 Landing Craft [Legacy]"},
@@ -401,7 +401,7 @@ function onload()
         diffuse = LEGACY_ASSETS.."dev/wave3/ships/c9979/diffuse.png",
         ruler = LEGACY_ASSETS.."dev/wave3/ships/c9979/ruler.obj", 
         maneuver = {{"I"},{"I","-"},{"I","-","-"}},
-        defense_tokens = {DEF_CONTAIN, DEF_EVADE, DEF_BRACE},
+        defense_tokens = {DEF_EVADE, DEF_BRACE},
         shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 32,
         aliases = {"C-9969 Landing Craft [Legacy]"},
@@ -1111,6 +1111,10 @@ Card:new(Commander,Empire,{name="Gilad Pellaeon",  front = LEGACY_ASSETS.."cards
 Card:new(Commander,Empire,{name="Admiral Rogriss",  front = LEGACY_ASSETS.."cards/commanders/admiral-rogriss.png", cost=25, aliases={"Admiral Rogriss [Legacy]"}})
 Card:new(Commander,Rebel,{name="Admiral Nantz",  front = LEGACY_ASSETS.."cards/commanders/admiral-nantz.png", cost=26, aliases={"Admiral Nantz [Legacy]"}})
 Card:new(Commander,Rebel,{name="Han Solo",  front = LEGACY_ASSETS.."cards/commanders/han-solo-commander.png", cost=30, aliases={"Han Solo [Legacy]"}})
+Card:new(Commander,Empire,{name="Director Isard",  front = LEGACY_ASSETS.."dev/wave3/cards/isard_com.png", cost=28, aliases={"Director Isard [Legacy]"}})
+Card:new(Commander,Republic,{name="Shaak Ti",  front = LEGACY_ASSETS.."dev/wave3/cards/shaak_com.png", cost=28, aliases={"Shaak Ti [Legacy]"}})
+Card:new(Commander,Rebel,{name="Admiral Nammo",  front = LEGACY_ASSETS.."dev/wave3/cards/nammo_com.png", cost=26, aliases={"Admiral Nammo [Legacy]"}})
+Card:new(Commander,Separatist,{name="Pors Tonith",  front = LEGACY_ASSETS.."dev/wave3/cards/pors_tonith.png", cost=28, aliases={"Pors Tonith [Legacy]"}})
 
 UpdateCard("Commander Sato",27,{cost = 23,aliases={"Commander Sato [Rebalanced]"}})
 --UpdateCard("Garm Bel Iblis",25,{cost = 22,aliases={"Garm Bel Iblis [Rebalanced]"}})
