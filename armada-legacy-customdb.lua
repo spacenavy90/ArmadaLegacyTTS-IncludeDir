@@ -87,7 +87,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/arquitens-command-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/empire/rep_arq/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
@@ -101,7 +101,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/arquitens-light-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/arquitens/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/empire/rep_arq/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
@@ -453,7 +453,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/dreadnaught-imperial-refit.png",
         mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_imp_texture.png",
-        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
         shields = {3,3,3,1}, -- Front, left, right, rear
@@ -467,7 +467,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/dreadnaught-katana-refit.png",
         mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_katana_texture.png",
-        ruler = LEGACY_ASSETS.."ships/rebel/nebulon/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
         shields = {3,3,3,1}, -- Front, left, right, rear
@@ -481,7 +481,7 @@ function onload()
         front = CARDS_LEGACY.."Wave II/Ships/interdictor-star-destroyer.png",
         mesh = LEGACY_ASSETS.."ships/empire/interdictor-sd/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictorsd-sd-texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/imperial/ruler.obj",
+        ruler = LEGACY_ASSETS.."ships/empire/interdictor-sd/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"I","-","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
         shields = {4,3,3,2}, -- Front, left, right, rear
@@ -495,7 +495,7 @@ function onload()
         front = CARDS_LEGACY.."Wave II/Ships/interdictor-prototype.png",
         mesh = LEGACY_ASSETS.."ships/empire/interdictor-sd/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/empire/interdictor-sd/interdictorsd-proto-texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/imperial/ruler.obj",
+        ruler = LEGACY_ASSETS.."ships/empire/interdictor-sd/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"I","-","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
         shields = {4,3,3,2}, -- Front, left, right, rear
@@ -833,7 +833,7 @@ UpdateCard("Ahsoka",5,{cost = 7,aliases={"Walex Blissex [Rebalanced]"}})
 
 UpdateCard("Commandant Aresko",7,{cost = 5,aliases={"Commandant Aresko [Rebalanced]"}})
 UpdateCard("Director Isard",3,{cost = 1,aliases={"Director Isard [Rebalanced]"}})
-UpdateCard("Darth Vader",1,{cost = 3,aliases={"Darth Vader [Rebalanced]"}})
+UpdateCard("Darth Vader",1,{name="Darth Vader (Officer)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (Officer) [Rebalanced]"}})
 UpdateCard("Governor Pryce",7,{cost = 9,aliases={"Governor Pryce [Rebalanced]"}})
 
 UpdateCard("Damage Control Officer",5,{cost = 3,aliases={"Damage Control Officer [Rebalanced]"}})
@@ -1007,7 +1007,7 @@ WeaponsTeamAndOffensiveRetrofit = {
 Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="Asajj Ventress", front = LEGACY_ASSETS.."cards/wepoff/asajj-ventress-boarding-team.png", cost=7, aliases={"Asajj Ventress [Legacy]"}})
 Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="BX Commando Droids", front = LEGACY_ASSETS.."cards/wepoff/bx-commando-droids.png", cost=2, aliases={"BX Commando Droids [Legacy]"}})
 
-UpdateCard("Darth Vader", 3,{cost = 5,aliases={"Darth Vader [Rebalanced]"}})
+UpdateCard("Darth Vader",3,{name="Darth Vader (BP)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (BP) [Rebalanced]"}})
 
 --weapons_team
 WeaponsTeam = {
