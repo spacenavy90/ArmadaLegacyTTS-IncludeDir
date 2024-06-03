@@ -89,7 +89,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/arquitens-command-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/rep_arq/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
@@ -103,7 +103,7 @@ function onload()
         front = CARDS_LEGACY.."Wave I/Ships/arquitens-light-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
-        ruler = LEGACY_ASSETS.."ships/empire/rep_arq/ruler.obj", 
+        ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
@@ -1266,7 +1266,7 @@ Card:new(OffensiveRetrofit,{name="Tractor Tentacles", front = LEGACY_ASSETS.."ca
 
 UpdateCard("Advanced Transponder Net",5,{cost = 3,aliases={"Advanced Transponder Net [Rebalanced]"}})
 UpdateCard("Hardened Bulkheads",5,{cost = 3,aliases={"Hardened Bulkheads [Rebalanced]"}})
-UpdateCard("Point Defense Reroute",5,{cost = 2,aliases={"Point Defense Reroute [Rebalanced]"}})
+UpdateCard("Point Defense Reroute",5,{cost = 2,aliases={"Point Defense Reroute [Rebalanced]", "Point-Defense Reroute [Rebalanced]"}})
 UpdateCard("Quad Laser Turrets",5,{cost = 3,aliases={"Quad Laser Turrets [Rebalanced]"}})
 UpdateCard("Rapid Launch Bays",6,{cost = 4,aliases={"Rapid Launch Bays [Rebalanced]"}})
 
