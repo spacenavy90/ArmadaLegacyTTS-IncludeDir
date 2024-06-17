@@ -1151,7 +1151,7 @@ Card:new(Officer,Rebel,{name="Captain Onoma", front = LEGACY_ASSETS.."cards/offi
 Card:new(Officer,Rebel,{name="Borsk Fey'lya", front = LEGACY_ASSETS.."cards/officers/borsk-feylya.png", cost=7, aliases={"Borsk Fey'lya [Legacy]"}})
 
 UpdateCard("Walex Blissex",5,{cost = 7,aliases={"Walex Blissex [Rebalanced]"}})
-UpdateCard("Ahsoka",5,{cost = 7,aliases={"Walex Blissex [Rebalanced]"}})
+UpdateCard("Ahsoka Tano",2,{cost = 3,aliases={"Ahsoka Tano [Rebalanced]"}})
 
 UpdateCard("Commandant Aresko",7,{cost = 5,aliases={"Commandant Aresko [Rebalanced]"}})
 UpdateCard("Director Isard",3,{cost = 1,aliases={"Director Isard [Rebalanced]"}})
@@ -1201,7 +1201,7 @@ UpdateCard("Jaina's Light",2,{cost = 3,aliases={"Jaina's Light [Rebalanced]"}})
 
 UpdateCard("Warlord",8,{cost = 5,aliases={"Warlord [Rebalanced]"}})
 
-UpdateCard("Patriot's Fist",6,{cost = 9,aliases={"Patriot's Fist [Rebalanced]"}})
+UpdateCard("Patriot Fist",6,{cost = 9,aliases={"Patriot Fist [Rebalanced]"}})
 
 --defensive retrofit
 DefensiveRetrofit = {
