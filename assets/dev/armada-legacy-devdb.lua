@@ -1333,6 +1333,7 @@ WeaponsTeamAndOffensiveRetrofit = {
 }
 Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="Asajj Ventress", front = LEGACY_ASSETS.."cards/wepoff/asajj-ventress-boarding-team.png", cost=7, aliases={"Asajj Ventress [Legacy]"}})
 Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="BX Commando Droids", front = LEGACY_ASSETS.."cards/wepoff/bx-commando-droids.png", cost=2, aliases={"BX Commando Droids [Legacy]"}})
+Card:new(WeaponsTeamAndOffensiveRetrofit,{name="ARC Troopers", front = LEGACY_ASSETS.."cards/wepoff/arc_troopers.ping", cost=3, aliases={"ARC Troopers [Legacy]"}})
 
 UpdateCard("Darth Vader",3,{name="Darth Vader (BP)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (BP) [Rebalanced]"}})
 
