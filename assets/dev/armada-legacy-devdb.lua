@@ -979,7 +979,7 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
         name = "Alliance Overhaul ARC-170 Squadron",
         front = LEGACY_ASSETS.."dev/wave3/squadrons/arc_reb/alliance-arc-170-squadron.png",
         cost = 15,
-        aliases = {"Alliance Overhaul ARC-170 Squadron [Legacy]"}
+        aliases = {"Alliance Overhaul ARC-170 Squadron [Legacy]","ARC-170 Squadron [Legacy]"}
     })
     Squadron:new(arc_reb, REBEL_SQUAD, {
         name = "Norra Wexley",
@@ -1044,7 +1044,7 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
     Squadron:new(uwing, REBEL_SQUAD, {
         name = "U-wing",
         front = LEGACY_ASSETS.."dev/wave3/squadrons/uwing/u-wing.png",
-        cost = 12,
+        cost = 10,
         aliases = {"U-wing [Legacy]"}
     })
     Squadron:new(uwing, REBEL_SQUAD, {
@@ -1319,7 +1319,7 @@ Turbolaser = {
 }
 Card:new(Turbolaser,{name="Light Turbolaser Cannons", front = LEGACY_ASSETS.."cards/turbo/light-turbolaser-cannons.png", cost=6, aliases={"Light Turbolaser Cannons [Legacy]"}})
 Card:new(Turbolaser,{name="XV9 Turbolasers", front = LEGACY_ASSETS.."cards/turbo/xv9-turbolasers.png", cost=5, aliases={"XV9 Turbolasers [Legacy]"}})
-Card:new(Turbolaser,{name="Point Defense Cannons", front = LEGACY_ASSETS.."dev/wave3/cards/point-defense-cannons.png", cost=5, aliases={"Point Defense Cannons [Legacy]"}})
+Card:new(Turbolaser,{name="Point Defense Cannons", front = LEGACY_ASSETS.."dev/wave3/cards/point-defense-cannons.png", cost=6, aliases={"Point Defense Cannons [Legacy]"}})
 
 UpdateCard("Dual Turbolaser Turrets", 5,{cost = 3,aliases={"Dual Turbolaser Turrets [Rebalanced]"}})
 UpdateCard("Heavy Turbolaser Turrets", 6,{cost = 4,aliases={"Heavy Turbolaser Turrets [Rebalanced]"}})
