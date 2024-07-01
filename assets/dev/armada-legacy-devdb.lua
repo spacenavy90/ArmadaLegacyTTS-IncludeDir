@@ -326,28 +326,28 @@ function onload()
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Trident-class Assault Ships",
-        front = CARDS_LEGACY.."Wave I/Ships/trident-assault-ships.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_ships.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_a_texture.png",
         ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 30,
+        cost = 34,
         aliases = {"Trident Assault Ships [Legacy]"},
         command = 1
         })
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Trident-class Assault Carriers",
-        front = CARDS_LEGACY.."Wave I/Ships/trident-assault-carriers.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_carriers.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_c_texture.png",
         ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 32,
+        cost = 30,
         aliases = {"Trident Assault Carriers [Legacy]"},
         command = 1
         })
@@ -564,13 +564,13 @@ function onload()
 
     Ship:new(MediumShip,EMPIRE_SHIP, {
         name = "Dreadnaught-class Imperial Refit",
-        front = CARDS_LEGACY.."Wave I/Ships/dreadnaught-imperial-refit.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/dread_imp.png",
         mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_imp_texture.png",
         ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
-        shields = {3,3,3,1}, -- Front, left, right, rear
+        shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 64,
         aliases = {"Dreadnaught Imperial Refit [Legacy]"},
         command = 3
@@ -578,13 +578,13 @@ function onload()
 
     Ship:new(MediumShip,EMPIRE_SHIP, {
         name = "Dreadnaught-class Katana Refit",
-        front = CARDS_LEGACY.."Wave I/Ships/dreadnaught-katana-refit.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/dread_katana.png",
         mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_katana_texture.png",
         ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
-        shields = {3,3,3,1}, -- Front, left, right, rear
+        shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 62,
         aliases = {"Dreadnaught Katana Refit [Legacy]"},
         command = 3
@@ -843,11 +843,11 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP, {
         name = "Assault Frigate Mark I A",
-        front = CARDS_LEGACY.."Wave I/Ships/assault-frigate-mki-a.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/afm1_a.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1a_mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_a_texture.png",
         ruler = LEGACY_ASSETS.."ships/rebel/afm1/ruler.obj", 
-        maneuver = {{"II"},{"I","I"},{"I","I","I"}},
+        maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
         cost = 72,
@@ -857,11 +857,11 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP, {
         name = "Assault Frigate Mark I B",
-        front = CARDS_LEGACY.."Wave I/Ships/assault-frigate-mki-b.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/afm1_b.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1b_mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_b_texture.png",
         ruler = LEGACY_ASSETS.."ships/rebel/afm1/ruler.obj", 
-        maneuver = {{"II"},{"I","I"},{"I","I","I"}},
+        maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
         cost = 68,
