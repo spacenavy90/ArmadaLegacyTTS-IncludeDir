@@ -118,7 +118,7 @@ function onload()
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
         ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
-        maneuver = {{"II"},{"I","I"},{"-","-","II"}},
+        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 58,
@@ -132,7 +132,7 @@ function onload()
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
         ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
-        maneuver = {{"II"},{"I","I"},{"-","-","II"}},
+        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 54,
@@ -333,7 +333,7 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 34,
+        cost = 28,
         aliases = {"Trident Assault Ships [Legacy]"},
         command = 1
         })
@@ -347,7 +347,7 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 30,
+        cost = 27,
         aliases = {"Trident Assault Carriers [Legacy]"},
         command = 1
         })
@@ -570,7 +570,7 @@ function onload()
         ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
-        shields = {2,2,2,1}, -- Front, left, right, rear
+        shields = {3,2,2,1}, -- Front, left, right, rear
         cost = 64,
         aliases = {"Dreadnaught Imperial Refit [Legacy]"},
         command = 3
@@ -584,7 +584,7 @@ function onload()
         ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
-        shields = {2,2,2,1}, -- Front, left, right, rear
+        shields = {3,2,2,1}, -- Front, left, right, rear
         cost = 62,
         aliases = {"Dreadnaught Katana Refit [Legacy]"},
         command = 3
@@ -1206,6 +1206,7 @@ Card:new(Title,Republic,{name="Stellar Rise", front = LEGACY_ASSETS.."cards/titl
 Card:new(Title,Republic,{name="Surrogator", front = LEGACY_ASSETS.."cards/titles/surrogator.png", cost=5, aliases={"Surrogator [Legacy]"}})
 Card:new(Title,Separatist,{name="Neimoidian Grasp", front = LEGACY_ASSETS.."cards/titles/neimoidian-grasp.png", cost=2, aliases={"Neimoidian Grasp [Legacy]"}})
 Card:new(Title,Separatist,{name="Grappler", front = LEGACY_ASSETS.."cards/titles/grappler.png", cost=3, aliases={"Grappler [Legacy]"}})
+Card:new(Title,Separatist,{name="Drill Assault Craft", front = LEGACY_ASSETS.."dev/wave1_revised/cards/drill_craft.png", cost=1, aliases={"Drill Assault Craft [Legacy]"}})
 Card:new(Title,Separatist,{name="Procurer", front = LEGACY_ASSETS.."cards/titles/procurer.png", cost=5, aliases={"Procurer [Legacy]"}})
 Card:new(Title,Separatist,{name="Profusion", front = LEGACY_ASSETS.."cards/titles/profusion.png", cost=4, aliases={"Profusion [Legacy]"}})
 Card:new(Title,Separatist,{name="Vuuntun Palaa", front = LEGACY_ASSETS.."cards/titles/vuuntun-palaa.png", cost=7, aliases={"Vuuntun Palaa [Legacy]"}})
@@ -1287,7 +1288,7 @@ OffensiveRetrofit = {
     back = LEGACY_ASSETS.."cards/offretro/back.png"
 }
 Card:new(OffensiveRetrofit,{name="Advanced Guidance System", front = LEGACY_ASSETS.."cards/offretro/advanced-guidance-system.png", cost=4, aliases={"Advanced Guidance System [Legacy]"}})
-Card:new(OffensiveRetrofit,{name="Drill Beak", front = LEGACY_ASSETS.."cards/offretro/drill-beak.png", cost=5, aliases={"Drill Beak [Legacy]"}})
+Card:new(OffensiveRetrofit,{name="Drill Beak", front = LEGACY_ASSETS.."dev/wave1_revised/cards/drill_beak.jpg", cost=5, aliases={"Drill Beak [Legacy]"}})
 Card:new(OffensiveRetrofit,{name="Enhanced Propulsion", front = LEGACY_ASSETS.."cards/offretro/enhanded-propulsion.png", cost=2, aliases={"Enhanced Propulsion [Legacy]"}})
 Card:new(OffensiveRetrofit,{name="Reserve Bulk Hangar", front = LEGACY_ASSETS.."cards/offretro/reserve-bulk-hangar.png", cost=9, aliases={"Reserve Bulk Hangar [Legacy]"}})
 Card:new(OffensiveRetrofit,{name="Tractor Tentacles", front = LEGACY_ASSETS.."cards/offretro/tractor-tentacles.png", cost=3, aliases={"Tractor Tentacles [Legacy]"}})
