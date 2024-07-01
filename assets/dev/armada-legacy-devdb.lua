@@ -86,7 +86,7 @@ function onload()
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
         name = "Arquitens-class Command Cruiser",
-        front = CARDS_LEGACY.."Wave I/Ships/arquitens-command-cruiser.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-command-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
         ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
@@ -100,7 +100,7 @@ function onload()
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
         name = "Arquitens-class Light Cruiser",
-        front = CARDS_LEGACY.."Wave I/Ships/arquitens-light-cruiser.png",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-light-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
         diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
         ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
@@ -109,6 +109,34 @@ function onload()
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 58,
         aliases = {"Arquitens Light Cruiser [Legacy]"},
+        command = 2
+    })
+
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+        name = "Arquitens-class Command Cruiser (Alt)",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-command-cruiser_alt.png",
+        mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
+        ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","-","II"}},
+        defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+        shields = {2,2,2,2}, -- Front, left, right, rear
+        cost = 58,
+        aliases = {"Arquitens Command Cruiser Alt [Legacy]"},
+        command = 2
+    })
+
+    Ship:new(SmallShip,REPUBLIC_SHIP, {
+        name = "Arquitens-class Light Cruiser (Alt)",
+        front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-light-cruiser_alt.png",
+        mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
+        ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","-","II"}},
+        defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+        shields = {2,2,2,2}, -- Front, left, right, rear
+        cost = 54,
+        aliases = {"Arquitens Light Cruiser Alt [Legacy]"},
         command = 2
     })
 
@@ -1111,7 +1139,7 @@ Card:new(Commander,Empire,{name="Gilad Pellaeon",  front = LEGACY_ASSETS.."cards
 Card:new(Commander,Empire,{name="Admiral Rogriss",  front = LEGACY_ASSETS.."cards/commanders/admiral-rogriss.png", cost=25, aliases={"Admiral Rogriss [Legacy]"}})
 Card:new(Commander,Rebel,{name="Admiral Nantz",  front = LEGACY_ASSETS.."cards/commanders/admiral-nantz.png", cost=26, aliases={"Admiral Nantz [Legacy]"}})
 Card:new(Commander,Rebel,{name="Han Solo",  front = LEGACY_ASSETS.."cards/commanders/han-solo-commander.png", cost=30, aliases={"Han Solo [Legacy]"}})
-Card:new(Commander,Empire,{name="Director Isard",  front = LEGACY_ASSETS.."dev/wave3/cards/isard_com.png", cost=28, aliases={"Director Isard [Legacy]"}})
+Card:new(Commander,Empire,{name="Director Isard",  front = LEGACY_ASSETS.."dev/wave3/cards/isard_com.png", cost=20, aliases={"Director Isard [Legacy]"}})
 Card:new(Commander,Republic,{name="Shaak Ti",  front = LEGACY_ASSETS.."dev/wave3/cards/shaak_com.png", cost=28, aliases={"Shaak Ti [Legacy]"}})
 Card:new(Commander,Rebel,{name="Admiral Nammo",  front = LEGACY_ASSETS.."dev/wave3/cards/nammo_com.png", cost=26, aliases={"Admiral Nammo [Legacy]"}})
 Card:new(Commander,Separatist,{name="Pors Tonith",  front = LEGACY_ASSETS.."dev/wave3/cards/pors_tonith.png", cost=28, aliases={"Pors Tonith [Legacy]"}})
