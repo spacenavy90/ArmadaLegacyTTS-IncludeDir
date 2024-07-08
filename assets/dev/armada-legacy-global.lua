@@ -1094,15 +1094,17 @@ ship_size = {
     {0.807,0,1.398}, --small
     {1.201,0,2.008}, --med
     {1.496,0,2.539}, --large
-    {1.496,0,2.539,2.539*3+3.68}, --huge
-    {1.201,0,2.008,9.10} --custom massive
+    {1.496,0,2.539,2.539*3+3.68}, --huge (=11.297)
+    --{1.201,0,2.008,9.10} --custom massive doublemed
+    {1.496,0,2.539,9.10} --custom massive shortHuge
 }
 shield_pos = {
     {0.634,0,1.176,-1.176}, --small
     {1.028,0,1.835,-1.835}, --med
     {1.323,0,2.377,-2.377}, --large
-    {1.323,0,2.377,2.539*2+2.377+3.68}, --huge
-    {1.055,0,1.835,6.4} --custom massive / sides mirror offset, zero, rear offset, front offset
+    {1.323,0,2.377,2.539*2+2.377+3.68}, --huge (=11.135)
+    --{1.055,0,1.835,6.4} --custom massive doublemed / sides mirror offset, zero, rear offset, front offset
+    {1.4,0,2.45,8.2} --custom massive shortHuge / sides mirror offset, zero, rear offset, front offset
 }
 function spawnShields(ship)
 --    local pos = ship.getPosition()
@@ -1120,9 +1122,12 @@ function spawnShields(ship)
     if size==4 then --huge size, array 4 in ships[]
         table.insert(offsets,{-math.abs(o[1]),0,2.539*2+3.68}) --front left
         table.insert(offsets,{math.abs(o[1]),0,2.539*2+3.68}) --front right
-    elseif size==5 then --custom massive size, array 5 in ships[]
-        table.insert(offsets,{-math.abs(o[1]),0,4.50})
-        table.insert(offsets,{math.abs(o[1]),0,4.50})
+    elseif size==5 then --custom massive size, array 5 in ships[] 
+        --table.insert(offsets,{-math.abs(o[1]),0,4.50}) --doublemed
+        --table.insert(offsets,{math.abs(o[1]),0,4.50}) --doublemed
+        table.insert(offsets,{-math.abs(o[1]),0,5.75}) --shortHuge
+        table.insert(offsets,{math.abs(o[1]),0,5.75}) --shortHuge
+
     end
 
     local world = ship.getPosition()
@@ -1398,14 +1403,14 @@ ATTACK_RULERS = {
     ASSETS_ROOT.."misc/rulers/ship/medium/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/huge/collider.obj",
-    LEGACY_ASSETS.."dev/wave3/ships/subjugator/attack_collider.obj" --custom massive
+    LEGACY_ASSETS.."dev/wave3/ships/subjugator/attack_collider.obj" --custom massive shortHuge
 }
 RANGE_RULER_MESH = {
     ASSETS_ROOT.."misc/rulers/ship/small/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/medium/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/huge/mesh.obj",
-    LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_range_ruler.obj" --custom massive
+    LEGACY_ASSETS.."dev/wave3/ships/subjugator/massive_range_ruler.obj" --custom massive shortHuge
 }
 function Action_cmds(ship)
     printCmds(ship)

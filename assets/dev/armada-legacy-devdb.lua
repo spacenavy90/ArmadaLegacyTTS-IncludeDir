@@ -566,11 +566,11 @@ function onload()
         name = "Dreadnaught-class Imperial Refit",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/dread_imp.png",
         mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_imp_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/dread_imp_diffuse.png",
         ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
-        shields = {3,2,2,1}, -- Front, left, right, rear
+        shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 64,
         aliases = {"Dreadnaught Imperial Refit [Legacy]"},
         command = 3
@@ -580,11 +580,11 @@ function onload()
         name = "Dreadnaught-class Katana Refit",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/dread_katana.png",
         mesh = LEGACY_ASSETS.."ships/empire/dread/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/empire/dread/dread_katana_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/dread_katana_diffuse.png",
         ruler = LEGACY_ASSETS.."ships/empire/dread/ruler.obj", 
         maneuver = {{"I"},{"I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
-        shields = {3,2,2,1}, -- Front, left, right, rear
+        shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 62,
         aliases = {"Dreadnaught Katana Refit [Legacy]"},
         command = 3

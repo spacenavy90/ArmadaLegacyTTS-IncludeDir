@@ -325,11 +325,12 @@ function API_MOVE_SHIP(params)
     storeUndo(params.ship,moved_tokens)
 end
 ship_size = {
-    {0.807,0,1.398,1.398},
-    {1.201,0,2.008,2.008},
-    {1.496,0,2.539,2.539},
-    {1.496,0,2.539,2.539*3+3.68},
-    {1.201,0,2.008,9.10} --custom massive
+    {0.807,0,1.398,1.398}, --small
+    {1.201,0,2.008,2.008}, --med
+    {1.496,0,2.539,2.539}, --large
+    {1.496,0,2.539,2.539*3+3.68}, --huge (=11.135)
+    {1.496,0,2.539,9.10} --custom shorthuge
+    --{1.201,0,2.008,9.10} --custom doublemed
 }
 -- moved_objects = {}
 function moveTokens(ship, old_pos, old_rot, new_pos, new_rot)
