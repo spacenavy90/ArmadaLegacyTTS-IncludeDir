@@ -257,7 +257,7 @@ function onload()
         aliases = {"Anakin Skywalker [G9] [Legacy]"}
     })
 
-    UpdateCard("Anakin Skywalker",24,{cost = 28,aliases={"Anakin Skywalker [Rebalanced]"}})
+    --UpdateCard("Anakin Skywalker",24,{cost = 28,aliases={"Anakin Skywalker [Rebalanced]"}})
 
 ------------------------------------
     --separatist ships
@@ -504,30 +504,29 @@ function onload()
         command = 3
         })
 
-    UpdateCard("Arquitens-class Command Cruiser",59,{cost = 57,aliases={"Arquitens Command Cruiser [Rebalanced]"}})
-    UpdateCard("Gladiator II-class Star Destroyer",62,{cost = 59,aliases={"Gladiator II [Rebalanced]"}})
-    UpdateCard("Gozanti-class Assault Carriers",28,{cost = 25,aliases={"Gozanti Assault Carriers [Rebalanced]"}})
-    UpdateCard("Imperial I-class Star Destroyer",110,{cost = 105,aliases={"Imperial I Star Destroyer [Rebalanced]"}})
+    --UpdateCard("Arquitens-class Command Cruiser",59,{cost = 57,aliases={"Arquitens Command Cruiser [Rebalanced]"}})
+    --UpdateCard("Gladiator II-class Star Destroyer",62,{cost = 59,aliases={"Gladiator II [Rebalanced]"}})
+    --UpdateCard("Gozanti-class Assault Carriers",28,{cost = 25,aliases={"Gozanti Assault Carriers [Rebalanced]"}})
+    --UpdateCard("Imperial I-class Star Destroyer",110,{cost = 105,aliases={"Imperial I Star Destroyer [Rebalanced]"}})
     --UpdateCard("Imperial II-class Star Destroyer",120,{cost = 115,aliases={"Imperial II Star Destroyer [Rebalanced]"}})   
-    UpdateCard("Interdictor Suppression Refit",90,{
+    --UpdateCard("Interdictor Suppression Refit",90,{
         --front = CARDS_LEGACY.."Rebalance/Ships/interdictor-combat-refit.png",
-        aliases = {"Interdictor Suppression Refit [Rebalanced]"},
-        --cost = 90
-    })
+        --aliases = {"Interdictor Suppression Refit [Rebalanced]"},
+        --cost = 90})
     UpdateCard("Interdictor Combat Refit",93,{
-        front = CARDS_LEGACY.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
+        --front = CARDS_LEGACY.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
         aliases = {"Interdictor Combat Refit [Rebalanced]"},
         cost = 88
     })
-    UpdateCard("Quasar Fire II-class Cruiser-Carrier",61,{cost = 58,aliases={"Quasar II Cruiser-Carrier [Rebalanced]"}})
-    UpdateCard("Raider I-class Corvette",44,{cost = 42,aliases={"Raider I Corvette [Rebalanced]"}})
-    UpdateCard("Raider II-class Corvette",48,{cost = 44,aliases={"Raider II Corvette [Rebalanced]"}})
-    UpdateCard("Star Dreadnought Command Prototype",220,{cost = 205,aliases={"SSD Command Prototype [Rebalanced]"}})
-    UpdateCard("Star Dreadnought Assault Prototype",250,{cost = 235,aliases={"SSD Assault Prototype [Rebalanced]"}})
-    UpdateCard("Victory I-class Star Destroyer",73,{cost = 68,aliases={"Victory I Star Destroyer [Rebalanced]"}})
-    UpdateCard("Victory II-class Star Destroyer",85,{cost = 75,aliases={"Victory II Star Destroyer [Rebalanced]"}})
-    UpdateCard("Executor I-class Star Dreadnought",381,{cost = 340,aliases={"Executor I-class Star Dreadnought [Rebalanced]"}})
-    UpdateCard("Executor II-class Star Dreadnought",411,{cost = 380,aliases={"Executor II-class Star Dreadnought [Rebalanced]"}})
+    --UpdateCard("Quasar Fire II-class Cruiser-Carrier",61,{cost = 58,aliases={"Quasar II Cruiser-Carrier [Rebalanced]"}})
+    --UpdateCard("Raider I-class Corvette",44,{cost = 42,aliases={"Raider I Corvette [Rebalanced]"}})
+    --UpdateCard("Raider II-class Corvette",48,{cost = 44,aliases={"Raider II Corvette [Rebalanced]"}})
+    --UpdateCard("Star Dreadnought Command Prototype",220,{cost = 205,aliases={"SSD Command Prototype [Rebalanced]"}})
+    --UpdateCard("Star Dreadnought Assault Prototype",250,{cost = 235,aliases={"SSD Assault Prototype [Rebalanced]"}})
+    --UpdateCard("Victory I-class Star Destroyer",73,{cost = 68,aliases={"Victory I Star Destroyer [Rebalanced]"}})
+    UpdateCard("Victory II-class Star Destroyer",85,{cost = 80,aliases={"Victory II Star Destroyer [Rebalanced]"}})
+    --UpdateCard("Executor I-class Star Dreadnought",381,{cost = 340,aliases={"Executor I-class Star Dreadnought [Rebalanced]"}})
+    --UpdateCard("Executor II-class Star Dreadnought",411,{cost = 380,aliases={"Executor II-class Star Dreadnought [Rebalanced]"}})
 
 ------------------------------------
     --empire squadrons
@@ -581,28 +580,27 @@ function onload()
         aliases = {"Turr Phennir [Legacy]"}
     })
 
-    UpdateCard("Aggressor Assault Fighter",16,{cost = 15,aliases={"Aggressor Assault Fighter [Rebalanced]"}})
+    --UpdateCard("Aggressor Assault Fighter",16,{cost = 15,aliases={"Aggressor Assault Fighter [Rebalanced]"}})
     UpdateCard("Mandalorian Gauntlet Fighter",20,{cost = 18,aliases={"Mandalorian Gauntlet Fighter [Rebalanced]"}})
-    UpdateCard("JumpMaster 5000",12,{cost = 10,aliases={"Jumpmaster 5000 [Rebalanced]"}})
-    UpdateCard("TIE Bomber Squadron",9,{cost = 8,aliases={"TIE Bomber Squadron [Rebalanced]"}})
-    UpdateCard("TIE Phantom Squadron",14,{cost = 13,aliases={"TIE Phantom Squadron [Rebalanced]"}})
-    UpdateCard("TIE Advanced Squadron",12,{cost = 11,aliases={"TIE Advanced Squadron [Rebalanced]","Tie Advanced Squadron [Rebalanced]"}})
-    UpdateCard("Ciena Ree",17,{cost = 19,aliases={"Ciena Ree [Rebalanced]"}})
-    UpdateCard("Darth Vader",21,{
-        name = "Darth Vader (TIE/x1)",
-        front = CARDS_LEGACY.."Wave I/Squadrons/Darth Vader Advanced.png",
+    --UpdateCard("JumpMaster 5000",12,{cost = 10,aliases={"Jumpmaster 5000 [Rebalanced]"}})
+    --UpdateCard("TIE Bomber Squadron",9,{cost = 8,aliases={"TIE Bomber Squadron [Rebalanced]"}})
+    --UpdateCard("TIE Phantom Squadron",14,{cost = 13,aliases={"TIE Phantom Squadron [Rebalanced]"}})
+    --UpdateCard("TIE Advanced Squadron",12,{cost = 11,aliases={"TIE Advanced Squadron [Rebalanced]","Tie Advanced Squadron [Rebalanced]"}})
+    --UpdateCard("Ciena Ree",17,{cost = 19,aliases={"Ciena Ree [Rebalanced]"}})
+    --UpdateCard("Darth Vader",21,{
+        --name = "Darth Vader (TIE/x1)",
+        --front = CARDS_LEGACY.."Wave I/Squadrons/Darth Vader Advanced.png",
         --mesh = LEGACY_ASSETS..".obj",
-        aliases = {"Darth Vader [Rebalanced]"},
-        cost = 25
-    })
-    UpdateCard("Darth Vader",25,{cost = 27,name = "Darth Vader (TIE/D)",aliases={"Darth Vader [TIE/D] [Rebalanced]"}})
-    UpdateCard("Gar Saxon",23,{cost = 21,aliases={"Gar Saxon [Rebalanced]"}})
-    UpdateCard("Maarek Stele",21,{cost = 25,aliases={"Maarek Stele [Rebalanced]"}})
-    UpdateCard("\"Mauler\" Mithel",15,{cost = 18,aliases={"Mauler Mithel [Rebalanced]"}})
-    UpdateCard("Morna Kee",27,{cost = 29,aliases={"Morna Kee [Rebalanced]"}})
-    UpdateCard("Tel Trevura",17,{cost = 19,aliases={"Tel Trevura [Rebalanced]"}})
-    UpdateCard("Tempest Squadron",13,{cost = 12,aliases={"Tempest Squadron [Rebalanced]"}})
-    UpdateCard("Valen Rudor",13,{cost = 15,aliases={"Valen Rudor [Rebalanced]"}})
+        --aliases = {"Darth Vader [Rebalanced]"},
+        --cost = 25})
+    --UpdateCard("Darth Vader",25,{cost = 27,name = "Darth Vader (TIE/D)",aliases={"Darth Vader [TIE/D] [Rebalanced]"}})
+    --UpdateCard("Gar Saxon",23,{cost = 21,aliases={"Gar Saxon [Rebalanced]"}})
+    --UpdateCard("Maarek Stele",21,{cost = 25,aliases={"Maarek Stele [Rebalanced]"}})
+    --UpdateCard("\"Mauler\" Mithel",15,{cost = 18,aliases={"Mauler Mithel [Rebalanced]"}})
+    --UpdateCard("Morna Kee",27,{cost = 29,aliases={"Morna Kee [Rebalanced]"}})
+    --UpdateCard("Tel Trevura",17,{cost = 19,aliases={"Tel Trevura [Rebalanced]"}})
+    --UpdateCard("Tempest Squadron",13,{cost = 12,aliases={"Tempest Squadron [Rebalanced]"}})
+    --UpdateCard("Valen Rudor",13,{cost = 15,aliases={"Valen Rudor [Rebalanced]"}})
 
 ------------------------------------
     --rebel ships
@@ -667,24 +665,24 @@ function onload()
         command = 3
         })
 
-UpdateCard("Assault Frigate Mk. II B",72,{cost = 78,aliases={"Assault Frig. Mk.II B [Rebalanced]"}})
-UpdateCard("GR-75 Medium Transports",18,{cost = 21,aliases={"GR-75 Medium Transports [Rebalanced]"}})
-UpdateCard("GR-75 Combat Retrofits",24,{cost = 23,aliases={"GR-75 Combat Retrofits [Rebalanced]"}})
-UpdateCard("Hammerhead Scout Corvette",41,{cost = 39,aliases={"Hammerhead Scout Corvette [Rebalanced]"}})
+UpdateCard("Assault Frigate Mark II A",81,{cost = 78,aliases={"Assault Frig. Mk.II A [Rebalanced]"}})
+--UpdateCard("Assault Frigate Mark II B",72,{cost = 78,aliases={"Assault Frig. Mk.II B [Rebalanced]"}})
+--UpdateCard("GR-75 Medium Transports",18,{cost = 21,aliases={"GR-75 Medium Transports [Rebalanced]"}})
+--UpdateCard("GR-75 Combat Retrofits",24,{cost = 23,aliases={"GR-75 Combat Retrofits [Rebalanced]"}})
+--UpdateCard("Hammerhead Scout Corvette",41,{cost = 39,aliases={"Hammerhead Scout Corvette [Rebalanced]"}})
 --UpdateCard("MC75 Ordnance Cruiser",100,{cost = 98,aliases={"MC75 Ordnance Cruiser [Rebalanced]"}})
 --UpdateCard("MC75 Armored Cruiser",104,{cost = 100,aliases={"MC75 Armored Cruiser [Rebalanced]"}})
-UpdateCard("MC80 Starcruiser",96,{cost = 94,aliases={"MC80 Starcruiser [Rebalanced]"}})
-UpdateCard("MC80 Battle Cruiser",103,{cost = 98,aliases={"MC80 Battle Cruiser [Rebalanced]"}})
-UpdateCard("MC80 Command Cruiser",106,{
-    front = CARDS_LEGACY.."Rebalance/Ships/mc80-command-cruiser.png",
-    aliases = {"MC80 Command Cruiser [Rebalanced]"},
-    cost = 106
-})
-UpdateCard("MC80 Assault Cruiser",114,{cost = 110,aliases={"MC80 Assault Cruiser [Rebalanced]"}})
-UpdateCard("Modified Pelta-class Assault Ship",56,{cost = 54,aliases={"Pelta Assault Ship [Rebalanced]"}})
-UpdateCard("Modified Pelta-class Command Ship",60,{cost = 58,aliases={"Pelta Command Ship [Rebalanced]"}})
-UpdateCard("Nebulon-B Support Refit",51,{cost = 48,aliases={"Nebulon-B Support Refit [Rebalanced]"}})
-UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort Frigate [Rebalanced]"}})
+--UpdateCard("MC80 Starcruiser",96,{cost = 94,aliases={"MC80 Starcruiser [Rebalanced]"}})
+--UpdateCard("MC80 Battle Cruiser",103,{cost = 98,aliases={"MC80 Battle Cruiser [Rebalanced]"}})
+--UpdateCard("MC80 Command Cruiser",106,{
+    --front = CARDS_LEGACY.."Rebalance/Ships/mc80-command-cruiser.png",
+    --aliases = {"MC80 Command Cruiser [Rebalanced]"},
+    --cost = 106})
+--UpdateCard("MC80 Assault Cruiser",114,{cost = 110,aliases={"MC80 Assault Cruiser [Rebalanced]"}})
+--UpdateCard("Modified Pelta-class Assault Ship",56,{cost = 54,aliases={"Pelta Assault Ship [Rebalanced]"}})
+--UpdateCard("Modified Pelta-class Command Ship",60,{cost = 58,aliases={"Pelta Command Ship [Rebalanced]"}})
+--UpdateCard("Nebulon-B Support Refit",51,{cost = 48,aliases={"Nebulon-B Support Refit [Rebalanced]"}})
+--UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort Frigate [Rebalanced]"}})
 
 ------------------------------------
     --rebel squadrons
@@ -738,27 +736,26 @@ UpdateCard("Nebulon-B Escort Frigate",57,{cost = 54,aliases={"Nebulon-B Escort F
         aliases = {"Horton Salm [Legacy]"}
     })
 
-    UpdateCard("B-wing Squadron",14,{cost = 13,aliases={"B-wing Squadron [Rebalanced]"}})
-    UpdateCard("E-wing Squadron",15,{cost = 14,aliases={"E-wing Squadron [Rebalanced]"}})
-    UpdateCard("HWK-290",12,{cost = 10,aliases={"HWK-290 [Rebalanced]"}})
-    UpdateCard("Lancer-class Pursuit Craft",15,{cost = 14,aliases={"Lancer Pursuit Craft [Rebalanced]"}})
-    UpdateCard("YT-2400",16,{cost = 17,aliases={"YT-2400 [Rebalanced]"}})
-    UpdateCard("Biggs Darklighter",19,{cost = 23,aliases={"Biggs Darklighter [Rebalanced]"}})
-    UpdateCard("\"Dutch\" Vander",16,{cost = 18,aliases={"Dutch Vander [Rebalanced]"}})
-    UpdateCard("Han Solo",26,{cost = 24,aliases={"Han Solo [Rebalanced]"}})
-    UpdateCard("Jan Ors",19,{cost = 21,aliases={"Jan Ors [Rebalanced]"}})
-    UpdateCard("Keyan Farlander",20,{cost = 19,aliases={"Keyan Farlander [Rebalanced]"}})
-    UpdateCard("Lando Calrissian",23,{cost = 26,aliases={"Lando Calrissian [Rebalanced]"}})
-    UpdateCard("Luke Skywalker",20,{
-        front = CARDS_LEGACY.."Wave I/Squadrons/Luke Skywalker.png",
+    --UpdateCard("B-wing Squadron",14,{cost = 13,aliases={"B-wing Squadron [Rebalanced]"}})
+    --UpdateCard("E-wing Squadron",15,{cost = 14,aliases={"E-wing Squadron [Rebalanced]"}})
+    --UpdateCard("HWK-290",12,{cost = 10,aliases={"HWK-290 [Rebalanced]"}})
+    --UpdateCard("Lancer-class Pursuit Craft",15,{cost = 14,aliases={"Lancer Pursuit Craft [Rebalanced]"}})
+    --UpdateCard("YT-2400",16,{cost = 17,aliases={"YT-2400 [Rebalanced]"}})
+    --UpdateCard("Biggs Darklighter",19,{cost = 23,aliases={"Biggs Darklighter [Rebalanced]"}})
+    --UpdateCard("\"Dutch\" Vander",16,{cost = 18,aliases={"Dutch Vander [Rebalanced]"}})
+    --UpdateCard("Han Solo",26,{cost = 24,aliases={"Han Solo [Rebalanced]"}})
+    --UpdateCard("Jan Ors",19,{cost = 21,aliases={"Jan Ors [Rebalanced]"}})
+    --UpdateCard("Keyan Farlander",20,{cost = 19,aliases={"Keyan Farlander [Rebalanced]"}})
+    --UpdateCard("Lando Calrissian",23,{cost = 26,aliases={"Lando Calrissian [Rebalanced]"}})
+    --UpdateCard("Luke Skywalker",20,{
+        --front = CARDS_LEGACY.."Wave I/Squadrons/Luke Skywalker.png",
         --mesh = LEGACY_ASSETS..".obj",
-        aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"},
-        cost = 22
-    })
-    UpdateCard("Malee Hurra",26,{cost = 20,aliases={"Malee Hurra [Rebalanced]"}})
-    UpdateCard("Shara Bey",17,{cost = 19,aliases={"Shara Bey [Rebalanced]"}})
-    UpdateCard("Tycho Celchu",16,{cost = 18,aliases={"Tycho Celchu [Rebalanced]"}})
-    UpdateCard("Wedge Antilles",19,{cost = 20,aliases={"Wedge Antilles [Rebalanced]"}})
+        --aliases = {"Luke Skywalker [Legacy]", "Luke Skywalker [Rebalanced]"},
+        --cost = 22})
+    --UpdateCard("Malee Hurra",26,{cost = 20,aliases={"Malee Hurra [Rebalanced]"}})
+    --UpdateCard("Shara Bey",17,{cost = 19,aliases={"Shara Bey [Rebalanced]"}})
+    --UpdateCard("Tycho Celchu",16,{cost = 18,aliases={"Tycho Celchu [Rebalanced]"}})
+    --UpdateCard("Wedge Antilles",19,{cost = 20,aliases={"Wedge Antilles [Rebalanced]"}})
 
 
 ------------------------------------
@@ -794,24 +791,25 @@ Card:new(Commander,Empire,{name="Admiral Rogriss",  front = LEGACY_ASSETS.."card
 Card:new(Commander,Rebel,{name="Admiral Nantz",  front = LEGACY_ASSETS.."cards/commanders/admiral-nantz.png", cost=26, aliases={"Admiral Nantz [Legacy]"}})
 Card:new(Commander,Rebel,{name="Han Solo",  front = LEGACY_ASSETS.."cards/commanders/han-solo-commander.png", cost=30, aliases={"Han Solo [Legacy]"}})
 
-UpdateCard("Commander Sato",27,{cost = 23,aliases={"Commander Sato [Rebalanced]"}})
+--UpdateCard("Commander Sato",27,{cost = 23,aliases={"Commander Sato [Rebalanced]"}})
 --UpdateCard("Garm Bel Iblis",25,{cost = 22,aliases={"Garm Bel Iblis [Rebalanced]"}})
-UpdateCard("General Madine",30,{cost = 20,aliases={"General Madine [Rebalanced]"}})
-UpdateCard("Mon Mothma",27,{cost = 25,aliases={"Mon Mothma [Rebalanced]"}})
-UpdateCard("Leia Organa",27,{cost = 24,aliases={"Leia Organa [Rebalanced]"}})
+UpdateCard("General Madine",30,{cost = 27,aliases={"General Madine [Rebalanced]"}})
+--UpdateCard("Mon Mothma",27,{cost = 25,aliases={"Mon Mothma [Rebalanced]"}})
+--UpdateCard("Leia Organa",27,{cost = 24,aliases={"Leia Organa [Rebalanced]"}})
 
-UpdateCard("Admiral Piett",22,{cost = 20,aliases={"Admiral Piett [Rebalanced]"}})
-UpdateCard("Admiral Sloane",24,{cost = 30,aliases={"Admiral Sloane [Rebalanced]"}})
---UpdateCard("Darth Vader",36,{cost = 34,aliases={"Darth Vader [Rebalanced]"}})
-UpdateCard("Emperor Palpatine",35,{cost = 30,aliases={"Emperor Palpatine [Rebalanced]"}})
+--UpdateCard("Admiral Piett",22,{cost = 20,aliases={"Admiral Piett [Rebalanced]"}})
+--UpdateCard("Admiral Sloane",24,{cost = 30,aliases={"Admiral Sloane [Rebalanced]"}})
+UpdateCard("Darth Vader",36,{cost = 32,aliases={"Darth Vader [Rebalanced]"}})
+UpdateCard("Emperor Palpatine",35,{cost = 31,aliases={"Emperor Palpatine [Rebalanced]"}})
 --UpdateCard("Grand Admiral Thrawn",32,{cost = 30,aliases={"Grand Admiral Thrawn [Rebalanced]"}})
-UpdateCard("Grand Moff Tarkin",28,{cost = 30,aliases={"Grand Moff Tarkin [Rebalanced]"}})
-UpdateCard("Moff Jerjerrod",23,{cost = 28,aliases={"Moff Jerjerrod [Rebalanced]"}})
+--UpdateCard("Grand Moff Tarkin",28,{cost = 30,aliases={"Grand Moff Tarkin [Rebalanced]"}})
+--UpdateCard("Moff Jerjerrod",23,{cost = 28,aliases={"Moff Jerjerrod [Rebalanced]"}})
 
-UpdateCard("Obi-Wan Kenobi",28,{cost = 20,aliases={"Obi-Wan Kenobi [Rebalanced]"}})
+UpdateCard("Obi-Wan Kenobi",28,{cost = 25,aliases={"Obi-Wan Kenobi [Rebalanced]"}})
 
 --UpdateCard("Count Dooku",30,{cost = 26,aliases={"Count Dooku [Rebalanced]"}})
-UpdateCard("Kraken",30,{cost = 26,aliases={"Kraken [Rebalanced]"}})
+--UpdateCard("Kraken",30,{cost = 26,aliases={"Kraken [Rebalanced]"}})
+UpdateCard("Admiral Trench",36,{cost = 32,aliases={"Admiral Trench [Rebalanced]"}})
 
 
 --officers
@@ -828,23 +826,23 @@ Card:new(Officer,Empire,{name="Joruus C'baoth", front = LEGACY_ASSETS.."cards/of
 Card:new(Officer,Rebel,{name="Captain Onoma", front = LEGACY_ASSETS.."cards/officers/captain-onoma.png", cost=4, aliases={"Captain Onoma [Legacy]"}})
 Card:new(Officer,Rebel,{name="Borsk Fey'lya", front = LEGACY_ASSETS.."cards/officers/borsk-feylya.png", cost=7, aliases={"Borsk Fey'lya [Legacy]"}})
 
-UpdateCard("Walex Blissex",5,{cost = 7,aliases={"Walex Blissex [Rebalanced]"}})
-UpdateCard("Ahsoka Tano",2,{cost = 3,aliases={"Ahsoka Tano [Rebalanced]"}})
+--UpdateCard("Walex Blissex",5,{cost = 7,aliases={"Walex Blissex [Rebalanced]"}})
+--UpdateCard("Ahsoka Tano",2,{cost = 3,aliases={"Ahsoka Tano [Rebalanced]"}})
 
-UpdateCard("Commandant Aresko",7,{cost = 5,aliases={"Commandant Aresko [Rebalanced]"}})
-UpdateCard("Director Isard",3,{cost = 1,aliases={"Director Isard [Rebalanced]"}})
-UpdateCard("Darth Vader",1,{name="Darth Vader (Officer)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (Officer) [Rebalanced]"}})
-UpdateCard("Governor Pryce",7,{cost = 9,aliases={"Governor Pryce [Rebalanced]"}})
+--UpdateCard("Commandant Aresko",7,{cost = 5,aliases={"Commandant Aresko [Rebalanced]"}})
+--UpdateCard("Director Isard",3,{cost = 1,aliases={"Director Isard [Rebalanced]"}})
+--UpdateCard("Darth Vader",1,{name="Darth Vader (Officer)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (Officer) [Rebalanced]"}})
+--UpdateCard("Governor Pryce",7,{cost = 9,aliases={"Governor Pryce [Rebalanced]"}})
 
-UpdateCard("Damage Control Officer",5,{cost = 3,aliases={"Damage Control Officer [Rebalanced]"}})
-UpdateCard("Defense Liaison",3,{cost = 1,aliases={"Defense Liason [Rebalanced]"}})
-UpdateCard("Engineering Captain",6,{cost = 4,aliases={"Engineering Captain [Rebalanced]"}})
-UpdateCard("Navigation Officer",6,{cost = 4,aliases={"Navigation Officer [Rebalanced]"}})
-UpdateCard("Support Officer",4,{cost = 2,aliases={"Support Officer [Rebalanced]"}})
-UpdateCard("Tactical Expert",6,{cost = 4,aliases={"Tactical Expert [Rebalanced]"}})
-UpdateCard("Veteran Captain",3,{cost = 2,aliases={"Veteran Captain [Rebalanced]"}})
-UpdateCard("Weapons Liaison",3,{cost = 1,aliases={"Weapons Liaison [Rebalanced]"}})
-UpdateCard("Wing Commander",6,{cost = 4,aliases={"Wing Commander [Rebalanced]"}})
+--UpdateCard("Damage Control Officer",5,{cost = 3,aliases={"Damage Control Officer [Rebalanced]"}})
+--UpdateCard("Defense Liaison",3,{cost = 1,aliases={"Defense Liason [Rebalanced]"}})
+--UpdateCard("Engineering Captain",6,{cost = 4,aliases={"Engineering Captain [Rebalanced]"}})
+--UpdateCard("Navigation Officer",6,{cost = 4,aliases={"Navigation Officer [Rebalanced]"}})
+--UpdateCard("Support Officer",4,{cost = 2,aliases={"Support Officer [Rebalanced]"}})
+--UpdateCard("Tactical Expert",6,{cost = 4,aliases={"Tactical Expert [Rebalanced]"}})
+--UpdateCard("Veteran Captain",3,{cost = 2,aliases={"Veteran Captain [Rebalanced]"}})
+--UpdateCard("Weapons Liaison",3,{cost = 1,aliases={"Weapons Liaison [Rebalanced]"}})
+--UpdateCard("Wing Commander",6,{cost = 4,aliases={"Wing Commander [Rebalanced]"}})
 
 --titles
 Title = {
@@ -872,14 +870,14 @@ Card:new(Title,Rebel,{name="Remember Alderaan", front = LEGACY_ASSETS.."cards/ti
 Card:new(Title,Rebel,{name="Tyrant's Bane", front = LEGACY_ASSETS.."cards/titles/tyrants-bane.png", cost=8, aliases={"Tyrant's Bane [Legacy]"}})
 
 --UpdateCard("Concord",12,{cost = 8,aliases={"Concord [Rebalanced]"}})
-UpdateCard("Dodonna's Pride",6,{cost = 3,aliases={"Dodonna's Pride [Rebalanced]"}})
-UpdateCard("Independence",8,{cost = 4,aliases={"Independence [Rebalanced]"}})
-UpdateCard("Redemption",8,{cost = 6,aliases={"Redemption [Rebalanced]"}})
-UpdateCard("Jaina's Light",2,{cost = 3,aliases={"Jaina's Light [Rebalanced]"}})
+--UpdateCard("Dodonna's Pride",6,{cost = 3,aliases={"Dodonna's Pride [Rebalanced]"}})
+--UpdateCard("Independence",8,{cost = 4,aliases={"Independence [Rebalanced]"}})
+--UpdateCard("Redemption",8,{cost = 6,aliases={"Redemption [Rebalanced]"}})
+--UpdateCard("Jaina's Light",2,{cost = 3,aliases={"Jaina's Light [Rebalanced]"}})
 
-UpdateCard("Warlord",8,{cost = 5,aliases={"Warlord [Rebalanced]"}})
+--UpdateCard("Warlord",8,{cost = 5,aliases={"Warlord [Rebalanced]"}})
 
-UpdateCard("Patriot Fist",6,{cost = 9,aliases={"Patriot Fist [Rebalanced]"}})
+--UpdateCard("Patriot Fist",6,{cost = 9,aliases={"Patriot Fist [Rebalanced]"}})
 
 --defensive retrofit
 DefensiveRetrofit = {
@@ -889,11 +887,11 @@ DefensiveRetrofit = {
 Card:new(DefensiveRetrofit,{name="Cloaking Device", front = LEGACY_ASSETS.."cards/defretro/cloaking-device.png", cost=10, aliases={"Cloaking Device [Legacy]"}})
 Card:new(DefensiveRetrofit,{name="Flares", front = LEGACY_ASSETS.."cards/defretro/flares.png", cost=5, aliases={"Flares [Legacy]"}})
 
-UpdateCard("Advanced Projectors",6,{cost = 4,aliases={"Advanced Projectors [Rebalanced]"}})
-UpdateCard("Cluster Bombs",5,{cost = 2,aliases={"Cluster Bombs [Rebalanced]"}})
-UpdateCard("Electronic Countermeasures",7,{cost = 8,aliases={"Electronic Countermeasures [Rebalanced]"}})
-UpdateCard("Redundant Shields",8,{cost = 5,aliases={"Redundant Shields [Rebalanced]"}})
-UpdateCard("Thermal Shields",5,{cost = 8,front=LEGACY_ASSETS.."cards/defretro/thermal_shields.png",aliases={"Thermal Shields [Rebalanced]"}})
+--UpdateCard("Advanced Projectors",6,{cost = 4,aliases={"Advanced Projectors [Rebalanced]"}})
+--UpdateCard("Cluster Bombs",5,{cost = 2,aliases={"Cluster Bombs [Rebalanced]"}})
+--UpdateCard("Electronic Countermeasures",7,{cost = 8,aliases={"Electronic Countermeasures [Rebalanced]"}})
+UpdateCard("Redundant Shields",8,{cost = 6,aliases={"Redundant Shields [Rebalanced]"}})
+--UpdateCard("Thermal Shields",5,{cost = 8,front=LEGACY_ASSETS.."cards/defretro/thermal_shields.png",aliases={"Thermal Shields [Rebalanced]"}})
 
 --experimental retrofit
 ExperimentalRetrofit = {
@@ -924,12 +922,12 @@ IonCannons = {
     back = "https://i.imgur.com/CzYiC1u.png"
 }
 
-UpdateCard("High-Capacity Ion Turbines", 8,{cost = 6,aliases={"High-Capacity Ion Turbines [Rebalanced]"}})
-UpdateCard("Ion Cannon Batteries", 5,{cost = 4,aliases={"Ion Cannon Batteries [Rebalanced]"}})
-UpdateCard("NK-7 Ion Cannons", 10,{cost = 7,aliases={"NK-7 Ion Cannons [Rebalanced]"}})
+--UpdateCard("High-Capacity Ion Turbines", 8,{cost = 6,aliases={"High-Capacity Ion Turbines [Rebalanced]"}})
+--UpdateCard("Ion Cannon Batteries", 5,{cost = 4,aliases={"Ion Cannon Batteries [Rebalanced]"}})
+UpdateCard("NK-7 Ion Cannons", 10,{cost = 8,aliases={"NK-7 Ion Cannons [Rebalanced]"}})
 UpdateCard("Point Defense Ion Cannons", 4,{cost = 6,aliases={"Point Defense Ion Cannons [Rebalanced]"}})
-UpdateCard("SW-7 Ion Batteries", 5,{cost = 4,aliases={"SW-7 Ion Batteries [Rebalanced]"}})
-UpdateCard("Leading Shots", 6,{cost = 5,aliases={"Leading Shots [Rebalanced]"}}) --missing in appendix
+--UpdateCard("SW-7 Ion Batteries", 5,{cost = 4,aliases={"SW-7 Ion Batteries [Rebalanced]"}})
+--UpdateCard("Leading Shots", 6,{cost = 5,aliases={"Leading Shots [Rebalanced]"}}) --missing in appendix
 
 --offensive retrofit
 OffensiveRetrofit = {
@@ -943,10 +941,10 @@ Card:new(OffensiveRetrofit,{name="Reserve Bulk Hangar", front = LEGACY_ASSETS.."
 Card:new(OffensiveRetrofit,{name="Tractor Tentacles", front = LEGACY_ASSETS.."cards/offretro/tractor-tentacles.png", cost=3, aliases={"Tractor Tentacles [Legacy]"}})
 
 UpdateCard("Advanced Transponder Net",5,{cost = 3,aliases={"Advanced Transponder Net [Rebalanced]"}})
-UpdateCard("Hardened Bulkheads",5,{cost = 3,aliases={"Hardened Bulkheads [Rebalanced]"}})
-UpdateCard("Point Defense Reroute",5,{cost = 2,aliases={"Point Defense Reroute [Rebalanced]", "Point-Defense Reroute [Rebalanced]"}})
-UpdateCard("Quad Laser Turrets",5,{cost = 3,aliases={"Quad Laser Turrets [Rebalanced]"}})
-UpdateCard("Rapid Launch Bays",6,{cost = 4,aliases={"Rapid Launch Bays [Rebalanced]"}})
+--UpdateCard("Hardened Bulkheads",5,{cost = 3,aliases={"Hardened Bulkheads [Rebalanced]"}})
+--UpdateCard("Point Defense Reroute",5,{cost = 2,aliases={"Point Defense Reroute [Rebalanced]", "Point-Defense Reroute [Rebalanced]"}})
+--UpdateCard("Quad Laser Turrets",5,{cost = 3,aliases={"Quad Laser Turrets [Rebalanced]"}})
+--UpdateCard("Rapid Launch Bays",6,{cost = 4,aliases={"Rapid Launch Bays [Rebalanced]"}})
 
 --ordnance
 Ordnance = {
@@ -956,9 +954,9 @@ Ordnance = {
 Card:new(Ordnance,{name="Long Range Concussion Missiles", front = LEGACY_ASSETS.."cards/ord/long-range-concussion-missiles.png", cost=4, aliases={"Long Range Concussion Missiles [Legacy]"}})
 Card:new(Ordnance,{name="Tracking Torpedoes", front = LEGACY_ASSETS.."cards/ord/tracking-torpedoes.png", cost=6, aliases={"Tracking Torpedoes [Legacy]"}})
 
-UpdateCard("Expanded Launchers", 13,{cost = 10,aliases={"Expanded Launchers [Rebalanced]"}})
-UpdateCard("External Racks", 4,{cost = 5,aliases={"External Racks [Rebalanced]"}})
-UpdateCard("Rapid Reload", 8,{cost = 4,aliases={"Rapid Reload [Rebalanced]"}})
+UpdateCard("Expanded Launchers", 13,{cost = 11,aliases={"Expanded Launchers [Rebalanced]"}})
+--UpdateCard("External Racks", 4,{cost = 5,aliases={"External Racks [Rebalanced]"}})
+--UpdateCard("Rapid Reload", 8,{cost = 4,aliases={"Rapid Reload [Rebalanced]"}})
 
 --superweapon & 'central control' custom upgrades
 SuperWeapon = {
@@ -984,8 +982,8 @@ Card:new(SupportTeam,Republic,{name="Clone Engineers", front = LEGACY_ASSETS.."c
 Card:new(SupportTeam,{name="Mon Calamari Shield Techs", front = LEGACY_ASSETS.."cards/support/mon-calamari-shield-techs.png", cost=5, aliases={"Mon Calamari Shield Techs [Legacy]"}})
 Card:new(SupportTeam,{name="Repair Team", front = LEGACY_ASSETS.."cards/support/repair-team.png", cost=2, aliases={"Repair Team [Legacy]"}})
 
-UpdateCard("Nav Team", 4,{cost = 2,aliases={"Nav Team [Rebalanced]"}})
-UpdateCard("Engineering Team", 5,{cost = 3,aliases={"Engineering Team [Rebalanced]"}})
+--UpdateCard("Nav Team", 4,{cost = 2,aliases={"Nav Team [Rebalanced]"}})
+--UpdateCard("Engineering Team", 5,{cost = 3,aliases={"Engineering Team [Rebalanced]"}})
 
 Turbolaser = {
     type="Turbolaser",
@@ -994,9 +992,9 @@ Turbolaser = {
 Card:new(Turbolaser,{name="Light Turbolaser Cannons", front = LEGACY_ASSETS.."cards/turbo/light-turbolaser-cannons.png", cost=6, aliases={"Light Turbolaser Cannons [Legacy]"}})
 Card:new(Turbolaser,{name="XV9 Turbolasers", front = LEGACY_ASSETS.."cards/turbo/xv9-turbolasers.png", cost=5, aliases={"XV9 Turbolasers [Legacy]"}})
 
-UpdateCard("Dual Turbolaser Turrets", 5,{cost = 3,aliases={"Dual Turbolaser Turrets [Rebalanced]"}})
-UpdateCard("Heavy Turbolaser Turrets", 6,{cost = 4,aliases={"Heavy Turbolaser Turrets [Rebalanced]"}})
-UpdateCard("Linked Turbolaser Towers", 7,{cost = 9,aliases={"Linked Turbolaser Towers [Rebalanced]"}})
+--UpdateCard("Dual Turbolaser Turrets", 5,{cost = 3,aliases={"Dual Turbolaser Turrets [Rebalanced]"}})
+--UpdateCard("Heavy Turbolaser Turrets", 6,{cost = 4,aliases={"Heavy Turbolaser Turrets [Rebalanced]"}})
+--UpdateCard("Linked Turbolaser Towers", 7,{cost = 9,aliases={"Linked Turbolaser Towers [Rebalanced]"}})
 --UpdateCard("Quad Turbolaser Cannons", 10,{cost = 7,aliases={"Quad Turbolaser Cannons [Rebalanced]"}})
 
 --weapons team & offensive retrofit
@@ -1007,7 +1005,7 @@ WeaponsTeamAndOffensiveRetrofit = {
 Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="Asajj Ventress", front = LEGACY_ASSETS.."cards/wepoff/asajj-ventress-boarding-team.png", cost=7, aliases={"Asajj Ventress [Legacy]"}})
 Card:new(WeaponsTeamAndOffensiveRetrofit,Separatist,{name="BX Commando Droids", front = LEGACY_ASSETS.."cards/wepoff/bx-commando-droids.png", cost=2, aliases={"BX Commando Droids [Legacy]"}})
 
-UpdateCard("Darth Vader",3,{name="Darth Vader (BP)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (BP) [Rebalanced]"}})
+--UpdateCard("Darth Vader",3,{name="Darth Vader (BP)",cost = 3,aliases={"Darth Vader [Rebalanced]","Darth Vader (BP) [Rebalanced]"}})
 
 --weapons_team
 WeaponsTeam = {
@@ -1016,7 +1014,7 @@ WeaponsTeam = {
 }
 Card:new(WeaponsTeam,{name="Targeting Team", front = LEGACY_ASSETS.."cards/wepteam/targeting-team.png", cost=5, aliases={"Targeting Team [Legacy]"}})
 
-UpdateCard("Sensor Team", 5,{cost = 3,aliases={"Sensor Team [Rebalanced]"}})
+--UpdateCard("Sensor Team", 5,{cost = 3,aliases={"Sensor Team [Rebalanced]"}})
 
 printToAll("Finished loading Armada Legacy collection!",{1,0.5,0})
 

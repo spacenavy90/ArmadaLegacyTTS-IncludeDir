@@ -22,7 +22,7 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
     {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"},
-    {LEGACY_ASSETS..'dev/wave3/ships/subjugator/massive_base_mesh.obj',"https://paste.ee/r/AE0fV"}} --custom massive
+    {LEGACY_ASSETS..'dev/wave3/ships/subjugator/massive_base_mesh.obj',"https://pastebin.com/raw/FbinX7mf"}} --custom massive/shortHuge
     -- "https://paste.ee/r/eDbf1",
     -- "https://paste.ee/r/6LYTT",
     -- "https://paste.ee/r/a7mfW",
