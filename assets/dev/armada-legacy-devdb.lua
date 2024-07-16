@@ -88,7 +88,7 @@ function onload()
         name = "Arquitens-class Command Cruiser",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-command-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/reparq_command_texture.png",
         ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
@@ -102,7 +102,7 @@ function onload()
         name = "Arquitens-class Light Cruiser",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-light-cruiser.png",
         mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/reparq_light_texture.png",
         ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
@@ -112,33 +112,33 @@ function onload()
         command = 2
     })
 
-    Ship:new(SmallShip,REPUBLIC_SHIP, {
-        name = "Arquitens-class Command Cruiser (Alt)",
-        front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-command-cruiser_alt.png",
-        mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
-        ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
-        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
-        defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
-        shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 58,
-        aliases = {"Arquitens Command Cruiser Alt [Legacy]"},
-        command = 2
-    })
+    -- Ship:new(SmallShip,REPUBLIC_SHIP, {
+    --     name = "Arquitens-class Command Cruiser (Alt)",
+    --     front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-command-cruiser_alt.png",
+    --     mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+    --     diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_command_texture.png",
+    --     ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
+    --     maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    --     defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+    --     shields = {2,2,2,2}, -- Front, left, right, rear
+    --     cost = 58,
+    --     aliases = {"Arquitens Command Cruiser Alt [Legacy]"},
+    --     command = 2
+    -- })
 
-    Ship:new(SmallShip,REPUBLIC_SHIP, {
-        name = "Arquitens-class Light Cruiser (Alt)",
-        front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-light-cruiser_alt.png",
-        mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
-        ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
-        maneuver = {{"II"},{"-","II"},{"-","-","II"}},
-        defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
-        shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 54,
-        aliases = {"Arquitens Light Cruiser Alt [Legacy]"},
-        command = 2
-    })
+    -- Ship:new(SmallShip,REPUBLIC_SHIP, {
+    --     name = "Arquitens-class Light Cruiser (Alt)",
+    --     front = LEGACY_ASSETS.."dev/wave1_revised/ships/arquitens-light-cruiser_alt.png",
+    --     mesh = LEGACY_ASSETS.."ships/republic/rep_arq/mesh.obj",
+    --     diffuse = LEGACY_ASSETS.."ships/republic/rep_arq/reparq_light_texture.png",
+    --     ruler = LEGACY_ASSETS.."ships/republic/rep_arq/ruler.obj", 
+    --     maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    --     defense_tokens = {DEF_EVADE, DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+    --     shields = {2,2,2,2}, -- Front, left, right, rear
+    --     cost = 54,
+    --     aliases = {"Arquitens Light Cruiser Alt [Legacy]"},
+    --     command = 2
+    -- })
 
     Ship:new(SmallShip,REPUBLIC_SHIP, {
         name = "IPV-2C Stealth Corvette",
@@ -328,7 +328,7 @@ function onload()
         name = "Trident-class Assault Ships",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_ships.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_a_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_a_texture.png",
         ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
@@ -342,7 +342,7 @@ function onload()
         name = "Trident-class Assault Carriers",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_carriers.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/separatist/trident/trident_c_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_c_texture.png",
         ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
@@ -656,7 +656,7 @@ function onload()
         --aliases = {"Interdictor Suppression Refit [Rebalanced]"},
         --cost = 90})
     UpdateCard("Interdictor Combat Refit",93,{
-        front = CARDS_LEGACY.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
+        --front = CARDS_LEGACY.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",
         aliases = {"Interdictor Combat Refit [Rebalanced]"},
         cost = 88})
     --UpdateCard("Quasar Fire II-class Cruiser-Carrier",61,{cost = 58,aliases={"Quasar II Cruiser-Carrier [Rebalanced]"}})
@@ -842,7 +842,7 @@ function onload()
         name = "Assault Frigate Mark I A",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/afm1_a.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1a_mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_a_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/afm1_a_texture.png",
         ruler = LEGACY_ASSETS.."ships/rebel/afm1/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
@@ -856,7 +856,7 @@ function onload()
         name = "Assault Frigate Mark I B",
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/afm1_b.png",
         mesh = LEGACY_ASSETS.."ships/rebel/afm1/afm1b_mesh.obj",
-        diffuse = LEGACY_ASSETS.."ships/rebel/afm1/afm1_b_texture.png",
+        diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/afm1_b_texture.png",
         ruler = LEGACY_ASSETS.."ships/rebel/afm1/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
