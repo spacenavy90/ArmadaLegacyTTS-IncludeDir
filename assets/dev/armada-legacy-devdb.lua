@@ -847,7 +847,7 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
-        cost = 72,
+        cost = 68,
         aliases = {"Assault Frigate Mark I A [Legacy]", "Assault Frig. Mk.I A [Legacy]"},
         command = 2
         })
@@ -861,7 +861,7 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE},
         shields = {3,3,3,2}, -- Front, left, right, rear
-        cost = 68,
+        cost = 64,
         aliases = {"Assault Frigate Mark I B [Legacy]", "Assault Frig. Mk.I B [Legacy]"},
         command = 2
         })
