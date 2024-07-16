@@ -329,7 +329,7 @@ function onload()
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_ships.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_a_texture.png",
-        ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
+        ruler = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
@@ -343,7 +343,7 @@ function onload()
         front = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_carriers.png",
         mesh = LEGACY_ASSETS.."ships/separatist/trident/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_c_texture.png",
-        ruler = LEGACY_ASSETS.."ships/separatist/trident/ruler.obj", 
+        ruler = LEGACY_ASSETS.."dev/wave1_revised/ships/trident_ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
