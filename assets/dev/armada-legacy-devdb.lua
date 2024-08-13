@@ -233,13 +233,13 @@ function onload()
     }
     Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
         name = "G9 Rigger-class Freighter",
-        front = LEGACY_ASSETS.."dev/wave0/squadrons/g-9-freighter.png",
+        front = LEGACY_ASSETS.."dev/wave0/squadrons/g9_rigger/g-9-freighter.png",
         cost = 14,
         aliases = {"G9 Rigger-class Freighter [Legacy]"}
     })
     Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
         name = "Anakin Skywalker (Twilight)",
-        front = LEGACY_ASSETS.."dev/wave0/squadrons/Twilight.png",
+        front = LEGACY_ASSETS.."dev/wave0/squadrons/g9_rigger/Twilight.png",
         diffuse = LEGACY_ASSETS.."dev/wave0/squadrons/g9_rigger/g9rigger_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 25,
@@ -255,13 +255,13 @@ function onload()
     }
     Squadron:new(nu_shuttle, REPUBLIC_SQUAD, {
         name = "Nu-class Transport Shuttle",
-        front = LEGACY_ASSETS.."dev/wave0/squadrons/nu_shuttle.png",
+        front = LEGACY_ASSETS.."dev/wave0/squadrons/nu_shuttle/nu_shuttle.png",
         cost = 15,
         aliases = {"Nu-class Transport Shuttle [Legacy]"}
     })
     Squadron:new(nu_shuttle, REPUBLIC_SQUAD, {
         name = "Delta Squad",
-        front = LEGACY_ASSETS.."dev/wave0/squadrons/Delta_Squad.png",
+        front = LEGACY_ASSETS.."dev/wave0/squadrons/nu_shuttle/Delta_Squad.png",
         diffuse = LEGACY_ASSETS.."dev/wave0/squadrons/nu_shuttle/diffuse_ace.png", 
         defense_tokens = {DEF_BRACE},
         cost = 24,
@@ -523,8 +523,8 @@ function onload()
     })
     Squadron:new(sheathipede, SEPARATIST_SQUAD, {
         name = "Kalani",
-        front = LEGACY_ASSETS.."dev/wave0/sheathipede/Kalani.png",
-        diffuse = LEGACY_ASSETS.."dev/wave0/sheathipede/diffuse_ace.png", 
+        front = LEGACY_ASSETS.."dev/wave0/squadrons/sheathipede/Kalani.png",
+        diffuse = LEGACY_ASSETS.."dev/wave0/squadrons/sheathipede/diffuse_ace.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 18,
         aliases = {"Kalani [Legacy]"}
