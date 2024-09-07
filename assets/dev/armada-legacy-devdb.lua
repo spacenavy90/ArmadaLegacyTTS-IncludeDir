@@ -234,16 +234,16 @@ function onload()
     Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
         name = "G9 Rigger-class Freighter",
         front = LEGACY_ASSETS.."dev/wave0/squadrons/g9_rigger/g-9-freighter.png",
-        cost = 14,
-        aliases = {"G9 Rigger-class Freighter [Legacy]"}
+        cost = 16,
+        aliases = {"G9 Rigger-class Freighter [Legacy]","G9 Rigger Freighter [Legacy]"}
     })
     Squadron:new(g9_rigger, REPUBLIC_SQUAD, {
         name = "Anakin Skywalker (Twilight)",
         front = LEGACY_ASSETS.."dev/wave0/squadrons/g9_rigger/Twilight.png",
         diffuse = LEGACY_ASSETS.."dev/wave0/squadrons/g9_rigger/g9rigger_ace_texture.png", 
         defense_tokens = {DEF_BRACE,DEF_EVADE},
-        cost = 25,
-        aliases = {"Anakin Skywalker [Twilight] [Legacy]"}
+        cost = 24,
+        aliases = {"Anakin Skywalker [Twilight] [Legacy]","Anakin Skywalker [G9] [Legacy]"}
     })
 
     nu_shuttle = {
@@ -257,7 +257,7 @@ function onload()
         name = "Nu-class Transport Shuttle",
         front = LEGACY_ASSETS.."dev/wave0/squadrons/nu_shuttle/nu_shuttle.png",
         cost = 15,
-        aliases = {"Nu-class Transport Shuttle [Legacy]"}
+        aliases = {"Nu-class Transport Shuttle [Legacy]","Nu Shuttle [Legacy]"}
     })
     Squadron:new(nu_shuttle, REPUBLIC_SQUAD, {
         name = "Delta Squad",
@@ -459,14 +459,14 @@ function onload()
     sith_infil = {
         mesh = LEGACY_ASSETS.."dev/wave0/squadrons/sith-infil/mesh.obj",
         diffuse = LEGACY_ASSETS.."dev/wave0/squadrons/sith-infil/sithinfil_texture.png",
-        health = 8,
+        health = 7,
         move = 3,
         defense_tokens = {}
     }
     Squadron:new(sith_infil, SEPARATIST_SQUAD, {
         name = "Star Courier",
         front = LEGACY_ASSETS.."dev/wave0/squadrons/sith-infil/Star_Courier.png",
-        cost = 18,
+        cost = 17,
         aliases = {"Star Courier [Legacy]"}
     })
     Squadron:new(sith_infil, SEPARATIST_SQUAD, {
@@ -519,15 +519,15 @@ function onload()
         name = "Sheathipede-class Shuttle",
         front = LEGACY_ASSETS.."dev/wave0/squadrons/sheathipede/sheathipede.png",
         cost = 15,
-        aliases = {"Sheathipede-class Shuttle [Legacy]"}
+        aliases = {"Sheathipede-class Shuttle [Legacy]","Sheathipede shuttle [Legacy]"}
     })
     Squadron:new(sheathipede, SEPARATIST_SQUAD, {
         name = "Kalani",
         front = LEGACY_ASSETS.."dev/wave0/squadrons/sheathipede/Kalani.png",
         diffuse = LEGACY_ASSETS.."dev/wave0/squadrons/sheathipede/diffuse_ace.png", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
-        cost = 18,
-        aliases = {"Kalani [Legacy]"}
+        cost = 24,
+        aliases = {"Kalani [Legacy]", "Kalani<span class=\"swasf2\">}</span> [Legacy] (24)"}
     })
 
 ------------------------------------
@@ -707,7 +707,7 @@ function onload()
         name = "Alpha-class Star Wing Squadron",
         front = LEGACY_ASSETS.."dev/wave3/squadrons/alpha/alpha-star-wing.png",
         cost = 13,
-        aliases = {"G9 Rigger-class Freighter [Legacy]"}
+        aliases = {"Alpha-class Star Wing Squadron [Legacy]"}
     })
     Squadron:new(alpha_starwing, EMPIRE_SQUAD, {
         name = "Major Vynder",
@@ -1114,8 +1114,8 @@ Card:new(Commander,Empire,{name="Director Isard",  front = LEGACY_ASSETS.."dev/w
 Card:new(Commander,Republic,{name="Shaak Ti",  front = LEGACY_ASSETS.."dev/wave3/cards/shaak_com.png", cost=28, aliases={"Shaak Ti [Legacy]"}})
 Card:new(Commander,Rebel,{name="Admiral Nammo",  front = LEGACY_ASSETS.."dev/wave3/cards/nammo_com.png", cost=26, aliases={"Admiral Nammo [Legacy]"}})
 Card:new(Commander,Separatist,{name="Pors Tonith",  front = LEGACY_ASSETS.."dev/wave3/cards/pors_tonith.png", cost=28, aliases={"Pors Tonith [Legacy]"}})
-Card:new(Commander,Separatist,{name="Daultay Dofine",  front = LEGACY_ASSETS.."dev/wave0/Dofine.png", cost=26, aliases={"Daultay Dofine [Legacy]"}})
-Card:new(Commander,Republic,{name="Ki-Adi-Mundi",  front = LEGACY_ASSETS.."dev/wave0/Ki-Adi-Mundi.png", cost=30, aliases={"Ki-Adi-Mundi [Legacy]"}})
+Card:new(Commander,Separatist,{name="Daultay Dofine",  front = LEGACY_ASSETS.."dev/wave0/Dofine.png", cost=28, aliases={"Daultay Dofine [Legacy]"}})
+Card:new(Commander,Republic,{name="Ki-Adi-Mundi",  front = LEGACY_ASSETS.."dev/wave0/Ki-Adi-Mundi.png", cost=28, aliases={"Ki-Adi-Mundi [Legacy]"}})
 
 --UpdateCard("Commander Sato",27,{cost = 23,aliases={"Commander Sato [Rebalanced]"}})
 --UpdateCard("Garm Bel Iblis",25,{cost = 22,aliases={"Garm Bel Iblis [Rebalanced]"}})
